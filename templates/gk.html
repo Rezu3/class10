@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 
     <!-- ============================================= -->
-    <!-- MATHJAX CONFIGURATION — MUST be before the   -->
-    <!-- MathJax script tag.                          -->
+    <!-- MATHJAX CONFIGURATION                        -->
     <!-- ============================================= -->
     <script>
         MathJax = {
@@ -30,11 +29,12 @@
                 processHtmlClass: 'mathjax'
             },
             svg: { fontCache: 'global' },
-            loader: { load: ['[tex]/ams', '[tex]/physics', '[tex]/cancel'] },
-            startup: { typeset: false }
+            loader: { load: ['[tex]/ams', '[tex]/physics', '[tex]/cancel'] }
+            /* ✅ startup block সরানো হয়েছে */
         };
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script" async></script>
+    <!-- ✅ async সরানো হয়েছে -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script"></script>
 </head>
 <body>
 
