@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,41 @@
     <link rel="stylesheet" href="/static/css/quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- ============================================= -->
+    <!-- MATHJAX CONFIGURATION - সঠিক ও পরিষ্কার সেটআপ -->
+    <!-- ============================================= -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ],
+                displayMath: [
+                    ['$$', '$$'],
+                    ['\\[', '\\]']
+                ],
+                processEscapes: true,
+                processEnvironments: true,
+                packages: {
+                    '[+]': ['ams', 'physics', 'cancel', 'noerrors', 'noundefined', 'autoload', 'require']
+                }
+            },
+            options: {
+                enableMenu: false,
+                ignoreHtmlClass: 'no-mathjax',
+                processHtmlClass: 'mathjax'
+            },
+            svg: {
+                fontCache: 'global'
+            },
+            loader: {
+                load: ['[tex]/ams', '[tex]/physics', '[tex]/cancel']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script" async></script>
 </head>
 <body>
     <div class="container">
@@ -26,6 +61,10 @@
                     </div>
                     <h3>MJC-19</h3>
                     <p>Advance Classical Electrodynamics</p>
+                    <!-- MathJax উদাহরণ: একটি ছোট সমীকরণ (ইলেক্ট্রোডায়নামিক্সের সাথে সম্পর্কিত) -->
+                    <p class="mathjax" style="font-size: 1.1rem; margin: 6px 0 2px; color: #ffffffcc;">
+                        \(\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0}\)
+                    </p>
                     <div class="card-stats">
                         <span><i class="fas fa-question-circle"></i>Questions</span>
                         <span><i class="fas fa-clock"></i> 30s each</span>
@@ -39,6 +78,10 @@
                     </div>
                     <h3>Null</h3>
                     <p>Test your awareness of world facts, history, and current events</p>
+                    <!-- MathJax উদাহরণ: একটি বিখ্যাত সমীকরণ -->
+                    <p class="mathjax" style="font-size: 1.1rem; margin: 6px 0 2px; color: #ffffffcc;">
+                        \(e^{i\pi} + 1 = 0\)
+                    </p>
                     <div class="card-stats">
                         <span><i class="fas fa-question-circle"></i>Questions</span>
                         <span><i class="fas fa-clock"></i> 30s each</span>
@@ -52,6 +95,10 @@
                     </div>
                     <h3>Null</h3>
                     <p>E=mc²</p>
+                    <!-- MathJax উদাহরণ: আইনস্টাইনের ভর-শক্তি সমতুল্যতা, সুন্দরভাবে রেন্ডার করা -->
+                    <p class="mathjax" style="font-size: 1.3rem; margin: 6px 0 2px; color: #ffffffcc;">
+                        \(E = mc^2\)
+                    </p>
                     <div class="card-stats">
                         <span><i class="fas fa-question-circle"></i>Questions</span>
                         <span><i class="fas fa-clock"></i> 30s each</span>
@@ -59,8 +106,7 @@
                     <a href="/gs" class="start-btn">Start Quiz <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-                              
-             
+        </div>
         
         <footer>
             <p>Quiz Master Challenge &copy; 2026 | Designed with <i class="fas fa-heart"></i> for knowledge seekers</p>
@@ -77,5 +123,3 @@
     <script src="/static/js/subject.js"></script>
 </body>
 </html>
-
-
