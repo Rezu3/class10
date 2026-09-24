@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let quizTimerInterval = null;
 
     const TOTAL_TIME = 1500;
-    const QUESTION_TIME = 60;
+    const QUESTION_TIME = 59;
 
     const questionText = document.getElementById('question-text');
     const optionsContainer = document.getElementById('options-container');
