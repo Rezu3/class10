@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Master · MJC-19</title>
+    <title>Quiz Master - Subject Selection</title>
     <link rel="stylesheet" href="/static/css/quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 
-    <!-- ✅ MathJax Config — MUST be before the MathJax script -->
+    <!-- MathJax Config -->
     <script>
         MathJax = {
             tex: {
@@ -30,17 +30,80 @@
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script" async></script>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-brain"></i>◆ 𝑸𝒖𝒊𝒛 𝒘𝒊𝒕𝒉 𝑹𝒆𝒛𝒖 ◆</h1>
+            <p class="subtitle">Test your knowledge in different domains</p>
+        </header>
 
-    <!-- Quiz HTML structure -->
-    <div id="quiz-container">
-        <div id="question-text" class="mathjax"></div>
-        <div id="options-container"></div>
-        <div id="feedback" class="feedback"></div>
-        <!-- ... বাকি elements ... -->
+        <div class="subject-selection">
+            <h2>Choose a Quiz Category</h2>
+            <p class="instruction">Select a subject to begin the challenge. Each quiz has 30 seconds per question with instant feedback!</p>
+
+            <div class="subject-grid">
+                <!-- Card 1: MJC-19 -->
+                <div class="subject-card" data-subject="gk">
+                    <div class="card-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>MJC-19</h3>
+                    <p>Advance Classical Electrodynamics</p>
+                    <p class="mathjax" style="font-size: 1.1rem; margin: 6px 0 2px; color: #ffffffcc;">
+                        \(\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0}\)
+                    </p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-question-circle"></i> 25 Questions</span>
+                        <span><i class="fas fa-clock"></i> 30s each</span>
+                    </div>
+                    <a href="/gk" class="start-btn">Start Quiz <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 2: Math -->
+                <div class="subject-card" data-subject="math">
+                    <div class="card-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Mathematics</h3>
+                    <p>Test your mathematical reasoning and problem-solving skills</p>
+                    <p class="mathjax" style="font-size: 1.1rem; margin: 6px 0 2px; color: #ffffffcc;">
+                        \(e^{i\pi} + 1 = 0\)
+                    </p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-question-circle"></i> Questions</span>
+                        <span><i class="fas fa-clock"></i> 30s each</span>
+                    </div>
+                    <a href="/math" class="start-btn">Start Quiz <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 3: GS -->
+                <div class="subject-card" data-subject="gs">
+                    <div class="card-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>General Science</h3>
+                    <p>Physics, Chemistry & Biology basics</p>
+                    <p class="mathjax" style="font-size: 1.3rem; margin: 6px 0 2px; color: #ffffffcc;">
+                        \(E = mc^2\)
+                    </p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-question-circle"></i> Questions</span>
+                        <span><i class="fas fa-clock"></i> 30s each</span>
+                    </div>
+                    <a href="/gs" class="start-btn">Start Quiz <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Quiz Master Challenge &copy; 2026 | Designed with <i class="fas fa-heart"></i> for knowledge seekers</p>
+            <div class="whatsapp-channel">
+                <a href="https://whatsapp.com/channel/0029Vb7ToysEAKWKYWbsla3X" target="_blank" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Join our WhatsApp Channel
+                </a>
+            </div>
+        </footer>
     </div>
 
-    <!-- ✅ Script load order — quiz.js আগে, gk.js পরে -->
-    <script src="/static/js/quiz.js"></script>
-    <script src="/static/js/gk.js"></script>
+    <script src="/static/js/subject.js"></script>
 </body>
 </html>
