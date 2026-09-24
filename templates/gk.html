@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#0f172a">
     <title>Quiz Master · MJC-19</title>
 
     <link rel="stylesheet" href="/static/css/quiz.css">
@@ -28,10 +31,85 @@
             loader: { load: ['[tex]/ams', '[tex]/physics', '[tex]/cancel'] }
         };
     </script>
-    <!-- MathJax Script — NO async -->
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script"></script>
+
+    <!-- Fullscreen Button Styles -->
+    <style>
+        /* ---------- Fullscreen Button ---------- */
+        .fullscreen-btn {
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 9999;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4361ee, #7209b7);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            box-shadow: 0 6px 20px rgba(67, 97, 238, 0.45);
+            transition: all 0.25s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .fullscreen-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 26px rgba(67, 97, 238, 0.65);
+        }
+
+        .fullscreen-btn:active {
+            transform: scale(0.94);
+        }
+
+        .fullscreen-btn i {
+            pointer-events: none;
+        }
+
+        /* Hide button in fullscreen mode? No — keep it visible to allow exit */
+        .fullscreen-btn.is-fullscreen {
+            background: linear-gradient(135deg, #f72585, #7209b7);
+        }
+
+        @media (max-width: 480px) {
+            .fullscreen-btn {
+                top: 10px;
+                right: 10px;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+
+        /* ---------- Fullscreen Mode Enhancements ---------- */
+        body:fullscreen,
+        body:-webkit-full-screen,
+        body:-moz-full-screen,
+        body:-ms-fullscreen {
+            background: #0f172a;
+            overflow-y: auto;
+        }
+
+        /* Center content when in fullscreen on large screens */
+        body:fullscreen .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
+
+<!-- ============================================= -->
+<!-- FULLSCREEN BUTTON                             -->
+<!-- ============================================= -->
+<button id="fullscreen-btn" class="fullscreen-btn" title="Toggle Fullscreen" aria-label="Toggle Fullscreen">
+    <i class="fas fa-expand" id="fullscreen-icon"></i>
+</button>
 
 <div class="container">
     <header>
@@ -116,6 +194,81 @@
         </div>
     </footer>
 </div>
+
+<!-- ============================================= -->
+<!-- FULLSCREEN LOGIC                              -->
+<!-- ============================================= -->
+<script>
+    (function () {
+        'use strict';
+
+        const btn = document.getElementById('fullscreen-btn');
+        const icon = document.getElementById('fullscreen-icon');
+        if (!btn || !icon) return;
+
+        // Cross-browser request
+        function requestFullscreen(el) {
+            if (el.requestFullscreen) return el.requestFullscreen();
+            if (el.webkitRequestFullscreen) return el.webkitRequestFullscreen();
+            if (el.mozRequestFullScreen) return el.mozRequestFullScreen();
+            if (el.msRequestFullscreen) return el.msRequestFullscreen();
+        }
+
+        function exitFullscreen() {
+            if (document.exitFullscreen) return document.exitFullscreen();
+            if (document.webkitExitFullscreen) return document.webkitExitFullscreen();
+            if (document.mozCancelFullScreen) return document.mozCancelFullScreen();
+            if (document.msExitFullscreen) return document.msExitFullscreen();
+        }
+
+        function isFullscreen() {
+            return !!(
+                document.fullscreenElement ||
+                document.webkitFullscreenElement ||
+                document.mozFullScreenElement ||
+                document.msFullscreenElement
+            );
+        }
+
+        function updateButton() {
+            if (isFullscreen()) {
+                icon.classList.remove('fa-expand');
+                icon.classList.add('fa-compress');
+                btn.classList.add('is-fullscreen');
+                btn.setAttribute('title', 'Exit Fullscreen');
+            } else {
+                icon.classList.remove('fa-compress');
+                icon.classList.add('fa-expand');
+                btn.classList.remove('is-fullscreen');
+                btn.setAttribute('title', 'Enter Fullscreen');
+            }
+        }
+
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            if (isFullscreen()) {
+                exitFullscreen();
+            } else {
+                // Fullscreen the entire page (body)
+                requestFullscreen(document.documentElement);
+            }
+        });
+
+        // Listen to fullscreen change events (all vendor prefixes)
+        ['fullscreenchange', 'webkitfullscreenchange',
+         'mozfullscreenchange', 'MSFullscreenChange'].forEach(function (evt) {
+            document.addEventListener(evt, updateButton);
+        });
+
+        // Optional: auto-hide button while fullscreen on small screens after inactivity?
+        // Not necessary. Keep simple.
+
+        // Initial state
+        updateButton();
+    })();
+</script>
 
 <!-- Scripts -->
 <script src="/static/js/quiz.js"></script>
