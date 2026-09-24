@@ -1,13 +1,9 @@
-// =============================================
-// gk.js - Advanced Classical Electrodynamics Quiz
-// MJC-19 · 25 MCQ with MathJax support
-// =============================================
-
-// ---------- Question Data ----------
 const gkQuestions = [
+    // ===== Section 1: EM Waves, Dispersion, and Scattering =====
     {
         id: 1,
         question: `According to the Beer-Lambert Law, if the concentration of an absorbing species in a solution is doubled and the path length of the light is halved, what happens to the total absorbance \\( (A) \\) ?`,
+        image: null,
         options: [
             `It increases by a factor of four.`,
             `It is halved.`,
@@ -19,6 +15,7 @@ const gkQuestions = [
     {
         id: 2,
         question: `In a medium characterized by a complex refractive index \\( \\tilde{n} = n + ik \\) , what physical manifestation is directly governed by the imaginary part \\( k \\) (the extinction coefficient)?`,
+        image: null,
         options: [
             `The phase velocity of the propagating wave.`,
             `The exponential attenuation of the wave amplitude.`,
@@ -30,6 +27,7 @@ const gkQuestions = [
     {
         id: 3,
         question: `Under the classical Lorentz oscillator model, anomalous dispersion \\( \\left( \\frac{dn}{d\\omega} < 0 \\right) \\) typically occurs in which region of the electromagnetic spectrum?`,
+        image: null,
         options: [
             `In transparent regions far from any resonant frequencies.`,
             `Exclusively at static/zero frequency.`,
@@ -41,6 +39,7 @@ const gkQuestions = [
     {
         id: 4,
         question: `The Kramers-Kronig relations connect the real and imaginary parts of the complex refractive index. What fundamental physical principle guarantees the validity of these integral relationships?`,
+        image: null,
         options: [
             `Conservation of angular momentum.`,
             `The principle of causality.`,
@@ -52,6 +51,7 @@ const gkQuestions = [
     {
         id: 5,
         question: `For a particle whose diameter is significantly smaller than the wavelength of the incident light (size \\( \\ll \\lambda \\) ), classical Rayleigh scattering dictates that the intensity of scattered light \\( (I) \\) scales with the frequency \\( (\\omega) \\) as:`,
+        image: null,
         options: [
             `\\( I \\propto \\omega \\)`,
             `\\( I \\propto \\omega^{2} \\)`,
@@ -60,20 +60,24 @@ const gkQuestions = [
         ],
         correctAnswer: 2
     },
+
+    // ===== Section 2: Plasma Physics and Wave Propagation =====
     {
         id: 6,
         question: `A uniform plane electromagnetic wave propagates in a general direction specified by the wave vector \\( \\mathbf{k} = k_x\\hat{x} + k_y\\hat{y} + k_z\\hat{z} \\) through a lossless isotropic medium. Which of the following conditions must the electric field vector \\( \\mathbf{E}_0 \\) satisfy?`,
+        image: null,
         options: [
             `\\( \\mathbf{k} \\cdot \\mathbf{E}_0 = 0 \\)`,
             `\\( \\mathbf{k} \\times \\mathbf{E}_0 = 0 \\)`,
-            `\\( \\mathbf{k} \\cdot \\mathbf{E}_0 = \\omega\\mu\\epsilon \\)`,
+            `\\( \\mathbf{k} \\cdot \\mathbf{E}_0 = \\omega \\mu \\epsilon \\)`,
             `\\( \\mathbf{k} \\cdot \\mathbf{E}_0 = |\\mathbf{k}||\\mathbf{E}_0| \\)`
         ],
         correctAnswer: 0
     },
     {
         id: 7,
-        question: `An electromagnetic wave with a frequency \\( \\omega \\) attempts to propagate through a dilute, unmagnetised cold plasma with a characteristic plasma frequency \\( \\omega_p \\). If \\( \\omega < \\omega_p \\), what is the nature of the wave propagation?`,
+        question: `An electromagnetic wave with a frequency \\( \\omega \\) attempts to propagate through a dilute, unmagnetised cold plasma with a characteristic plasma frequency \\( \\omega_{p} \\) . If \\( \\omega < \\omega_{p} \\) , what is the nature of the wave propagation?`,
+        image: null,
         options: [
             `The wave propagates without attenuation with a phase velocity less than the speed of light \\( (c) \\).`,
             `The wave propagates normally, but its group velocity exceeds \\( c \\).`,
@@ -84,18 +88,20 @@ const gkQuestions = [
     },
     {
         id: 8,
-        question: `In the orbit theory of plasma physics, a guiding centre drift arises when a charged particle moves through an inhomogeneous magnetic field. If a spatial gradient exists perpendicular to the magnetic field \\( (\\nabla_{\\perp} B) \\), the resulting \\( \\nabla B \\) drift velocity is proportional to which of the following?`,
+        question: `In the orbit theory of plasma physics, a guiding centre drift arises when a charged particle moves through an inhomogeneous magnetic field. If a spatial gradient exists perpendicular to the magnetic field \\( (\\nabla_{\\perp} B) \\) , the resulting \\( \\nabla B \\) drift velocity is proportional to which of the following?`,
+        image: null,
         options: [
-            `Inversely proportional to the particle's perpendicular kinetic energy \\( (v_{\\perp}^2) \\).`,
-            `Directly proportional to the charge sign \\( (q) \\), meaning ions and electrons drift in the same direction.`,
-            `Inversely proportional to the charge sign \\( (q) \\), meaning ions and electrons drift in opposite directions.`,
-            `Independent of the magnetic field magnitude \\( B \\).`
+            `Inversely proportional to the particle's perpendicular kinetic energy \\( (v_{\\perp}^{2}) \\) .`,
+            `Directly proportional to the charge sign \\( (q) \\) , meaning ions and electrons drift in the same direction.`,
+            `Inversely proportional to the charge sign \\( (q) \\) , meaning ions and electrons drift in opposite directions.`,
+            `Independent of the magnetic field magnitude \\( B \\) .`
         ],
         correctAnswer: 2
     },
     {
         id: 9,
-        question: `The pinch effect in a cylindrical plasma column is a phenomenon where a large axial current \\( (I_z) \\) causes the plasma to contract radially. This self-constriction is primarily driven by:`,
+        question: `The pinch effect in a cylindrical plasma column is a phenomenon where a large axial current \\( (I_{z}) \\) causes the plasma to contract radially. This self-constriction is primarily driven by:`,
+        image: null,
         options: [
             `The electrostatic attraction between electrons and ions.`,
             `The azimuthal magnetic field \\( (B_{\\theta}) \\) creating an inward \\( \\mathbf{J} \\times \\mathbf{B} \\) Lorentz force.`,
@@ -106,7 +112,8 @@ const gkQuestions = [
     },
     {
         id: 10,
-        question: `A localized radial constriction (necking) in a pinched plasma column tends to grow over time, leading to a disruption of the column. This macro-instability \\( (m=0) \\) is widely known as the:`,
+        question: `A localized radial constriction (necking) in a pinched plasma column tends to grow over time, leading to a disruption of the column. This macro-instability \\( (m = 0) \\) is widely known as the:`,
+        image: null,
         options: [
             `Kink instability`,
             `Sausage instability`,
@@ -115,20 +122,24 @@ const gkQuestions = [
         ],
         correctAnswer: 1
     },
+
+    // ===== Section 3: Classical Electrodynamics and Radiation Theory =====
     {
         id: 11,
-        question: `When solving the inhomogeneous wave equations for the electromagnetic potentials in the Lorenz gauge, the solution is uniquely given by the retarded potentials. The time argument in the source densities is evaluated at the retarded time \\( t_{ret} = t - R/c \\). This specific formulation is mathematically a direct result of selecting which type of Green's function?`,
+        question: `When solving the inhomogeneous wave equations for the electromagnetic potentials \\( (\\Phi, \\mathbf{A}) \\) in the Lorenz gauge, the solution is uniquely given by the retarded potentials. The time argument in the source densities \\( (\\rho, \\mathbf{J}) \\) is evaluated at the retarded time \\( t_{\\mathrm{ret}} = t - R/c \\) . This specific formulation is mathematically a direct result of selecting which type of Green's function?`,
+        image: null,
         options: [
             `An advanced Green's function that violates causality.`,
-            `A causal Green's function that vanishes for \\( t < t_{ret} \\).`,
+            `A causal Green's function that vanishes for \\( t < t_{\\mathrm{ret}} \\).`,
             `A static Green's function belonging to the Laplace equation.`,
-            `A homogeneous boundary Green's function satisfying \\( \\nabla^2 G = 0 \\).`
+            `A homogeneous boundary Green's function satisfying \\( \\nabla^{2} G = 0 \\).`
         ],
         correctAnswer: 1
     },
     {
         id: 12,
-        question: `In the Liénard-Wiechert potentials for a moving point charge \\( q \\), what is the physical origin of the correction factor \\( (1 - \\beta \\cdot \\hat{n})^{-1} \\) in the scalar potential?`,
+        question: `In the Liénard-Wiechert potentials for a moving point charge \\( q \\) , the scalar potential is given by \\( \\Phi(\\mathbf{r}, t) = \\frac{1}{4\\pi\\epsilon_0}\\left[\\frac{q}{R(1 - \\beta \\cdot \\hat{\\mathbf{n}})}\\right]_{\\mathrm{ret}} \\) , where \\( \\beta = \\mathbf{v}/c \\) and \\( \\hat{\\mathbf{n}} \\) is the unit vector pointing from the charge to the observer. What is the physical origin of the correction factor \\( (1 - \\beta \\cdot \\hat{\\mathbf{n}})^{-1} \\) ?`,
+        image: null,
         options: [
             `It corrects for the change in the total intrinsic net charge of the particle due to length contraction.`,
             `It compensates for the Doppler-like stretching or crowding of the charge's effective volume during signal emission.`,
@@ -139,29 +150,32 @@ const gkQuestions = [
     },
     {
         id: 13,
-        question: `When evaluating the total electric field of a point charge using the Liénard-Wiechert formulation, the field naturally splits into two distinct terms: \\( \\mathbf{E} = \\mathbf{E}_{velocity} + \\mathbf{E}_{acceleration} \\). Which of the following statements correctly distinguishes their long-range behaviors?`,
+        question: `When evaluating the total electric field of a point charge using the Liénard-Wiechert formulation, the field naturally splits into two distinct terms: \\( \\mathbf{E} = \\mathbf{E}_{\\mathrm{velocity}} + \\mathbf{E}_{\\mathrm{acceleration}} \\) . Which of the following statements correctly distinguishes their long-range behaviors?`,
+        image: null,
         options: [
-            `\\( \\mathbf{E}_{velocity} \\propto R^{-1} \\) and \\( \\mathbf{E}_{acceleration} \\propto R^{-2} \\), meaning only velocity fields radiate energy to infinity.`,
+            `\\( \\mathbf{E}_{\\mathrm{velocity}} \\propto R^{-1} \\) and \\( \\mathbf{E}_{\\mathrm{acceleration}} \\propto R^{-2} \\) , meaning only velocity fields radiate energy to infinity.`,
             `Both fields scale as \\( R^{-2} \\) and carry a finite amount of electromagnetic radiation.`,
-            `\\( \\mathbf{E}_{velocity} \\propto R^{-2} \\) (generalized Coulomb field) and \\( \\mathbf{E}_{acceleration} \\propto R^{-1} \\) (radiation field), meaning only the acceleration field transmits power across an infinitely large sphere.`,
-            `\\( \\mathbf{E}_{velocity} \\) vanishes identically if the charge moves at relativistic speeds.`
+            `\\( \\mathbf{E}_{\\mathrm{velocity}} \\propto R^{-2} \\) (generalized Coulomb field) and \\( \\mathbf{E}_{\\mathrm{acceleration}} \\propto R^{-1} \\) (radiation field), meaning only the acceleration field transmits power across an infinitely large sphere.`,
+            `\\( \\mathbf{E}_{\\mathrm{velocity}} \\) vanishes identically if the charge moves at relativistic speeds.`
         ],
         correctAnswer: 2
     },
     {
         id: 14,
-        question: `A highly relativistic charged particle \\( (\\gamma \\gg 1) \\) is accelerated. Compare the total power radiated via the relativistic Larmor generalization when the acceleration is linear (\\( a \\parallel v \\)) versus when it is circular (\\( a \\perp v \\)) for the same magnitude of force applied.`,
+        question: `A highly relativistic charged particle \\( (\\gamma \\gg 1) \\) is accelerated. Compare the total power radiated via the relativistic Larmor generalization when the acceleration is linear \\( (\\mathbf{a} \\parallel \\mathbf{v}) \\) versus when it is circular \\( (\\mathbf{a} \\perp \\mathbf{v}) \\) for the same magnitude of force applied \\( (|\\mathbf{F}|) \\).`,
+        image: null,
         options: [
-            `Linear acceleration radiates a factor of \\( \\gamma^2 \\) more power than circular acceleration.`,
-            `Circular acceleration radiates a factor of \\( \\gamma^2 \\) more power than linear acceleration.`,
-            `Both configurations radiate the exact same total power since it depends only on \\( |\\mathbf{a}|^2 \\).`,
+            `Linear acceleration radiates a factor of \\( \\gamma^{2} \\) more power than circular acceleration.`,
+            `Circular acceleration radiates a factor of \\( \\gamma^{2} \\) more power than linear acceleration.`,
+            `Both configurations radiate the exact same total power since it depends only on \\( |\\mathbf{a}|^{2} \\).`,
             `Linear acceleration produces zero radiation at relativistic limits.`
         ],
         correctAnswer: 1
     },
     {
         id: 15,
-        question: `For a charge undergoing non-relativistic linear acceleration \\( (\\beta \\ll 1) \\), the angular distribution of radiated power follows a typical \\( \\sin^2\\theta \\) dipole pattern. As the particle's velocity becomes highly relativistic \\( (\\beta \\to 1) \\), how does this angular distribution change?`,
+        question: `For a charge undergoing non-relativistic linear acceleration \\( (\\beta \\ll 1) \\) , the angular distribution of radiated power \\( \\frac{dP}{d\\Omega} \\) follows a typical \\( \\sin^{2}\\theta \\) dipole pattern. As the particle's velocity becomes highly relativistic \\( (\\beta \\to 1) \\) , how does this angular distribution change?`,
+        image: null,
         options: [
             `The distribution remains perfectly symmetric but shifts its maximum to \\( \\theta = 0^{\\circ} \\).`,
             `The radiation lobes tilt sharply forward, concentrating into a narrow cone (forward "beaming") around the direction of velocity.`,
@@ -170,9 +184,12 @@ const gkQuestions = [
         ],
         correctAnswer: 1
     },
+
+    // ===== Section 4: Transmission Lines and Wave Propagation =====
     {
         id: 16,
         question: `In transmission line theory, the primary line parameters \\( (R, L, G, C) \\) describe the physical properties per unit length. Which of the following parameters specifies the power loss due to leakage currents through the imperfect dielectric insulation?`,
+        image: null,
         options: [
             `Series Resistance \\( (R) \\)`,
             `Shunt Conductance \\( (G) \\)`,
@@ -184,50 +201,57 @@ const gkQuestions = [
     {
         id: 17,
         question: `A transmission line is defined as strictly lossless when its attenuation constant \\( (\\alpha) \\) is exactly zero. Which mathematical condition must the primary parameters satisfy for a line to be considered ideally lossless?`,
+        image: null,
         options: [
             `\\( R = G = \\infty \\)`,
             `\\( R = G = 0 \\)`,
-            `\\( R / L = G / C \\)`,
+            `\\( R/L = G/C \\)`,
             `\\( R = \\omega L \\) and \\( G = \\omega C \\)`
         ],
         correctAnswer: 1
     },
     {
         id: 18,
-        question: `Which of the following statements is true regarding the characteristic impedance \\( (Z_0) \\) of both an ideal lossless line and a distortionless line?`,
+        question: `Which of the following statements is true regarding the characteristic impedance \\( (Z_{0}) \\) of both an ideal lossless line and a distortionless line?`,
+        image: null,
         options: [
-            `\\( Z_0 \\) is purely imaginary for both lines.`,
-            `\\( Z_0 \\) is complex and heavily frequency-dependent for both lines.`,
-            `\\( Z_0 \\) is purely real (resistive) and independent of frequency for both lines.`,
-            `\\( Z_0 \\) is zero for a lossless line and infinite for a distortionless line.`
+            `\\( Z_{0} \\) is purely imaginary for both lines.`,
+            `\\( Z_{0} \\) is complex and heavily frequency-dependent for both lines.`,
+            `\\( Z_{0} \\) is purely real (resistive) and independent of frequency for both lines.`,
+            `\\( Z_{0} \\) is zero for a lossless line and infinite for a distortionless line.`
         ],
         correctAnswer: 2
     },
     {
         id: 19,
         question: `To achieve distortionless transmission over a lossy line, signals of all frequencies must travel at the same phase velocity and undergo the same attenuation. What is the precise condition relating the primary constants?`,
+        image: null,
         options: [
             `\\( RG = LC \\)`,
-            `\\( R / G = C / L \\)`,
-            `\\( R / L = G / C \\)`,
+            `\\( R/G = C/L \\)`,
+            `\\( R/L = G/C \\)`,
             `\\( RL = GC \\)`
         ],
         correctAnswer: 2
     },
     {
         id: 20,
-        question: `For a lossy line that satisfies the distortionless condition \\( (RC = LG) \\), how do the attenuation constant \\( (\\alpha) \\) and phase constant \\( (\\beta) \\) behave as functions of angular frequency \\( (\\omega) \\)?`,
+        question: `For a lossy line that satisfies the distortionless condition \\( (RC = LG) \\) , how do the attenuation constant \\( (\\alpha) \\) and phase constant \\( (\\beta) \\) behave as functions of angular frequency \\( (\\omega) \\) ?`,
+        image: null,
         options: [
-            `\\( \\alpha \\) is independent of \\( \\omega \\); \\( \\beta \\) is linearly proportional to \\( \\omega \\).`,
-            `\\( \\alpha \\) is linearly proportional to \\( \\omega \\); \\( \\beta \\) is independent of \\( \\omega \\).`,
+            `\\( \\alpha \\) is independent of \\( \\omega \\) ; \\( \\beta \\) is linearly proportional to \\( \\omega \\).`,
+            `\\( \\alpha \\) is linearly proportional to \\( \\omega \\) ; \\( \\beta \\) is independent of \\( \\omega \\).`,
             `Both \\( \\alpha \\) and \\( \\beta \\) are independent of \\( \\omega \\).`,
             `Both \\( \\alpha \\) and \\( \\beta \\) increase quadratically with \\( \\omega \\).`
         ],
         correctAnswer: 0
     },
+
+    // ===== Section 5: Waveguides and Resonant Cavities =====
     {
         id: 21,
-        question: `Hollow metallic waveguides act as high-pass filters because they cannot support wave propagation below a specific frequency. What happens to a Transverse Electric (TE) or Transverse Magnetic (TM) mode if the operating frequency \\( \\omega \\) is strictly less than its cutoff frequency \\( \\omega_c \\)?`,
+        question: `Hollow metallic waveguides act as high-pass filters because they cannot support wave propagation below a specific frequency. What happens to a Transverse Electric (TE) or Transverse Magnetic (TM) mode if the operating frequency \\( \\omega \\) is strictly less than its cutoff frequency \\( \\omega_{c} \\) ?`,
+        image: null,
         options: [
             `The wave phase velocity drops to zero, keeping the wave perfectly stationary.`,
             `The propagation constant becomes purely imaginary, turning the wave into an exponentially decaying evanescent mode.`,
@@ -239,6 +263,7 @@ const gkQuestions = [
     {
         id: 22,
         question: `Why is a hollow, single-conductor metallic waveguide completely incapable of supporting a Transverse Electromagnetic (TEM) mode?`,
+        image: null,
         options: [
             `A single closed conductor cannot maintain an electrostatic potential difference to satisfy Gauss's Law for a transverse electric field in the empty space inside.`,
             `TEM modes can only exist when the walls of the waveguide are made of perfect magnetic conductors.`,
@@ -249,18 +274,21 @@ const gkQuestions = [
     },
     {
         id: 23,
-        question: `For an air-filled rectangular metallic waveguide with internal dimensions \\( a \\times b \\) where \\( a > b \\), which mode serves as the dominant mode (the mode with the lowest cutoff frequency)?`,
+        question: `For an air-filled rectangular metallic waveguide with internal dimensions \\( a \\times b \\) where \\( a > b \\) , which mode serves as the dominant mode (the mode with the lowest cutoff frequency)?`,
+        image: null,
         options: [
             `\\( TM_{11} \\)`,
             `\\( TE_{01} \\)`,
             `\\( TE_{10} \\)`,
-            `\\( TM_{10} \\)`
+            `\\( TM_{10} \\)`,
+            `\\( TE_{11} \\)`
         ],
         correctAnswer: 2
     },
     {
         id: 24,
-        question: `In an air-filled circular waveguide of radius \\( a \\), the cutoff frequencies depend on the roots of Bessel functions \\( (J_n(x)) \\) for TM modes and roots of their derivatives \\( (J_n'(x)) \\) for TE modes. Which mode is the dominant mode in a circular waveguide?`,
+        question: `In an air-filled circular waveguide of radius \\( a \\) , the cutoff frequencies depend on the roots of Bessel functions \\( (J_{n}(x)) \\) for TM modes and roots of their derivatives \\( (J_{n}^{\\prime}(x)) \\) for TE modes. Which mode is the dominant mode in a circular waveguide?`,
+        image: null,
         options: [
             `\\( TE_{01} \\)`,
             `\\( TM_{01} \\)`,
@@ -271,12 +299,13 @@ const gkQuestions = [
     },
     {
         id: 25,
-        question: `How does the wave impedance of a Transverse Electric mode \\( (Z_{TE}) \\) in a hollow guide compare to the intrinsic impedance \\( (\\eta) \\) of the open medium filling the guide?`,
+        question: `How does the wave impedance of a Transverse Electric mode \\( (Z_{\\mathrm{TE}}) \\) in a hollow guide compare to the intrinsic impedance of the open medium \\( (\\eta) \\) filling the guide?`,
+        image: null,
         options: [
-            `\\( Z_{TE} = \\eta \\sqrt{1 - (f_c/f)^2} \\)`,
-            `\\( Z_{TE} = \\dfrac{\\eta}{\\sqrt{1 - (f_c/f)^2}} \\)`,
-            `\\( Z_{TE} = \\eta \\)`,
-            `\\( Z_{TE} = -j\\eta (f_c/f) \\)`
+            `\\( Z_{\\mathrm{TE}} = \\eta \\sqrt{1 - (f_{c}/f)^{2}} \\)`,
+            `\\( Z_{\\mathrm{TE}} = \\dfrac{\\eta}{\\sqrt{1 - (f_{c}/f)^{2}}} \\)`,
+            `\\( Z_{\\mathrm{TE}} = \\eta \\)`,
+            `\\( Z_{\\mathrm{TE}} = -j\\eta (f_{c}/f) \\)`
         ],
         correctAnswer: 1
     }
