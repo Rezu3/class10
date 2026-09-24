@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Master · MJC-19 Advanced Classical Electrodynamics</title>
+    <title>Quiz Master · MJC-19</title>
 
     <link rel="stylesheet" href="/static/css/quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 
-    <!-- ============================================= -->
-    <!-- MATHJAX CONFIGURATION                        -->
-    <!-- ============================================= -->
+    <!-- MathJax Config -->
     <script>
-        MathJax = {
+        window.MathJax = {
             tex: {
                 inlineMath: [['$', '$'], ['\\(', '\\)']],
                 displayMath: [['$$', '$$'], ['\\[', '\\]']],
                 processEscapes: true,
                 processEnvironments: true,
-                packages: {
-                    '[+]': ['ams', 'physics', 'cancel', 'noerrors', 'noundefined', 'autoload', 'require']
-                }
+                packages: { '[+]': ['ams', 'physics', 'cancel'] }
             },
             options: {
                 enableMenu: false,
@@ -30,23 +26,19 @@
             },
             svg: { fontCache: 'global' },
             loader: { load: ['[tex]/ams', '[tex]/physics', '[tex]/cancel'] }
-            /* ✅ startup block সরানো হয়েছে */
         };
     </script>
-    <!-- ✅ async সরানো হয়েছে -->
+    <!-- MathJax Script — NO async -->
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script"></script>
 </head>
 <body>
 
 <div class="container">
-
-    <!-- Header -->
     <header>
         <h1><i class="fas fa-brain"></i>◆ 𝑸𝒖𝒊𝒛 𝒘𝒊𝒕𝒉 𝑹𝒆𝒛𝒖 ◆</h1>
         <p class="subtitle">MJC-19 · Advanced Classical Electrodynamics</p>
     </header>
 
-    <!-- Info bar -->
     <div class="quiz-info-bar">
         <div class="info-item">
             <i class="fas fa-list-ol"></i>
@@ -62,7 +54,6 @@
         </div>
     </div>
 
-    <!-- Timer + progress -->
     <div class="timer-container">
         <div class="timer-bar">
             <span id="timer" class="timer"><i class="fas fa-clock"></i> 30s</span>
@@ -72,14 +63,12 @@
         </div>
     </div>
 
-    <!-- Question area -->
     <div class="question-container">
         <div id="question-text" class="question-text mathjax">Loading question...</div>
         <div id="options-container" class="options-container"></div>
         <div id="feedback" class="feedback"></div>
     </div>
 
-    <!-- Result container -->
     <div id="result-container" class="result-container" style="display: none;">
         <div class="result-card">
             <h2><i class="fas fa-trophy"></i> Quiz Completed!</h2>
@@ -118,7 +107,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>Quiz Master Challenge &copy; 2026 | Designed with <i class="fas fa-heart"></i> for knowledge seekers</p>
         <div class="whatsapp-channel">
@@ -127,10 +115,9 @@
             </a>
         </div>
     </footer>
-
 </div>
 
-<!-- Scripts: quiz.js আগে, gk.js পরে -->
+<!-- Scripts -->
 <script src="/static/js/quiz.js"></script>
 <script src="/static/js/gk.js"></script>
 
