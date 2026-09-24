@@ -2,7 +2,7 @@ const gkQuestions = [
     // ===== Section 1: EM Waves, Dispersion, and Scattering =====
     {
         id: 1,
-        question: `According to the Beer-Lambert Law, if the concentration of an absorbing species in a solution is doubled and the path length of the light is halved, what happens to the total absorbance \\( (A) \\) ?`,
+        question: `According to the Beer-Lambert Law, if the concentration of an absorbing species in a solution is doubled and the path length of the light is halved, what happens to the total absorbance \\( (A) \\)?`,
         image: null,
         options: [
             `It increases by a factor of four.`,
@@ -14,7 +14,7 @@ const gkQuestions = [
     },
     {
         id: 2,
-        question: `In a medium characterized by a complex refractive index \\( \\tilde{n} = n + ik \\) , what physical manifestation is directly governed by the imaginary part \\( k \\) (the extinction coefficient)?`,
+        question: `In a medium characterized by a complex refractive index \\( \\tilde{n} = n + ik \\), what physical manifestation is directly governed by the imaginary part \\( k \\) (the extinction coefficient)?`,
         image: null,
         options: [
             `The phase velocity of the propagating wave.`,
@@ -50,7 +50,7 @@ const gkQuestions = [
     },
     {
         id: 5,
-        question: `For a particle whose diameter is significantly smaller than the wavelength of the incident light (size \\( \\ll \\lambda \\) ), classical Rayleigh scattering dictates that the intensity of scattered light \\( (I) \\) scales with the frequency \\( (\\omega) \\) as:`,
+        question: `For a particle whose diameter is significantly smaller than the wavelength of the incident light (size \\( \\ll \\lambda \\)), classical Rayleigh scattering dictates that the intensity of scattered light \\( (I) \\) scales with the frequency \\( (\\omega) \\) as:`,
         image: null,
         options: [
             `\\( I \\propto \\omega \\)`,
@@ -76,7 +76,7 @@ const gkQuestions = [
     },
     {
         id: 7,
-        question: `An electromagnetic wave with a frequency \\( \\omega \\) attempts to propagate through a dilute, unmagnetised cold plasma with a characteristic plasma frequency \\( \\omega_{p} \\) . If \\( \\omega < \\omega_{p} \\) , what is the nature of the wave propagation?`,
+        question: `An electromagnetic wave with a frequency \\( \\omega \\) attempts to propagate through a dilute, unmagnetised cold plasma with a characteristic plasma frequency \\( \\omega_{p} \\). If \\( \\omega < \\omega_{p} \\), what is the nature of the wave propagation?`,
         image: null,
         options: [
             `The wave propagates without attenuation with a phase velocity less than the speed of light \\( (c) \\).`,
@@ -88,13 +88,13 @@ const gkQuestions = [
     },
     {
         id: 8,
-        question: `In the orbit theory of plasma physics, a guiding centre drift arises when a charged particle moves through an inhomogeneous magnetic field. If a spatial gradient exists perpendicular to the magnetic field \\( (\\nabla_{\\perp} B) \\) , the resulting \\( \\nabla B \\) drift velocity is proportional to which of the following?`,
+        question: `In the orbit theory of plasma physics, a guiding centre drift arises when a charged particle moves through an inhomogeneous magnetic field. If a spatial gradient exists perpendicular to the magnetic field \\( (\\nabla_{\\perp} B) \\), the resulting \\( \\nabla B \\) drift velocity is proportional to which of the following?`,
         image: null,
         options: [
-            `Inversely proportional to the particle's perpendicular kinetic energy \\( (v_{\\perp}^{2}) \\) .`,
-            `Directly proportional to the charge sign \\( (q) \\) , meaning ions and electrons drift in the same direction.`,
-            `Inversely proportional to the charge sign \\( (q) \\) , meaning ions and electrons drift in opposite directions.`,
-            `Independent of the magnetic field magnitude \\( B \\) .`
+            `Inversely proportional to the particle's perpendicular kinetic energy \\( (v_{\\perp}^{2}) \\).`,
+            `Directly proportional to the charge sign \\( (q) \\), meaning ions and electrons drift in the same direction.`,
+            `Inversely proportional to the charge sign \\( (q) \\), meaning ions and electrons drift in opposite directions.`,
+            `Independent of the magnetic field magnitude \\( B \\).`
         ],
         correctAnswer: 2
     },
@@ -126,7 +126,7 @@ const gkQuestions = [
     // ===== Section 3: Classical Electrodynamics and Radiation Theory =====
     {
         id: 11,
-        question: `When solving the inhomogeneous wave equations for the electromagnetic potentials \\( (\\Phi, \\mathbf{A}) \\) in the Lorenz gauge, the solution is uniquely given by the retarded potentials. The time argument in the source densities \\( (\\rho, \\mathbf{J}) \\) is evaluated at the retarded time \\( t_{\\mathrm{ret}} = t - R/c \\) . This specific formulation is mathematically a direct result of selecting which type of Green's function?`,
+        question: `When solving the inhomogeneous wave equations for the electromagnetic potentials \\( (\\Phi, \\mathbf{A}) \\) in the Lorenz gauge, the solution is uniquely given by the retarded potentials. The time argument in the source densities \\( (\\rho, \\mathbf{J}) \\) is evaluated at the retarded time \\( t_{\\mathrm{ret}} = t - R/c \\). This specific formulation is mathematically a direct result of selecting which type of Green's function?`,
         image: null,
         options: [
             `An advanced Green's function that violates causality.`,
@@ -138,7 +138,7 @@ const gkQuestions = [
     },
     {
         id: 12,
-        question: `In the Liénard-Wiechert potentials for a moving point charge \\( q \\) , the scalar potential is given by \\( \\Phi(\\mathbf{r}, t) = \\frac{1}{4\\pi\\epsilon_0}\\left[\\frac{q}{R(1 - \\beta \\cdot \\hat{\\mathbf{n}})}\\right]_{\\mathrm{ret}} \\) , where \\( \\beta = \\mathbf{v}/c \\) and \\( \\hat{\\mathbf{n}} \\) is the unit vector pointing from the charge to the observer. What is the physical origin of the correction factor \\( (1 - \\beta \\cdot \\hat{\\mathbf{n}})^{-1} \\) ?`,
+        question: `In the Liénard-Wiechert potentials for a moving point charge \\( q \\), the scalar potential is given by \\( \\Phi(\\mathbf{r}, t) = \\frac{1}{4\\pi\\epsilon_0}\\left[\\frac{q}{R(1 - \\boldsymbol{\\beta} \\cdot \\hat{\\mathbf{n}})}\\right]_{\\mathrm{ret}} \\), where \\( \\boldsymbol{\\beta} = \\mathbf{v}/c \\) and \\( \\hat{\\mathbf{n}} \\) is the unit vector pointing from the charge to the observer. What is the physical origin of the correction factor \\( (1 - \\boldsymbol{\\beta} \\cdot \\hat{\\mathbf{n}})^{-1} \\)?`,
         image: null,
         options: [
             `It corrects for the change in the total intrinsic net charge of the particle due to length contraction.`,
@@ -150,10 +150,10 @@ const gkQuestions = [
     },
     {
         id: 13,
-        question: `When evaluating the total electric field of a point charge using the Liénard-Wiechert formulation, the field naturally splits into two distinct terms: \\( \\mathbf{E} = \\mathbf{E}_{\\mathrm{velocity}} + \\mathbf{E}_{\\mathrm{acceleration}} \\) . Which of the following statements correctly distinguishes their long-range behaviors?`,
+        question: `When evaluating the total electric field of a point charge using the Liénard-Wiechert formulation, the field naturally splits into two distinct terms: \\( \\mathbf{E} = \\mathbf{E}_{\\mathrm{velocity}} + \\mathbf{E}_{\\mathrm{acceleration}} \\). Which of the following statements correctly distinguishes their long-range behaviors?`,
         image: null,
         options: [
-            `\\( \\mathbf{E}_{\\mathrm{velocity}} \\propto R^{-1} \\) and \\( \\mathbf{E}_{\\mathrm{acceleration}} \\propto R^{-2} \\) , meaning only velocity fields radiate energy to infinity.`,
+            `\\( \\mathbf{E}_{\\mathrm{velocity}} \\propto R^{-1} \\) and \\( \\mathbf{E}_{\\mathrm{acceleration}} \\propto R^{-2} \\), meaning only velocity fields radiate energy to infinity.`,
             `Both fields scale as \\( R^{-2} \\) and carry a finite amount of electromagnetic radiation.`,
             `\\( \\mathbf{E}_{\\mathrm{velocity}} \\propto R^{-2} \\) (generalized Coulomb field) and \\( \\mathbf{E}_{\\mathrm{acceleration}} \\propto R^{-1} \\) (radiation field), meaning only the acceleration field transmits power across an infinitely large sphere.`,
             `\\( \\mathbf{E}_{\\mathrm{velocity}} \\) vanishes identically if the charge moves at relativistic speeds.`
@@ -174,7 +174,7 @@ const gkQuestions = [
     },
     {
         id: 15,
-        question: `For a charge undergoing non-relativistic linear acceleration \\( (\\beta \\ll 1) \\) , the angular distribution of radiated power \\( \\frac{dP}{d\\Omega} \\) follows a typical \\( \\sin^{2}\\theta \\) dipole pattern. As the particle's velocity becomes highly relativistic \\( (\\beta \\to 1) \\) , how does this angular distribution change?`,
+        question: `For a charge undergoing non-relativistic linear acceleration \\( (\\beta \\ll 1) \\), the angular distribution of radiated power \\( \\frac{dP}{d\\Omega} \\) follows a typical \\( \\sin^{2}\\theta \\) dipole pattern. As the particle's velocity becomes highly relativistic \\( (\\beta \\to 1) \\), how does this angular distribution change?`,
         image: null,
         options: [
             `The distribution remains perfectly symmetric but shifts its maximum to \\( \\theta = 0^{\\circ} \\).`,
@@ -203,12 +203,12 @@ const gkQuestions = [
         question: `A transmission line is defined as strictly lossless when its attenuation constant \\( (\\alpha) \\) is exactly zero. Which mathematical condition must the primary parameters satisfy for a line to be considered ideally lossless?`,
         image: null,
         options: [
-            `\\( R = G = \\infty \\)`,
             `\\( R = G = 0 \\)`,
+            `\\( R = G = \\infty \\)`,
             `\\( R/L = G/C \\)`,
             `\\( R = \\omega L \\) and \\( G = \\omega C \\)`
         ],
-        correctAnswer: 1
+        correctAnswer: 0
     },
     {
         id: 18,
@@ -236,11 +236,11 @@ const gkQuestions = [
     },
     {
         id: 20,
-        question: `For a lossy line that satisfies the distortionless condition \\( (RC = LG) \\) , how do the attenuation constant \\( (\\alpha) \\) and phase constant \\( (\\beta) \\) behave as functions of angular frequency \\( (\\omega) \\) ?`,
+        question: `For a lossy line that satisfies the distortionless condition \\( (RC = LG) \\), how do the attenuation constant \\( (\\alpha) \\) and phase constant \\( (\\beta) \\) behave as functions of angular frequency \\( (\\omega) \\)?`,
         image: null,
         options: [
-            `\\( \\alpha \\) is independent of \\( \\omega \\) ; \\( \\beta \\) is linearly proportional to \\( \\omega \\).`,
-            `\\( \\alpha \\) is linearly proportional to \\( \\omega \\) ; \\( \\beta \\) is independent of \\( \\omega \\).`,
+            `\\( \\alpha \\) is independent of \\( \\omega \\); \\( \\beta \\) is linearly proportional to \\( \\omega \\).`,
+            `\\( \\alpha \\) is linearly proportional to \\( \\omega \\); \\( \\beta \\) is independent of \\( \\omega \\).`,
             `Both \\( \\alpha \\) and \\( \\beta \\) are independent of \\( \\omega \\).`,
             `Both \\( \\alpha \\) and \\( \\beta \\) increase quadratically with \\( \\omega \\).`
         ],
@@ -250,7 +250,7 @@ const gkQuestions = [
     // ===== Section 5: Waveguides and Resonant Cavities =====
     {
         id: 21,
-        question: `Hollow metallic waveguides act as high-pass filters because they cannot support wave propagation below a specific frequency. What happens to a Transverse Electric (TE) or Transverse Magnetic (TM) mode if the operating frequency \\( \\omega \\) is strictly less than its cutoff frequency \\( \\omega_{c} \\) ?`,
+        question: `Hollow metallic waveguides act as high-pass filters because they cannot support wave propagation below a specific frequency. What happens to a Transverse Electric (TE) or Transverse Magnetic (TM) mode if the operating frequency \\( \\omega \\) is strictly less than its cutoff frequency \\( \\omega_{c} \\)?`,
         image: null,
         options: [
             `The wave phase velocity drops to zero, keeping the wave perfectly stationary.`,
@@ -274,7 +274,7 @@ const gkQuestions = [
     },
     {
         id: 23,
-        question: `For an air-filled rectangular metallic waveguide with internal dimensions \\( a \\times b \\) where \\( a > b \\) , which mode serves as the dominant mode (the mode with the lowest cutoff frequency)?`,
+        question: `For an air-filled rectangular metallic waveguide with internal dimensions \\( a \\times b \\) where \\( a > b \\), which mode serves as the dominant mode (the mode with the lowest cutoff frequency)?`,
         image: null,
         options: [
             `\\( TM_{11} \\)`,
@@ -287,7 +287,7 @@ const gkQuestions = [
     },
     {
         id: 24,
-        question: `In an air-filled circular waveguide of radius \\( a \\) , the cutoff frequencies depend on the roots of Bessel functions \\( (J_{n}(x)) \\) for TM modes and roots of their derivatives \\( (J_{n}^{\\prime}(x)) \\) for TE modes. Which mode is the dominant mode in a circular waveguide?`,
+        question: `In an air-filled circular waveguide of radius \\( a \\), the cutoff frequencies depend on the roots of Bessel functions \\( (J_{n}(x)) \\) for TM modes and roots of their derivatives \\( (J_{n}^{\\prime}(x)) \\) for TE modes. Which mode is the dominant mode in a circular waveguide?`,
         image: null,
         options: [
             `\\( TE_{01} \\)`,
