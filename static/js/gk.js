@@ -1,256 +1,305 @@
 const gkQuestions = [
-    {
-        question: "১. পর্যায় সারণির জনক কাকে বলা হয়?",
-        options: ["মেন্ডেলিভ", "মোসলে", "ডোবেরাইনার", "নিউল্যান্ডস"],
-        correctAnswer: 0
-    },
-    {
-        question: "২. মেন্ডেলিভের পর্যায় সূত্রটি মৌলদের কোন ধর্মের ওপর ভিত্তি করে গড়ে উঠেছিল?",
-        options: ["পারমাণবিক সংখ্যা", "পারমাণবিক গুরুত্ব", "যোজ্যতা", "ইলেকট্রন বিন্যাস"],
-        correctAnswer: 1
-    },
-    {
-        question: "৩. আধুনিক পর্যায় সূত্রের ভিত্তি কী?",
-        options: ["পারমাণবিক গুরুত্ব", "পারমাণবিক সংখ্যা", "ভর সংখ্যা", "আইসোটোপ সংখ্যা"],
-        correctAnswer: 1
-    },
-    {
-        question: "৪. দীর্ঘ পর্যায় সারণিতে মোট কয়টি পর্যায় রয়েছে?",
-        options: ["৭টি", "৮টি", "৯টি", "১৮টি"],
-        correctAnswer: 0
-    },
-    {
-        question: "৫. আধুনিক দীর্ঘ পর্যায় সারণিতে মোট কয়টি শ্রেণী (Group) আছে?",
-        options: ["৭টি", "৯টি", "১৮টি", "৮টি"],
-        correctAnswer: 2
-    },
-    {
-        question: "৬. পর্যায় সারণির প্রথম পর্যায়কে কী বলা হয়?",
-        options: ["অতি হ্রস্ব পর্যায়", "হ্রস্ব পর্যায়", "দীর্ঘ পর্যায়", "অতি দীর্ঘ পর্যায়"],
-        correctAnswer: 0
-    },
-    {
-        question: "৭. প্রথম পর্যায়ে মৌলের সংখ্যা কয়টি?",
-        options: ["২টি", "৮টি", "১৮টি", "৩২টি"],
-        correctAnswer: 0
-    },
-    {
-        question: "৮. নিচের কোনটি একটি ক্ষার ধাতু (Alkali Metal)?",
-        options: ["Ca", "Mg", "Na", "Fe"],
-        correctAnswer: 2
-    },
-    {
-        question: "৯. ক্ষার ধাতুগুলি আধুনিক পর্যায় সারণির কোন শ্রেণীতে অবস্থিত?",
-        options: ["১ নম্বর শ্রেণী", "২ নম্বর শ্রেণী", "১৭ নম্বর শ্রেণী", "১৮ নম্বর শ্রেণী"],
-        correctAnswer: 0
-    },
-    {
-        question: "১০. নিচের কোনটি ক্ষারীয় মৃত্তিকা ধাতু (Alkaline Earth Metal)?",
-        options: ["Na", "K", "Mg", "Cu"],
-        correctAnswer: 2
-    },
-    {
-        question: "১১. ক্ষারীয় মৃত্তিকা ধাতুগুলি পর্যায় সারণির কোন শ্রেণীতে থাকে?",
-        options: ["শ্রেণী ১", "শ্রেণী ২", "শ্রেণী ১৩", "শ্রেণী ১৫"],
-        correctAnswer: 1
-    },
-    {
-        question: "১২. হ্যালোজেন মৌলগুলি দীর্ঘ পর্যায় সারণির কোন শ্রেণীতে অবস্থিত?",
-        options: ["১৬", "১৭", "১৮", "১"],
-        correctAnswer: 1
-    },
-    {
-        question: "১৩. নিচের কোনটি একটি হ্যালোজেন মৌল নয়?",
-        options: ["ফ্লোরিন", "ক্লোরিন", "ব্রোমিন", "হিলিয়াম"],
-        correctAnswer: 3
-    },
-    {
-        question: "১৪. সবচেয়ে তড়িৎ-ঋণাত্মক (Highly Electronegative) মৌল কোনটি?",
-        options: ["ক্লোরিন (Cl)", "ফ্লোরিন (F)", "অক্সিজেন (O)", "নাইট্রোজেন (N)"],
-        correctAnswer: 1
-    },
-    {
-        question: "১৫. নিষ্ক্রিয় গ্যাস বা নোবেল গ্যাসগুলি কোন শ্রেণীতে অবস্থান করে?",
-        options: ["শ্রেণী ০ বা ১৮", "শ্রেণী ১৭", "শ্রেণী ১", "শ্রেণী ২"],
-        correctAnswer: 0
-    },
-    {
-        question: "১৬. নিচের কোনটি একটি নোবেল গ্যাস?",
-        options: ["অক্সিজেন", "হাইড্রোজেন", "আর্গন", "ক্লোরিন"],
-        correctAnswer: 2
-    },
-    {
-        question: "১৭. মেন্ডেলিভের পর্যায় সারণিতে হাইড্রোজেনকে কোন কোন শ্রেণীর মৌলদের সাথে সাদৃশ্যের জন্য 'দুষ্ট মৌল' বলা হয়েছিল?",
-        options: ["IA এবং VIIA", "IA এবং IIA", "IIA এবং VIIA", "IB এবং VIII"],
-        correctAnswer: 0
-    },
-    {
-        question: "১৮. মেন্ডেলিভ তার পর্যায় সারণি প্রকাশের সময় নিচের কোন মৌলটির অস্তিত্ব ভবিষ্যদ্বাণী করেছিলেন (একা-বোরন)?",
-        options: ["স্ক্যান্ডিয়াম", "গ্যালিয়াম", "জার্মেনিয়াম", "টেকনেশিয়াম"],
-        correctAnswer: 0
-    },
-    {
-        question: "১৯. মেন্ডেলিভের 'একা-অ্যালুমিনিয়াম' পরবর্তীতে কোন মৌল হিসেবে আবিষ্কৃত হয়?",
-        options: ["বোরন", "গ্যালিয়াম", "জার্মেনিয়াম", "সিলিকন"],
-        correctAnswer: 1
-    },
-    {
-        question: "২০. পর্যায় সারণির কোনো পর্যায়ের বাম দিক থেকে ডান দিকে গেলে পরমাণুর ব্যাসার্ধ বা আকার সাধারণত কেমন হয়?",
-        options: ["বৃদ্ধি পায়", "হ্রাস পায়", "একই থাকে", "প্রথমে বাড়ে পরে কমে"],
-        correctAnswer: 1
-    },
-    {
-        question: "২১. কোনো শ্রেণীর ওপর থেকে নিচের দিকে নামলে পরমাণুর আকার সাধারণত কী হয়?",
-        options: ["হ্রাস পায়", "বৃদ্ধি পায়", "অপরিবর্তিত থাকে", "কোনো নিয়ম মানে না"],
-        correctAnswer: 1
-    },
-    {
-        question: "২২. নিচের মৌলগুলির মধ্যে কোনটির পরমাণুর আকার সবচেয়ে ছোট?",
-        options: ["Li", "Na", "K", "Rb"],
-        correctAnswer: 0
-    },
-    {
-        question: "২৩. নিচের মৌলগুলির মধ্যে কোনটির পারমাণবিক ব্যাসার্ধ সবচেয়ে বেশি?",
-        options: ["F", "Cl", "Br", "I"],
-        correctAnswer: 3
-    },
-    {
-        question: "২৪. বাম দিক থেকে ডান দিকে গেলে মৌলদের ধাতব ধর্ম (Metallic Character):",
-        options: ["বৃদ্ধি পায়", "হ্রাস পায়", "একই থাকে", "প্রথমে কমে পরে বাড়ে"],
-        correctAnswer: 1
-    },
-    {
-        question: "২৫. একটি শ্রেণীর ওপর থেকে নিচের দিকে নামলে অধাতব ধর্ম (Non-metallic Character):",
-        options: ["বৃদ্ধি পায়", "হ্রাস পায়", "অপরিবর্তিত থাকে", "হঠাৎ বাড়ে"],
-        correctAnswer: 1
-    },
-    {
-        question: "২৬. দ্বিতীয় পর্যায়ে তীব্র জারণধর্মী মৌল কোনটি?",
-        options: ["লিথিয়াম", "কার্বন", "নাইট্রোজেন", "ফ্লোরিন"],
-        correctAnswer: 3
-    },
-    {
-        question: "২৭. নিচের কোনটি একটি সন্ধিগত মৌল (Transition Element)?",
-        options: ["Ca", "Fe", "Na", "Al"],
-        correctAnswer: 1
-    },
-    {
-        question: "২৮. চতুর্থ পর্যায়ে কয়টি সন্ধিগত মৌল আছে?",
-        options: ["৮টি", "১০টি", "১৮টি", "২টি"],
-        correctAnswer: 1
-    },
-    {
-        question: "২৯. ইউরেনিয়াম-উত্তর মৌল বা নেপচুনিয়াম-পরবর্তী কৃত্রিম মৌল (Transuranic Element) কোনটি?",
-        options: ["প্লুটোনিয়াম", "থোরিয়াম", "ইউরেনিয়াম", "রেডিয়াম"],
-        correctAnswer: 0
-    },
-    {
-        question: "৩০. কোনো মৌলের গ্যাসীয় অবস্থায় তার বহিস্থ কক্ষ থেকে একটি ইলেকট্রন বের করতে যে ন্যূনতম শক্তির প্রয়োজন হয়, তাকে কী বলে?",
-        options: ["তড়িৎ ঋণাত্মকতা", "ইলেকট্রন আসক্তি", "আয়নন শক্তি (Ionisation Energy)", "পরমাণু শক্তি"],
-        correctAnswer: 2
-    },
-    {
-        question: "৩১. পর্যায় সারণির কোনো পর্যায়ের বাম দিক থেকে ডান দিকে গেলে আয়নন শক্তি সাধারণত:",
-        options: ["হ্রাস পায়", "বৃদ্ধি পায়", "একই থাকে", "প্রথমে বৃদ্ধি পায় পরে হ্রাস পায়"],
-        correctAnswer: 1
-    },
-    {
-        question: "৩২. দীর্ঘ পর্যায় সারণির সবচেয়ে হালকা ক্ষার ধাতু কোনটি?",
-        options: ["Na", "Li", "K", "Cs"],
-        correctAnswer: 1
-    },
-    {
-        question: "৩৩. পর্যায় সারণির কোন মৌলটির ইলেকট্রন আসক্তি (Electron Affinity) সবচেয়ে বেশি?",
-        options: ["ফ্লোরিন (F)", "ক্লোরিন (Cl)", "ব্রোমিন (Br)", "আয়োডিন (I)"],
-        correctAnswer: 1
-    },
-    {
-        question: "৩৪. নিচের কোনটি একটি চ্যালকোজেন (Chalcogen) মৌল?",
-        options: ["নাইট্রোজেন", "অক্সিজেন", "ফ্লোরিন", "হিলিয়াম"],
-        correctAnswer: 1
-    },
-    {
-        question: "৩৫. চ্যালকোজেন মৌলগুলি আধুনিক পর্যায় সারণির কোন শ্রেণীতে থাকে?",
-        options: ["১৫ নম্বর শ্রেণী", "১৬ নম্বর শ্রেণী", "১৭ নম্বর শ্রেণী", "১৮ নম্বর শ্রেণী"],
-        correctAnswer: 1
-    },
-    {
-        question: "৩৬. ত্রয়ী সূত্র (Law of Triads) কে প্রবর্তন করেন?",
-        options: ["নিউল্যান্ডস", "ডোবেরাইনার", "মেন্ডেলিভ", "লথার মেয়ার"],
-        correctAnswer: 1
-    },
-    {
-        question: "৩৭. অষ্টক সূত্র (Law of Octaves) কার দ্বারা প্রবর্তিত হয়েছিল?",
-        options: ["ডোবেরাইনার", "মোসলে", "নিউল্যান্ডস", "মেন্ডেলিভ"],
-        correctAnswer: 2
-    },
-    {
-        question: "৩৮. ল্যান্থানাইড মৌলগুলির (Lanthanides) মোট সংখ্যা কয়টি?",
-        options: ["১০টি", "১৪টি", "১৮টি", "৩২টি"],
-        correctAnswer: 1
-    },
-    {
-        question: "৩৯. অ্যাক্টিনাইড মৌলগুলি (Actinides) পর্যায় সারণির কোন পর্যায়ে অবস্থিত?",
-        options: ["৫ম পর্যায়", "৬ষ্ঠ পর্যায়", "৭ম পর্যায়", "৪র্থ পর্যায়"],
-        correctAnswer: 2
-    },
-    {
-        question: "৪০. নিচের কোন ধর্মটি মৌলদের পর্যায়গত ধর্ম (Periodic Property) নয়?",
-        options: ["পারমাণবিক ব্যাসার্ধ", "আয়নন শক্তি", "তেজস্ক্রিয়তা", "তড়িৎ ঋণাত্মকতা"],
-        correctAnswer: 2
-    },
-    {
-        question: "৪১. একটি তরল হ্যালোজেন মৌলের নাম কী?",
-        options: ["ক্লোরিন", "ফ্লোরিন", "ব্রোমিন", "আয়োডিন"],
-        correctAnswer: 2
-    },
-    {
-        question: "৪২. একটি কঠিন হ্যালোজেন মৌল কোনটি?",
-        options: ["ব্রোমিন", "ক্লোরিন", "আয়োডিন", "ফ্লোরিন"],
-        correctAnswer: 2
-    },
-    {
-        question: "৪৩. মুদ্রা ধাতু (Coinage Metals) যেমন Cu, Ag, Au পর্যায় সারণির কোন শ্রেণীতে অবস্থিত?",
-        options: ["শ্রেণী ১", "শ্রেণী ১১", "শ্রেণী ১২", "শ্রেণী ২"],
-        correctAnswer: 1
-    },
-    {
-        question: "৪৪. পর্যায় সারণির কোন শ্রেণীতে কঠিন, তরল ও গ্যাসীয়—তিন প্রকার মৌলই দেখা যায়?",
-        options: ["শ্রেণী ১", "শ্রেণী ২", "শ্রেণী ১৭", "শ্রেণী ১৮"],
-        correctAnswer: 2
-    },
-    {
-        question: "৪৫. নিচের কোন মৌলটি সবচেয়ে তীব্র বিজারণধর্মী?",
-        options: ["Li", "Na", "K", "Cs"],
-        correctAnswer: 3
-    },
-    {
-        question: "৪৬. কোনো মৌলের পরমাণুর যোজ্যতা কিসের ওপর নির্ভর করে?",
-        options: ["সবচেয়ে ভেতরের কক্ষের ইলেকট্রন সংখ্যার ওপর", "সবচেয়ে বাইরের কক্ষের (যোজ্যতা কক্ষ) ইলেকট্রন সংখ্যার ওপর", "প্রোটন সংখ্যার ওপর", "নিউট্রন সংখ্যার ওপর"],
-        correctAnswer: 1
-    },
-    {
-        question: "৪৭. মেন্ডেলিভের আদি পর্যায় সারণিতে মোট কয়টি পর্যায় এবং শ্রেণী ছিল?",
-        options: ["৭টি পর্যায় ও ৮টি শ্রেণী", "৭টি পর্যায় ও ৯টি শ্রেণী", "৬টি পর্যায় ও ৮টি শ্রেণী", "৭টি পর্যায় ও ১৮টি শ্রেণী"],
-        correctAnswer: 0
-    },
-    {
-        question: "৪৮. নিক্টোজেন (Pnictogen) বা শ্বাসরোধকারী মৌল কোন শ্রেণীর মৌলদের বলা হয়?",
-        options: ["শ্রেণী ১৪", "শ্রেণী ১৫", "শ্রেণী ১৬", "শ্রেণী ১৭"],
-        correctAnswer: 1
-    },
-    {
-        question: "৪৯. নিচের কোনটি একটি ধাতুকল্প (Metalloid)?",
-        options: ["সিলিকন (Si)", "সোডিয়াম (Na)", "কার্বন (C)", "লোহা (Fe)"],
-        correctAnswer: 0
-    },
-    {
-        question: "৫০. দীর্ঘ পর্যায় সারণির দ্বিতীয় ও তৃতীয় পর্যায়কে কী বলা হয়?",
-        options: ["অতি হ্রস্ব পর্যায়", "হ্রস্ব পর্যায়", "দীর্ঘ পর্যায়", "পূর্ণ পর্যায়"],
-        correctAnswer: 1
-    }
+  {
+    id: 1,
+    question: `According to the Beer-Lambert Law, if the concentration of an absorbing species in a solution is doubled and the path length of the light is halved, what happens to the total absorbance ($A$)?`,
+    image: null,
+    options: [
+      `It increases by a factor of four.`,
+      `It is halved.`,
+      `It remains unchanged.`,
+      `It doubles.`
+    ],
+    correct: 2
+  },
+  {
+    id: 2,
+    question: `In a medium characterized by a complex refractive index $\\tilde{n}=n+ik$, what physical manifestation is directly governed by the imaginary part $k$ (the extinction coefficient)?`,
+    image: null,
+    options: [
+      `The phase velocity of the propagating wave.`,
+      `The exponential attenuation of the wave amplitude.`,
+      `The angle of refraction at the interface.`,
+      `The total polarization rotation.`
+    ],
+    correct: 1
+  },
+  {
+    id: 3,
+    question: `Under the classical Lorentz oscillator model, anomalous dispersion typically occurs in which region of the electromagnetic spectrum?`,
+    image: null,
+    options: [
+      `In transparent regions far from any resonant frequencies.`,
+      `Exclusively at static/zero frequency.`,
+      `In close proximity to a resonant absorption frequency.`,
+      `Throughout the entire vacuum spectrum.`
+    ],
+    correct: 2
+  },
+  {
+    id: 4,
+    question: `The Kramers-Kronig relations connect the real and imaginary parts of the complex refractive index. What fundamental physical principle guarantees the validity of these integral relationships?`,
+    image: null,
+    options: [
+      `Conservation of angular momentum.`,
+      `The principle of causality.`,
+      `Gauge invariance.`,
+      `The uniqueness theorem of electrostatics.`
+    ],
+    correct: 1
+  },
+  {
+    id: 5,
+    question: `For a particle whose diameter is significantly smaller than the wavelength of the incident light, classical Rayleigh scattering dictates that the intensity of scattered light ($I$) scales with the frequency ($\\omega$) as:`,
+    image: null,
+    options: [
+      `$I \\propto \\omega$`,
+      `$I \\propto \\omega^{2}$`,
+      `$I \\propto \\omega^{4}$`,
+      `$I \\propto \\omega^{-4}$`
+    ],
+    correct: 2
+  },
+  {
+    id: 6,
+    question: `A uniform plane electromagnetic wave propagates in a general direction specified by the wave vector $k = k_x\\hat{x} + k_y\\hat{y} + k_z\\hat{z}$ through a lossless isotropic medium. Which of the following conditions must the electric field vector $E_0$ satisfy?`,
+    image: null,
+    options: [
+      `$k \\cdot E_0 = 0$`,
+      `$k \\times E_0 = 0$`,
+      `$k \\cdot E_0 = \\omega\\mu\\epsilon$`,
+      `$k \\times E_0 = k \\| E_0$`
+    ],
+    correct: 0
+  },
+  {
+    id: 7,
+    question: `An electromagnetic wave with a frequency $\\omega$ attempts to propagate through a dilute, unmagnetised cold plasma with a characteristic plasma frequency $\\omega_p$. If $\\omega < \\omega_p$, what is the nature of the wave propagation?`,
+    image: null,
+    options: [
+      `The wave propagates without attenuation with a phase velocity less than the speed of light ($c$).`,
+      `The wave propagates normally, but its group velocity exceeds $c$.`,
+      `The propagation constant becomes purely imaginary, leading to exponential attenuation (evanescence).`,
+      `The wave undergoes continuous frequency upconversion.`
+    ],
+    correct: 2
+  },
+  {
+    id: 8,
+    question: `In the orbit theory of plasma physics, a guiding centre drift arises when a charged particle moves through an inhomogeneous magnetic field. If a spatial gradient exists perpendicular to the magnetic field ($\\nabla_{\\perp} B$), the resulting $\\nabla B$ drift velocity is proportional to which of the following?`,
+    image: null,
+    options: [
+      `Inversely proportional to the particle's perpendicular kinetic energy ($v_{\\perp}^2$).`,
+      `Directly proportional to the charge sign ($q$), meaning ions and electrons drift in the same direction.`,
+      `Inversely proportional to the charge sign ($q$), meaning ions and electrons drift in opposite directions.`,
+      `Independent of the magnetic field magnitude $B$.`
+    ],
+    correct: 2
+  },
+  {
+    id: 9,
+    question: `The pinch effect in a cylindrical plasma column is a phenomenon where a large axial current ($I_z$) causes the plasma to contract radially. This self-constriction is primarily driven by:`,
+    image: null,
+    options: [
+      `The electrostatic attraction between electrons and ions.`,
+      `The azimuthal magnetic field ($B_{\\theta}$) creating an inward $J \\times B$ Lorentz force.`,
+      `External mechanical pressure applied by the vacuum chamber walls.`,
+      `Centrifugal forces arising from high-speed plasma rotation.`
+    ],
+    correct: 1
+  },
+  {
+    id: 10,
+    question: `A localized radial constriction (necking) in a pinched plasma column tends to grow over time, leading to a disruption of the column. This macro-instability ($m=0$) is widely known as the:`,
+    image: null,
+    options: [
+      `Kink instability`,
+      `Sausage instability`,
+      `Rayleigh-Taylor instability`,
+      `Two-stream instability`
+    ],
+    correct: 1
+  },
+  {
+    id: 11,
+    question: `When solving the inhomogeneous wave equations for the electromagnetic potentials in the Lorenz gauge, the solution is uniquely given by the retarded potentials. The time argument in the source densities is evaluated at the retarded time $t_{ret} = t - R/c$. This specific formulation is mathematically a direct result of selecting which type of Green's function?`,
+    image: null,
+    options: [
+      `An advanced Green's function that violates causality.`,
+      `A causal Green's function that vanishes for $t < t_{ret}$.`,
+      `A static Green's function belonging to the Laplace equation.`,
+      `A homogeneous boundary Green's function satisfying $\\nabla^2 G = 0$.`
+    ],
+    correct: 1
+  },
+  {
+    id: 12,
+    question: `In the Liénard-Wiechert potentials for a moving point charge $q$, what is the physical origin of the correction factor $(1 - \\beta \\cdot \\hat{n})^{-1}$ in the scalar potential?`,
+    image: null,
+    options: [
+      `It corrects for the change in the total intrinsic net charge of the particle due to length contraction.`,
+      `It compensates for the Doppler-like stretching or crowding of the charge's effective volume during signal emission.`,
+      `It accounts for the non-linear self-interaction of the electromagnetic field in a vacuum.`,
+      `It is an artifact of the Coulomb gauge that vanishes in the Lorenz gauge.`
+    ],
+    correct: 1
+  },
+  {
+    id: 13,
+    question: `When evaluating the total electric field of a point charge using the Liénard-Wiechert formulation, the field naturally splits into two distinct terms: $E = E_{velocity} + E_{acceleration}$. Which of the following statements correctly distinguishes their long-range behaviors?`,
+    image: null,
+    options: [
+      `$E_{velocity} \\propto R^{-1}$ and $E_{acceleration} \\propto R^{-2}$ meaning only velocity fields radiate energy to infinity.`,
+      `Both fields scale as $R^{-2}$ and carry a finite amount of electromagnetic radiation.`,
+      `$E_{velocity} \\propto R^{-2}$ (generalized Coulomb field) and $E_{acceleration} \\propto R^{-1}$ (radiation field), meaning only the acceleration field transmits power across an infinitely large sphere.`,
+      `$E_{velocity}$ vanishes identically if the charge moves at relativistic speeds.`
+    ],
+    correct: 2
+  },
+  {
+    id: 14,
+    question: `A highly relativistic charged particle ($\\gamma \\gg 1$) is accelerated. Compare the total power radiated via the relativistic Larmor generalization when the acceleration is linear ($a \\parallel v$) versus when it is circular ($a \\perp v$) for the same magnitude of force applied ($|F|$).`,
+    image: null,
+    options: [
+      `Linear acceleration radiates a factor of $\\gamma^2$ more power than circular acceleration.`,
+      `Circular acceleration radiates a factor of $\\gamma^2$ more power than linear acceleration.`,
+      `Both configurations radiate the exact same total power since it depends only on $a^2$.`,
+      `Linear acceleration produces zero radiation at relativistic limits.`
+    ],
+    correct: 1
+  },
+  {
+    id: 15,
+    question: `For a charge undergoing non-relativistic linear acceleration ($\\beta \\ll 1$), the angular distribution of radiated power follows a typical $\\sin^2\\theta$ dipole pattern. As the particle's velocity becomes highly relativistic ($\\beta \\to 1$), how does this angular distribution change?`,
+    image: null,
+    options: [
+      `The distribution remains perfectly symmetric but shifts its maximum to $\\theta = 0^{\\circ}$.`,
+      `The radiation lobes tilt sharply forward, concentrating into a narrow cone (forward "beaming") around the direction of velocity.`,
+      `The radiation shifts entirely to the backward hemisphere ($\\theta = 180^{\\circ}$).`,
+      `The angular distribution becomes fully isotropic, distributing power evenly in all directions.`
+    ],
+    correct: 1
+  },
+  {
+    id: 16,
+    question: `In transmission line theory, the primary line parameters ($R, L, G, C$) describe the physical properties per unit length. Which of the following parameters specifies the power loss due to leakage currents through the imperfect dielectric insulation?`,
+    image: null,
+    options: [
+      `Series Resistance ($R$)`,
+      `Shunt Conductance ($G$)`,
+      `Series Inductance ($L$)`,
+      `Shunt Capacitance ($C$)`
+    ],
+    correct: 1
+  },
+  {
+    id: 17,
+    question: `A transmission line is defined as strictly lossless when its attenuation constant ($\\alpha$) is exactly zero. Which mathematical condition must the primary parameters satisfy for a line to be considered ideally lossless?`,
+    image: null,
+    options: [
+      `$R = G = \\infty$`,
+      `$RG = LC$`,
+      `$R/L = G/C$`,
+      `$R = \\omega L$ and $G = \\omega C$`
+    ],
+    correct: 1
+  },
+  {
+    id: 18,
+    question: `Which of the following statements is true regarding the characteristic impedance ($Z_0$) of both an ideal lossless line and a distortionless line?`,
+    image: null,
+    options: [
+      `$Z_0$ is purely imaginary for both lines.`,
+      `$Z_0$ is complex and heavily frequency-dependent for both lines.`,
+      `$Z_0$ is purely real (resistive) and independent of frequency for both lines.`,
+      `$Z_0$ is zero for a lossless line and infinite for a distortionless line.`
+    ],
+    correct: 2
+  },
+  {
+    id: 19,
+    question: `To achieve distortionless transmission over a lossy line, signals of all frequencies must travel at the same phase velocity and undergo the same attenuation. What is the precise condition relating the primary constants?`,
+    image: null,
+    options: [
+      `$RG = LC$`,
+      `$RC = LG$`,
+      `$R/L = G/C$`,
+      `$RL = GC$`
+    ],
+    correct: 2
+  },
+  {
+    id: 20,
+    question: `For a lossy line that satisfies the distortionless condition ($RC = LG$), how do the attenuation constant ($\\alpha$) and phase constant ($\\beta$) behave as functions of angular frequency ($\\omega$)?`,
+    image: null,
+    options: [
+      `$\\alpha$ is independent of $\\omega$; $\\beta$ is linearly proportional to $\\omega$.`,
+      `$\\alpha$ is linearly proportional to $\\omega$; $\\beta$ is independent of $\\omega$.`,
+      `Both $\\alpha$ and $\\beta$ are independent of $\\omega$.`,
+      `Both $\\alpha$ and $\\beta$ increase quadratically with $\\omega$.`
+    ],
+    correct: 0
+  },
+  {
+    id: 21,
+    question: `Hollow metallic waveguides act as high-pass filters because they cannot support wave propagation below a specific frequency. What happens to a Transverse Electric (TE) or Transverse Magnetic (TM) mode if the operating frequency $\\omega$ is strictly less than its cutoff frequency $\\omega_c$?`,
+    image: null,
+    options: [
+      `The wave phase velocity drops to zero, keeping the wave perfectly stationary.`,
+      `The propagation constant becomes purely imaginary, turning the wave into an exponentially decaying evanescent mode.`,
+      `The wave automatically converts into a Transverse Electromagnetic (TEM) mode.`,
+      `The wave's power increases exponentially due to dielectric breakdown.`
+    ],
+    correct: 1
+  },
+  {
+    id: 22,
+    question: `Why is a hollow, single-conductor metallic waveguide completely incapable of supporting a Transverse Electromagnetic (TEM) mode?`,
+    image: null,
+    options: [
+      `A single closed conductor cannot maintain an electrostatic potential difference to satisfy Gauss's Law for a transverse electric field in the empty space inside.`,
+      `TEM modes can only exist when the walls of the waveguide are made of perfect magnetic conductors.`,
+      `The cutoff frequency for a TEM mode in a hollow pipe is mathematically infinite.`,
+      `The magnetic field would have to be entirely parallel to the direction of wave propagation.`
+    ],
+    correct: 0
+  },
+  {
+    id: 23,
+    question: `For an air-filled rectangular metallic waveguide with internal dimensions $a \\times b$ where $a > b$, which mode serves as the dominant mode (the mode with the lowest cutoff frequency)?`,
+    image: null,
+    options: [
+      `$TM_{11}$`,
+      `$TE_{01}$`,
+      `$TE_{10}$`,
+      `$TM_{10}$`
+    ],
+    correct: 2
+  },
+  {
+    id: 24,
+    question: `In an air-filled circular waveguide of radius $a$, which mode is the dominant mode?`,
+    image: null,
+    options: [
+      `$TE_{01}$`,
+      `$TM_{01}$`,
+      `$TE_{11}$`,
+      `$TM_{11}$`
+    ],
+    correct: 2
+  },
+  {
+    id: 25,
+    question: `How does the wave impedance of a Transverse Electric mode ($Z_{TE}$) in a hollow guide compare to the intrinsic impedance ($\\eta$) of the open medium filling the guide?`,
+    image: null,
+    options: [
+      `$Z_{TE} = \\eta \\sqrt{1 - (f_c/f)^2}$`,
+      `$Z_{TE} = \\frac{\\eta}{\\sqrt{1 - (f_c/f)^2}}$`,
+      `$Z_{TE} = \\eta$`,
+      `$Z_{TE} = -j\\eta(f_c/f)$`
+    ],
+    correct: 1
+  }
 ];
-
 
 
 
