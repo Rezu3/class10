@@ -1,11 +1,10 @@
 // quiz.js - Shared quiz functionality
 
-// Utility functions for all quiz pages
 document.addEventListener('DOMContentLoaded', function() {
     // Add confetti effect for correct answers
     window.createConfetti = function() {
         const colors = ['#4361ee', '#7209b7', '#4cc9f0', '#f72585', '#f8961e'];
-        const confettiCount = 50; // Reduced for mobile performance
+        const confettiCount = 50;
         
         for (let i = 0; i < confettiCount; i++) {
             const confetti = document.createElement('div');
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             document.body.appendChild(confetti);
             
-            // Remove confetti after animation completes
             setTimeout(() => {
                 if (confetti.parentNode) {
                     confetti.parentNode.removeChild(confetti);
@@ -37,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize timer with callback
     window.initTimer = function(seconds, onTimeUp) {
-        const timerElement = document.querySelector('.timer');
+        // FIX: id বা class দুটোই support করে
+        const timerElement = document.querySelector('#timer') || document.querySelector('.timer');
         
         if (!timerElement) return null;
         
@@ -45,9 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
         let timerInterval;
         
         const updateTimerDisplay = () => {
-            timerElement.textContent = timeLeft;
+            // FIX: শুধু number বসালে icon হারিয়ে যায়, তাই innerHTML ব্যবহার
+            timerElement.innerHTML = `<i class="fas fa-clock"></i> ${timeLeft}s`;
             
-            // Change color based on time left
             if (timeLeft <= 10) {
                 timerElement.classList.add('danger');
                 timerElement.classList.remove('warning');
@@ -87,9 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
         return { startTimer, stopTimer, resetTimer, timeLeft: () => timeLeft };
     };
     
-    // Play sound effects (simplified for mobile)
+    // Play sound effects
     window.playSound = function(type) {
-        // Simple beep sounds using Web Audio API
         try {
             const audioContext = new (window.AudioContext || window.webkitAudioContext)();
             const oscillator = audioContext.createOscillator();
@@ -116,7 +114,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update progress bar
     window.updateProgressBar = function(current, total) {
-        const progressBar = document.querySelector('.progress');
+        // FIX: id বা class দুটোই support করে
+        const progressBar = document.querySelector('#progress-fill') || document.querySelector('.progress');
         if (progressBar) {
             const percentage = (current / total) * 100;
             progressBar.style.width = `${percentage}%`;
