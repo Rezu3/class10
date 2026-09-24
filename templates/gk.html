@@ -3,93 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Master - General Knowledge</title>
+    <title>Quiz Master · MJC-19 Advanced Classical Electrodynamics</title>
+
     <link rel="stylesheet" href="/static/css/quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- ============================================= -->
+    <!-- MATHJAX CONFIGURATION — MUST be before the   -->
+    <!-- MathJax script tag.                          -->
+    <!-- ============================================= -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                packages: {
+                    '[+]': ['ams', 'physics', 'cancel', 'noerrors', 'noundefined', 'autoload', 'require']
+                }
+            },
+            options: {
+                enableMenu: false,
+                ignoreHtmlClass: 'no-mathjax',
+                processHtmlClass: 'mathjax'
+            },
+            svg: { fontCache: 'global' },
+            loader: { load: ['[tex]/ams', '[tex]/physics', '[tex]/cancel'] },
+            startup: { typeset: false }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" id="MathJax-script" async></script>
 </head>
 <body>
-    <div class="quiz-container">
-        <!-- Compact Header -->
-        <div class="quiz-header">
-            <h1><i class="fas fa-globe-americas"></i>পর্যায় সারণি</h1>
-            <div class="quiz-info-bar">
-                <div class="info-box">
-                    <div class="info-label">Q</div>
-                    <div class="info-value" id="current-question">1/10</div>
-                </div>
-                <div class="info-box">
-                    <div class="info-label">Score</div>
-                    <div class="info-value" id="score">0</div>
-                </div>
-                <div class="info-box">
-                    <div class="info-label">Time</div>
-                    <div class="info-value" id="total-time">05:00</div>
-                </div>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <h1><i class="fas fa-brain"></i>◆ 𝑸𝒖𝒊𝒛 𝒘𝒊𝒕𝒉 𝑹𝒆𝒛𝒖 ◆</h1>
+        <p class="subtitle">MJC-19 · Advanced Classical Electrodynamics</p>
+    </header>
+
+    <!-- Info bar -->
+    <div class="quiz-info-bar">
+        <div class="info-item">
+            <i class="fas fa-list-ol"></i>
+            <span>Question: <strong id="current-question">1/25</strong></span>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-star"></i>
+            <span>Score: <strong id="score">0</strong></span>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-hourglass-half"></i>
+            <span>Total Time: <strong id="total-time">25:00</strong></span>
+        </div>
+    </div>
+
+    <!-- Timer + progress -->
+    <div class="timer-container">
+        <div class="timer-bar">
+            <span id="timer" class="timer"><i class="fas fa-clock"></i> 30s</span>
+            <div class="progress-track">
+                <div id="progress-fill" class="progress-fill" style="width: 4%;"></div>
             </div>
         </div>
-        
-        <!-- Timer -->
-        <div class="timer-container">
-            <div class="info-label">Time Remaining</div>
-            <div class="timer" id="timer">30</div>
-            <div class="progress-bar">
-                <div class="progress"></div>
+    </div>
+
+    <!-- Question area -->
+    <div class="question-container">
+        <div id="question-text" class="question-text mathjax">Loading question...</div>
+        <div id="options-container" class="options-container"></div>
+        <div id="feedback" class="feedback"></div>
+    </div>
+
+    <!-- Result container -->
+    <div id="result-container" class="result-container" style="display: none;">
+        <div class="result-card">
+            <h2><i class="fas fa-trophy"></i> Quiz Completed!</h2>
+            <div class="final-score-box">
+                <span class="final-score" id="final-score">0/25</span>
+                <span class="percentage" id="percentage">0%</span>
             </div>
-        </div>
-        
-        <!-- Question Area -->
-        <div class="question-container">
-            <div class="question-text" id="question-text">Loading question...</div>
-            
-            <div class="options-container" id="options-container">
-                <!-- Options will be populated by JavaScript -->
-            </div>
-            
-            <div class="feedback" id="feedback"></div>
-            <!-- Auto-advance progress bar will be inserted here -->
-        </div>
-        
-        <!-- Results (Initially Hidden) -->
-        <div class="result-container" id="result-container" style="display: none;">
-            <div class="result-icon">
-                <i class="fas fa-trophy"></i>
-            </div>
-            <h2>Quiz Complete!</h2>
-            <div class="score-display" id="final-score">0/10</div>
-            <p id="result-message">You're a knowledge master!</p>
-            
-            <div class="result-stats">
-                <div class="stat-box">
-                    <div class="stat-value" id="correct-count">0</div>
-                    <div class="stat-label">Correct</div>
+            <p id="result-message" class="result-message">Keep learning!</p>
+
+            <div class="stats-grid">
+                <div class="stat-item correct-stat">
+                    <i class="fas fa-check-circle"></i>
+                    <span class="stat-value" id="correct-count">0</span>
+                    <span class="stat-label">Correct</span>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-value" id="incorrect-count">0</div>
-                    <div class="stat-label">Incorrect</div>
+                <div class="stat-item incorrect-stat">
+                    <i class="fas fa-times-circle"></i>
+                    <span class="stat-value" id="incorrect-count">0</span>
+                    <span class="stat-label">Incorrect</span>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-value" id="time-taken">0:00</div>
-                    <div class="stat-label">Time</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value" id="percentage">0%</div>
-                    <div class="stat-label">Success</div>
+                <div class="stat-item time-stat">
+                    <i class="fas fa-clock"></i>
+                    <span class="stat-value" id="time-taken">00:00</span>
+                    <span class="stat-label">Time Taken</span>
                 </div>
             </div>
-            
-            <div class="action-buttons">
-                <button class="btn btn-primary" id="restart-btn">
+
+            <div class="result-buttons">
+                <button id="restart-btn" class="btn btn-primary">
                     <i class="fas fa-redo"></i> Restart Quiz
                 </button>
-                <button class="btn btn-secondary" id="home-btn">
-                    <i class="fas fa-home"></i> Back to Subjects
+                <button id="home-btn" class="btn btn-secondary">
+                    <i class="fas fa-home"></i> Home
                 </button>
             </div>
         </div>
     </div>
-    
-    <script src="/static/js/quiz.js"></script>
-    <script src="/static/js/gk.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>Quiz Master Challenge &copy; 2026 | Designed with <i class="fas fa-heart"></i> for knowledge seekers</p>
+        <div class="whatsapp-channel">
+            <a href="https://whatsapp.com/channel/0029Vb7ToysEAKWKYWbsla3X" target="_blank" class="whatsapp-link">
+                <i class="fab fa-whatsapp"></i> Join our WhatsApp Channel
+            </a>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts: quiz.js আগে, gk.js পরে -->
+<script src="/static/js/quiz.js"></script>
+<script src="/static/js/gk.js"></script>
+
 </body>
 </html>
