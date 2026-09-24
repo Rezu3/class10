@@ -283,7 +283,7 @@ const gkQuestions = [
 ];
 
 
-// ---------- Quiz Logic ----------
+ // ---------- Quiz Logic ----------
 document.addEventListener('DOMContentLoaded', function () {
 
     let currentQuestionIndex = 0;
@@ -314,6 +314,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const percentageElement = document.getElementById('percentage');
     const restartBtn = document.getElementById('restart-btn');
     const homeBtn = document.getElementById('home-btn');
+
+    // =============================================
+    // ✅ LOCAL renderMathJax — quiz.js-এর উপর depend করে না
+    // =============================================
+    function renderMathJax(elements) {
+        if (!elements) return;
+        // খালি array বা null filter
+        const targets = Array.isArray(elements) ? elements.filter(Boolean) : [elements];
+        if (targets.length === 0) return;
+
+        const tryRender = (attempt = 1) => {
+            if (window.MathJax && MathJax.typesetPromise) {
+                MathJax.typesetPromise(targets)
+                    .catch(err => console.warn('MathJax error:', err));
+            } else if (attempt < 25) {
+                setTimeout(() => tryRender(attempt + 1), 200);
+            } else {
+                console.warn('MathJax not available after multiple retries.');
+            }
+        };
+
+        tryRender();
+    }
 
     function initQuiz() {
         currentQuestionIndex = 0;
