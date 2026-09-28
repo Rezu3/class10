@@ -1,313 +1,292 @@
 const gkQuestions = [
-    // ===== Section 1: EM Waves, Dispersion, and Scattering =====
+    // ===== Section 1: Quantum Mechanics and Wave Mechanics =====
     {
         id: 1,
-        question: `According to the Beer-Lambert Law, if the concentration of an absorbing species in a solution is doubled and the path length of the light is halved, what happens to the total absorbance \\( (A) \\)?`,
+        question: `For a one-dimensional harmonic oscillator, the zero-point energy is`,
         image: null,
         options: [
-            `It increases by a factor of four.`,
-            `It is halved.`,
-            `It remains unchanged.`,
-            `It doubles.`
+            `\\( 0 \\)`,
+            `\\( \\frac{1}{2}\\hbar\\omega \\)`,
+            `\\( \\hbar\\omega \\)`,
+            `\\( \\frac{3}{2}\\hbar\\omega \\)`
         ],
-        correctAnswer: 2
+        correctAnswer: 1
     },
     {
         id: 2,
-        question: `In a medium characterized by a complex refractive index \\( \\tilde{n} = n + ik \\), what physical manifestation is directly governed by the imaginary part \\( k \\) (the extinction coefficient)?`,
+        question: `In the WKB approximation, the classical turning point is a point where`,
         image: null,
         options: [
-            `The phase velocity of the propagating wave.`,
-            `The exponential attenuation of the wave amplitude.`,
-            `The angle of refraction at the interface.`,
-            `The total polarization rotation.`
+            `\\( V(x) = 0 \\)`,
+            `\\( E = 0 \\)`,
+            `\\( E = V(x) \\)`,
+            `\\( p(x) = \\infty \\)`
         ],
-        correctAnswer: 1
+        correctAnswer: 2
     },
     {
         id: 3,
-        question: `Under the classical Lorentz oscillator model, anomalous dispersion \\( \\left( \\frac{dn}{d\\omega} < 0 \\right) \\) typically occurs in which region of the electromagnetic spectrum?`,
+        question: `Which approximation method is particularly suitable for obtaining approximate ground-state energy when a reasonable trial wave function is available?`,
         image: null,
         options: [
-            `In transparent regions far from any resonant frequencies.`,
-            `Exclusively at static/zero frequency.`,
-            `In close proximity to a resonant absorption frequency.`,
-            `Throughout the entire vacuum spectrum.`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 4,
-        question: `The Kramers-Kronig relations connect the real and imaginary parts of the complex refractive index. What fundamental physical principle guarantees the validity of these integral relationships?`,
-        image: null,
-        options: [
-            `Conservation of angular momentum.`,
-            `The principle of causality.`,
-            `Gauge invariance.`,
-            `The uniqueness theorem of electrostatics.`
+            `WKB method`,
+            `Variational method`,
+            `Born approximation`,
+            `Sudden approximation`
         ],
         correctAnswer: 1
     },
     {
-        id: 5,
-        question: `For a particle whose diameter is significantly smaller than the wavelength of the incident light (size \\( \\ll \\lambda \\)), classical Rayleigh scattering dictates that the intensity of scattered light \\( (I) \\) scales with the frequency \\( (\\omega) \\) as:`,
+        id: 4,
+        question: `In the interaction picture, the time dependence of the state vector and operators is`,
         image: null,
         options: [
-            `\\( I \\propto \\omega \\)`,
-            `\\( I \\propto \\omega^{2} \\)`,
-            `\\( I \\propto \\omega^{4} \\)`,
-            `\\( I \\propto \\omega^{-4} \\)`
+            `Entirely in the state vector`,
+            `Entirely in the operators`,
+            `Shared between the state vector and operators`,
+            `Absent from both`
         ],
         correctAnswer: 2
     },
-
-    // ===== Section 2: Plasma Physics and Wave Propagation =====
     {
-        id: 6,
-        question: `A uniform plane electromagnetic wave propagates in a general direction specified by the wave vector \\( \\mathbf{k} = k_x\\hat{x} + k_y\\hat{y} + k_z\\hat{z} \\) through a lossless isotropic medium. Which of the following conditions must the electric field vector \\( \\mathbf{E}_0 \\) satisfy?`,
+        id: 5,
+        question: `In the WKB approximation, the method generally becomes invalid near`,
         image: null,
         options: [
-            `\\( \\mathbf{k} \\cdot \\mathbf{E}_0 = 0 \\)`,
-            `\\( \\mathbf{k} \\times \\mathbf{E}_0 = 0 \\)`,
-            `\\( \\mathbf{k} \\cdot \\mathbf{E}_0 = \\omega \\mu \\epsilon \\)`,
-            `\\( \\mathbf{k} \\cdot \\mathbf{E}_0 = |\\mathbf{k}||\\mathbf{E}_0| \\)`
+            `A region where the potential is constant`,
+            `A region where the kinetic energy is maximum`,
+            `The origin only`,
+            `A classical turning point`
         ],
-        correctAnswer: 0
+        correctAnswer: 3
+    },
+    {
+        id: 6,
+        question: `According to Fermi's Golden Rule, the transition rate between an initial and final state is proportional to`,
+        image: null,
+        options: [
+            `The inverse of the perturbation strength`,
+            `The square of the initial-state wave function`,
+            `Only the initial-state energy`,
+            `The square of the transition matrix element multiplied by the density of final states`
+        ],
+        correctAnswer: 3
     },
     {
         id: 7,
-        question: `An electromagnetic wave with a frequency \\( \\omega \\) attempts to propagate through a dilute, unmagnetised cold plasma with a characteristic plasma frequency \\( \\omega_{p} \\). If \\( \\omega < \\omega_{p} \\), what is the nature of the wave propagation?`,
+        question: `In partial-wave scattering, the phase shift \\( \\delta_{l} \\) primarily represents`,
         image: null,
         options: [
-            `The wave propagates without attenuation with a phase velocity less than the speed of light \\( (c) \\).`,
-            `The wave propagates normally, but its group velocity exceeds \\( c \\).`,
-            `The propagation constant becomes purely imaginary, leading to exponential attenuation (evanescence).`,
-            `The wave undergoes continuous frequency upconversion.`
+            `The change in the energy of the incident particle`,
+            `The change in phase of the \\( l \\)-th partial wave caused by the potential`,
+            `The change in particle mass`,
+            `The scattering cross-section directly`
         ],
-        correctAnswer: 2
+        correctAnswer: 1
     },
     {
         id: 8,
-        question: `In the orbit theory of plasma physics, a guiding centre drift arises when a charged particle moves through an inhomogeneous magnetic field. If a spatial gradient exists perpendicular to the magnetic field \\( (\\nabla_{\\perp} B) \\), the resulting \\( \\nabla B \\) drift velocity is proportional to which of the following?`,
+        question: `Which equation describes a relativistic spin - \\( \\frac{1}{2} \\) particle and is first order in both space and time derivatives?`,
         image: null,
         options: [
-            `Inversely proportional to the particle's perpendicular kinetic energy \\( (v_{\\perp}^{2}) \\).`,
-            `Directly proportional to the charge sign \\( (q) \\), meaning ions and electrons drift in the same direction.`,
-            `Inversely proportional to the charge sign \\( (q) \\), meaning ions and electrons drift in opposite directions.`,
-            `Independent of the magnetic field magnitude \\( B \\).`
+            `Schrödinger equation`,
+            `Klein-Gordon equation`,
+            `Dirac equation`,
+            `Hamilton-Jacobi equation`
         ],
         correctAnswer: 2
     },
     {
         id: 9,
-        question: `The pinch effect in a cylindrical plasma column is a phenomenon where a large axial current \\( (I_{z}) \\) causes the plasma to contract radially. This self-constriction is primarily driven by:`,
+        question: `The infinitesimal rotation operator about an axis is generated by`,
         image: null,
         options: [
-            `The electrostatic attraction between electrons and ions.`,
-            `The azimuthal magnetic field \\( (B_{\\theta}) \\) creating an inward \\( \\mathbf{J} \\times \\mathbf{B} \\) Lorentz force.`,
-            `External mechanical pressure applied by the vacuum chamber walls.`,
-            `Centrifugal forces arising from high-speed plasma rotation.`
+            `Linear momentum`,
+            `Angular momentum`,
+            `Hamiltonian`,
+            `Position operator`
         ],
         correctAnswer: 1
     },
     {
         id: 10,
-        question: `A localized radial constriction (necking) in a pinched plasma column tends to grow over time, leading to a disruption of the column. This macro-instability \\( (m = 0) \\) is widely known as the:`,
+        question: `The Pauli matrices provide a matrix representation of the spin operators for`,
         image: null,
         options: [
-            `Kink instability`,
-            `Sausage instability`,
-            `Rayleigh-Taylor instability`,
-            `Two-stream instability`
+            `Spin 0 particles`,
+            `Spin \\( \\frac{1}{2} \\) particles`,
+            `Spin 1 particles`,
+            `Spin 2 particles`
         ],
         correctAnswer: 1
     },
-
-    // ===== Section 3: Classical Electrodynamics and Radiation Theory =====
     {
         id: 11,
-        question: `When solving the inhomogeneous wave equations for the electromagnetic potentials \\( (\\Phi, \\mathbf{A}) \\) in the Lorenz gauge, the solution is uniquely given by the retarded potentials. The time argument in the source densities \\( (\\rho, \\mathbf{J}) \\) is evaluated at the retarded time \\( t_{\\mathrm{ret}} = t - R/c \\). This specific formulation is mathematically a direct result of selecting which type of Green's function?`,
+        question: `The optical theorem relates the total scattering cross-section to`,
         image: null,
         options: [
-            `An advanced Green's function that violates causality.`,
-            `A causal Green's function that vanishes for \\( t < t_{\\mathrm{ret}} \\).`,
-            `A static Green's function belonging to the Laplace equation.`,
-            `A homogeneous boundary Green's function satisfying \\( \\nabla^{2} G = 0 \\).`
+            `The real part of the scattering amplitude at \\( 90^{\\circ} \\)`,
+            `The imaginary part of the forward scattering amplitude`,
+            `The differential cross-section at \\( 180^{\\circ} \\)`,
+            `The phase shift at \\( l = 0 \\) only`
         ],
         correctAnswer: 1
     },
     {
         id: 12,
-        question: `In the Liénard-Wiechert potentials for a moving point charge \\( q \\), the scalar potential is given by \\( \\Phi(\\mathbf{r}, t) = \\frac{1}{4\\pi\\epsilon_0}\\left[\\frac{q}{R(1 - \\boldsymbol{\\beta} \\cdot \\hat{\\mathbf{n}})}\\right]_{\\mathrm{ret}} \\), where \\( \\boldsymbol{\\beta} = \\mathbf{v}/c \\) and \\( \\hat{\\mathbf{n}} \\) is the unit vector pointing from the charge to the observer. What is the physical origin of the correction factor \\( (1 - \\boldsymbol{\\beta} \\cdot \\hat{\\mathbf{n}})^{-1} \\)?`,
+        question: `Which symmetry is directly associated with conservation of linear momentum?`,
         image: null,
         options: [
-            `It corrects for the change in the total intrinsic net charge of the particle due to length contraction.`,
-            `It compensates for the Doppler-like stretching or crowding of the charge's effective volume during signal emission.`,
-            `It accounts for the non-linear self-interaction of the electromagnetic field in a vacuum.`,
-            `It is an artifact of the Coulomb gauge that vanishes in the Lorenz gauge.`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 13,
-        question: `When evaluating the total electric field of a point charge using the Liénard-Wiechert formulation, the field naturally splits into two distinct terms: \\( \\mathbf{E} = \\mathbf{E}_{\\mathrm{velocity}} + \\mathbf{E}_{\\mathrm{acceleration}} \\). Which of the following statements correctly distinguishes their long-range behaviors?`,
-        image: null,
-        options: [
-            `\\( \\mathbf{E}_{\\mathrm{velocity}} \\propto R^{-1} \\) and \\( \\mathbf{E}_{\\mathrm{acceleration}} \\propto R^{-2} \\), meaning only velocity fields radiate energy to infinity.`,
-            `Both fields scale as \\( R^{-2} \\) and carry a finite amount of electromagnetic radiation.`,
-            `\\( \\mathbf{E}_{\\mathrm{velocity}} \\propto R^{-2} \\) (generalized Coulomb field) and \\( \\mathbf{E}_{\\mathrm{acceleration}} \\propto R^{-1} \\) (radiation field), meaning only the acceleration field transmits power across an infinitely large sphere.`,
-            `\\( \\mathbf{E}_{\\mathrm{velocity}} \\) vanishes identically if the charge moves at relativistic speeds.`
+            `Time translation`,
+            `Space inversion`,
+            `Space translation`,
+            `Time reversal`
         ],
         correctAnswer: 2
     },
     {
-        id: 14,
-        question: `A highly relativistic charged particle \\( (\\gamma \\gg 1) \\) is accelerated. Compare the total power radiated via the relativistic Larmor generalization when the acceleration is linear \\( (\\mathbf{a} \\parallel \\mathbf{v}) \\) versus when it is circular \\( (\\mathbf{a} \\perp \\mathbf{v}) \\) for the same magnitude of force applied \\( (|\\mathbf{F}|) \\).`,
+        id: 13,
+        question: `The first Born approximation is expected to be particularly useful when`,
         image: null,
         options: [
-            `Linear acceleration radiates a factor of \\( \\gamma^{2} \\) more power than circular acceleration.`,
-            `Circular acceleration radiates a factor of \\( \\gamma^{2} \\) more power than linear acceleration.`,
-            `Both configurations radiate the exact same total power since it depends only on \\( |\\mathbf{a}|^{2} \\).`,
-            `Linear acceleration produces zero radiation at relativistic limits.`
+            `The potential is sufficiently weak`,
+            `The potential is infinitely strong`,
+            `The particle has zero energy`,
+            `The scattering is always completely elastic`
         ],
-        correctAnswer: 1
+        correctAnswer: 0
+    },
+    {
+        id: 14,
+        question: `In quantum mechanics, invariance under continuous time translation is associated with conservation of`,
+        image: null,
+        options: [
+            `Linear momentum`,
+            `Angular momentum`,
+            `Energy`,
+            `Parity`
+        ],
+        correctAnswer: 2
     },
     {
         id: 15,
-        question: `For a charge undergoing non-relativistic linear acceleration \\( (\\beta \\ll 1) \\), the angular distribution of radiated power \\( \\frac{dP}{d\\Omega} \\) follows a typical \\( \\sin^{2}\\theta \\) dipole pattern. As the particle's velocity becomes highly relativistic \\( (\\beta \\to 1) \\), how does this angular distribution change?`,
+        question: `According to the Wigner-Eckart theorem, a matrix element of an irreducible tensor operator can be separated into`,
         image: null,
         options: [
-            `The distribution remains perfectly symmetric but shifts its maximum to \\( \\theta = 0^{\\circ} \\).`,
-            `The radiation lobes tilt sharply forward, concentrating into a narrow cone (forward "beaming") around the direction of velocity.`,
-            `The radiation shifts entirely to the backward hemisphere \\( (\\theta = 180^{\\circ}) \\).`,
-            `The angular distribution becomes fully isotropic, distributing power evenly in all directions.`
+            `Radial and angular parts only`,
+            `A Clebsch-Gordan coefficient and a reduced matrix element`,
+            `Kinetic and potential energy`,
+            `Real and imaginary parts`
         ],
         correctAnswer: 1
     },
-
-    // ===== Section 4: Transmission Lines and Wave Propagation =====
     {
         id: 16,
-        question: `In transmission line theory, the primary line parameters \\( (R, L, G, C) \\) describe the physical properties per unit length. Which of the following parameters specifies the power loss due to leakage currents through the imperfect dielectric insulation?`,
+        question: `For a degenerate energy level in perturbation theory, the first-order energy corrections are obtained by diagonalizing`,
         image: null,
         options: [
-            `Series Resistance \\( (R) \\)`,
-            `Shunt Conductance \\( (G) \\)`,
-            `Series Inductance \\( (L) \\)`,
-            `Shunt Capacitance \\( (C) \\)`
+            `The unperturbed Hamiltonian \\( H_{0} \\)`,
+            `The perturbation Hamiltonian \\( V \\) within the degenerate subspace`,
+            `The total Hamiltonian outside the degenerate subspace`,
+            `The momentum operator`
         ],
         correctAnswer: 1
     },
     {
         id: 17,
-        question: `A transmission line is defined as strictly lossless when its attenuation constant \\( (\\alpha) \\) is exactly zero. Which mathematical condition must the primary parameters satisfy for a line to be considered ideally lossless?`,
+        question: `In the partial-wave analysis of scattering, the phase shift \\( \\delta_{l} \\) primarily represents`,
         image: null,
         options: [
-            `\\( R = G = 0 \\)`,
-            `\\( R = G = \\infty \\)`,
-            `\\( R/L = G/C \\)`,
-            `\\( R = \\omega L \\) and \\( G = \\omega C \\)`
+            `The change in the energy of the incident particle`,
+            `The modification of the \\( l \\)-th partial wave due to interaction with the potential`,
+            `The total scattering cross-section`,
+            `The incident particle's spin`
         ],
-        correctAnswer: 0
+        correctAnswer: 1
     },
     {
         id: 18,
-        question: `Which of the following statements is true regarding the characteristic impedance \\( (Z_{0}) \\) of both an ideal lossless line and a distortionless line?`,
+        question: `The linear Stark effect in the hydrogen atom occurs because the perturbation`,
         image: null,
         options: [
-            `\\( Z_{0} \\) is purely imaginary for both lines.`,
-            `\\( Z_{0} \\) is complex and heavily frequency-dependent for both lines.`,
-            `\\( Z_{0} \\) is purely real (resistive) and independent of frequency for both lines.`,
-            `\\( Z_{0} \\) is zero for a lossless line and infinite for a distortionless line.`
+            `Changes the electron spin`,
+            `Removes the degeneracy of states of opposite parity within a degenerate manifold`,
+            `Changes the nuclear charge`,
+            `Produces a magnetic field`
         ],
-        correctAnswer: 2
+        correctAnswer: 1
     },
     {
         id: 19,
-        question: `To achieve distortionless transmission over a lossy line, signals of all frequencies must travel at the same phase velocity and undergo the same attenuation. What is the precise condition relating the primary constants?`,
+        question: `The first Born approximation is expected to be most appropriate when`,
         image: null,
         options: [
-            `\\( RG = LC \\)`,
-            `\\( R/G = C/L \\)`,
-            `\\( R/L = G/C \\)`,
-            `\\( RL = GC \\)`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 20,
-        question: `For a lossy line that satisfies the distortionless condition \\( (RC = LG) \\), how do the attenuation constant \\( (\\alpha) \\) and phase constant \\( (\\beta) \\) behave as functions of angular frequency \\( (\\omega) \\)?`,
-        image: null,
-        options: [
-            `\\( \\alpha \\) is independent of \\( \\omega \\); \\( \\beta \\) is linearly proportional to \\( \\omega \\).`,
-            `\\( \\alpha \\) is linearly proportional to \\( \\omega \\); \\( \\beta \\) is independent of \\( \\omega \\).`,
-            `Both \\( \\alpha \\) and \\( \\beta \\) are independent of \\( \\omega \\).`,
-            `Both \\( \\alpha \\) and \\( \\beta \\) increase quadratically with \\( \\omega \\).`
+            `The scattering potential is sufficiently weak`,
+            `The potential is infinitely strong`,
+            `The particle has zero kinetic energy`,
+            `The scattering is necessarily completely inelastic`
         ],
         correctAnswer: 0
     },
-
-    // ===== Section 5: Waveguides and Resonant Cavities =====
     {
-        id: 21,
-        question: `Hollow metallic waveguides act as high-pass filters because they cannot support wave propagation below a specific frequency. What happens to a Transverse Electric (TE) or Transverse Magnetic (TM) mode if the operating frequency \\( \\omega \\) is strictly less than its cutoff frequency \\( \\omega_{c} \\)?`,
+        id: 20,
+        question: `The Green's function in potential scattering is primarily used to`,
         image: null,
         options: [
-            `The wave phase velocity drops to zero, keeping the wave perfectly stationary.`,
-            `The propagation constant becomes purely imaginary, turning the wave into an exponentially decaying evanescent mode.`,
-            `The wave automatically converts into a Transverse Electromagnetic (TEM) mode.`,
-            `The wave's power increases exponentially due to dielectric breakdown.`
+            `Eliminate the potential completely`,
+            `Convert the Schrödinger differential equation into an integral equation`,
+            `Determine only the bound-state energies`,
+            `Calculate the spin of the particle`
+        ],
+        correctAnswer: 1
+    },
+    {
+        id: 21,
+        question: `The optical theorem relates the total scattering cross-section to`,
+        image: null,
+        options: [
+            `The real part of the scattering amplitude at \\( 90^{\\circ} \\)`,
+            `The imaginary part of the forward scattering amplitude`,
+            `The differential cross-section at \\( 180^{\\circ} \\)`,
+            `The phase shift of only the s-wave`
         ],
         correctAnswer: 1
     },
     {
         id: 22,
-        question: `Why is a hollow, single-conductor metallic waveguide completely incapable of supporting a Transverse Electromagnetic (TEM) mode?`,
+        question: `For a spherically symmetric potential, the scattering amplitude in the partial-wave method is determined by`,
         image: null,
         options: [
-            `A single closed conductor cannot maintain an electrostatic potential difference to satisfy Gauss's Law for a transverse electric field in the empty space inside.`,
-            `TEM modes can only exist when the walls of the waveguide are made of perfect magnetic conductors.`,
-            `The cutoff frequency for a TEM mode in a hollow pipe is mathematically infinite.`,
-            `The magnetic field would have to be entirely parallel to the direction of wave propagation.`
+            `Only the spin quantum number`,
+            `The phase shifts \\( \\delta_{l} \\) of the partial waves`,
+            `Only the incident energy`,
+            `Only the total cross-section`
         ],
-        correctAnswer: 0
+        correctAnswer: 1
     },
     {
         id: 23,
-        question: `For an air-filled rectangular metallic waveguide with internal dimensions \\( a \\times b \\) where \\( a > b \\), which mode serves as the dominant mode (the mode with the lowest cutoff frequency)?`,
+        question: `Under space inversion (parity) \\( \\vec{r} \\rightarrow -\\vec{r} \\), the orbital angular momentum operator \\( \\vec{L} \\) transforms as`,
         image: null,
         options: [
-            `\\( TM_{11} \\)`,
-            `\\( TE_{01} \\)`,
-            `\\( TE_{10} \\)`,
-            `\\( TM_{10} \\)`,
-            `\\( TE_{11} \\)`
+            `\\( \\vec{L} \\rightarrow -\\vec{L} \\)`,
+            `\\( \\vec{L} \\rightarrow \\vec{L} \\)`,
+            `\\( \\vec{L} \\rightarrow 0 \\)`,
+            `\\( \\vec{L} \\rightarrow -\\vec{r} \\)`
         ],
-        correctAnswer: 2
+        correctAnswer: 1
     },
     {
         id: 24,
-        question: `In an air-filled circular waveguide of radius \\( a \\), the cutoff frequencies depend on the roots of Bessel functions \\( (J_{n}(x)) \\) for TM modes and roots of their derivatives \\( (J_{n}^{\\prime}(x)) \\) for TE modes. Which mode is the dominant mode in a circular waveguide?`,
+        question: `In the sudden approximation, the external perturbation is assumed to be switched on`,
         image: null,
         options: [
-            `\\( TE_{01} \\)`,
-            `\\( TM_{01} \\)`,
-            `\\( TE_{11} \\)`,
-            `\\( TM_{11} \\)`
+            `Very slowly compared with the characteristic time of the system`,
+            `Infinitely slowly`,
+            `Very rapidly compared with the characteristic time of the system`,
+            `Periodically`
         ],
         correctAnswer: 2
-    },
-    {
-        id: 25,
-        question: `How does the wave impedance of a Transverse Electric mode \\( (Z_{\\mathrm{TE}}) \\) in a hollow guide compare to the intrinsic impedance of the open medium \\( (\\eta) \\) filling the guide?`,
-        image: null,
-        options: [
-            `\\( Z_{\\mathrm{TE}} = \\eta \\sqrt{1 - (f_{c}/f)^{2}} \\)`,
-            `\\( Z_{\\mathrm{TE}} = \\dfrac{\\eta}{\\sqrt{1 - (f_{c}/f)^{2}}} \\)`,
-            `\\( Z_{\\mathrm{TE}} = \\eta \\)`,
-            `\\( Z_{\\mathrm{TE}} = -j\\eta (f_{c}/f) \\)`
-        ],
-        correctAnswer: 1
     }
 ];
 
