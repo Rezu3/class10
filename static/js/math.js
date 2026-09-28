@@ -1,724 +1,280 @@
 const gkQuestions = [
-    // ===== Section: Statics and Dynamics =====
+    // ===== Section: Molecular Spectra and Atomic Physics =====
     {
         id: 1,
-        question: `What is rectilinear motion?`,
+        question: `Molecular spectra consists of`,
         image: null,
         options: [
-            `Motion along a curved path`,
-            `Motion in a straight line`,
-            `Circular motion`,
-            `Random motion`
+            `discrete lines`,
+            `bands`,
+            `mixture of lines and bands`,
+            `none of these.`
         ],
         correctAnswer: 1
     },
     {
         id: 2,
-        question: `Which of the following is true for rectilinear motion with uniform acceleration?`,
+        question: `The order of energy associated with rotational spectra is`,
         image: null,
         options: [
-            `Velocity changes at a constant rate`,
-            `Acceleration changes at a constant rate`,
-            `Displacement changes at a constant rate`,
-            `None of these`
+            `\\( 10^{-3} \\text{ eV} \\)`,
+            `\\( 2 \\text{ eV} \\)`,
+            `\\( 10^{-6} \\text{ eV} \\)`,
+            `\\( 10^{-2} \\text{ eV} \\)`
         ],
         correctAnswer: 0
     },
     {
         id: 3,
-        question: `A particle, starting from rest, moves along the x-axis with an acceleration \\( x - 3x^{2} \\). Then the particle comes to rest again after it has covered a distance`,
+        question: `The radiation emitted in rotational spectrum lies in`,
         image: null,
         options: [
-            `1 unit`,
-            `2 unit`,
-            `\\( \\frac{1}{2} \\) unit`,
-            `None of these`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 4,
-        question: `The speed of a particle moving in a straight line is given by the relation \\( v^{2} = a - bx^{2} \\), where \\( x \\) is the distance of the particle from a fixed point (origin), \\( a \\) and \\( b \\) being constant. The periodic time of the motion is`,
-        image: null,
-        options: [
-            `\\( 2\\pi \\)`,
-            `\\( \\pi \\)`,
-            `\\( \\frac{2\\pi}{b} \\)`,
-            `\\( \\frac{2\\pi}{\\sqrt{b}} \\)`
-        ],
-        correctAnswer: 3
-    },
-    {
-        id: 5,
-        question: `A particle is executing S.H.M. such that its period of oscillation is \\( 2\\pi \\) sec. If its maximum acceleration is \\( 8 \\text{ cm/sec}^{2} \\), then its amplitude will be`,
-        image: null,
-        options: [
-            `8 cm`,
-            `16 cm`,
-            `4 cm`,
-            `None of these`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 6,
-        question: `A particle executing an SHM has a maximum acceleration \\( a \\) and a maximum velocity \\( b \\). Then, its period of oscillations \\( T \\) will be`,
-        image: null,
-        options: [
-            `\\( \\frac{2\\pi a}{b} \\)`,
-            `\\( \\frac{a}{2\\pi b} \\)`,
-            `\\( \\frac{2\\pi b}{a} \\)`,
-            `None of these`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 7,
-        question: `A particle executes an SHM with an amplitude of \\( b \\) and a time period of \\( T \\). The (minimum) time taken by the particle to travel half its amplitude from the equilibrium position is`,
-        image: null,
-        options: [
-            `\\( \\frac{3T}{2} \\)`,
-            `\\( \\frac{T}{12} \\)`,
-            `\\( \\frac{2T}{3} \\)`,
-            `None of these`
+            `visible region`,
+            `near infrared region`,
+            `ultraviolet region`,
+            `audible region.`
         ],
         correctAnswer: 1
     },
     {
-        id: 8,
-        question: `If the position of a moving particle at time \\( t \\) is given by \\( x = at^{2} \\), \\( y = 2at \\), where \\( a \\) is a constant. Then the resultant acceleration of the particle at time \\( t \\) is`,
+        id: 4,
+        question: `The wavelength of electronic spectra lines between`,
         image: null,
         options: [
-            `4a`,
-            `0`,
-            `a`,
-            `2a`
+            `\\( 100 \\text{ to } 1000 \\text{ \\AA} \\)`,
+            `\\( 1000 \\text{ to } 7000 \\text{ \\AA} \\)`,
+            `\\( 10000 \\text{ to } 15000 \\text{ \\AA} \\)`,
+            `\\( 10^{5} \\text{ to } 10^{7} \\text{ \\AA} \\)`
         ],
-        correctAnswer: 3
+        correctAnswer: 1
+    },
+    {
+        id: 5,
+        question: `If the rotational, vibrational and electronic energy of a molecule be represented by \\( E_r, E_v \\) and \\( E_e \\) respectively, then`,
+        image: null,
+        options: [
+            `\\( E_v > E_r > E_e \\)`,
+            `\\( E_e > E_r > E_v \\)`,
+            `\\( E_e > E_v > E_r \\)`,
+            `\\( E_r = E_v = E_e \\)`
+        ],
+        correctAnswer: 2
+    },
+    {
+        id: 6,
+        question: `The rotational energy levels of diatomic molecules are`,
+        image: null,
+        options: [
+            `equi-spaced`,
+            `closely spaced at higher values`,
+            `decreases with \\( v \\)`,
+            `none of these.`
+        ],
+        correctAnswer: 0
+    },
+    {
+        id: 7,
+        question: `The frequency separation of rotational level`,
+        image: null,
+        options: [
+            `is constant`,
+            `increases with \\( v \\)`,
+            `decreases with \\( v \\)`,
+            `none of these.`
+        ],
+        correctAnswer: 0
+    },
+    {
+        id: 8,
+        question: `Molecular spectra is more complicated as compared to atomic spectra because`,
+        image: null,
+        options: [
+            `the molecule has many more energy levels,`,
+            `the electron in a molecule does not move in a central force field like an atom`,
+            `the molecular mass is usually greater than atomic mass`,
+            `the molecule can dissociate into atoms.`
+        ],
+        correctAnswer: 0
     },
     {
         id: 9,
-        question: `A planet revolving around the sun (at one foci) in an elliptical orbit has a constant`,
+        question: `The importance of rotational spectral study is that we can determine the`,
         image: null,
         options: [
-            `Linear velocity`,
-            `Kinetic energy`,
-            `Angular velocity`,
-            `Angular momentum`
+            `the mass of the atom forming the molecule`,
+            `bond length of the molecule`,
+            `angular momentum`,
+            `molecular structure.`
         ],
-        correctAnswer: 3
+        correctAnswer: 1
     },
     {
         id: 10,
-        question: `A point mass is moving in a hyperbolic orbit under a central force always directed towards one of its foci, then it has a constant`,
+        question: `All diatomic molecules do not show rotational spectra because,`,
         image: null,
         options: [
-            `Angular velocity`,
-            `Moment of momentum`,
-            `Linear velocity`,
-            `None of these`
+            `they possess very heavy mass`,
+            `they do not have permanent dipole moment`,
+            `their angular momentum is constant`,
+            `they always occupy ground state though they have higher rotational level.`
         ],
         correctAnswer: 1
     },
     {
         id: 11,
-        question: `Which of the following is a non-conservative force?`,
+        question: `The minimum vibrational energy of a diatomic molecule is given by`,
         image: null,
         options: [
-            `Frictional force`,
-            `Gravitational force`,
-            `Electrostatic force`,
-            `Spring force`
+            `\\( \\left( v + \\frac{1}{2} \\right) h \\nu_0 \\)`,
+            `\\( v h \\nu_0 \\)`,
+            `\\( \\frac{1}{2} h \\nu_0 \\)`,
+            `\\( h \\nu_0 \\)`
+        ],
+        correctAnswer: 2
+    },
+    {
+        id: 12,
+        question: `The vibrational levels of a diatomic molecule are`,
+        image: null,
+        options: [
+            `equi-spaced`,
+            `unequi-spaced`,
+            `irregularly spaced`,
+            `none of these.`
         ],
         correctAnswer: 0
     },
     {
-        id: 12,
-        question: `A central orbit is always`,
-        image: null,
-        options: [
-            `A straight line`,
-            `A plane curve`,
-            `A circle`,
-            `A hyperbola`
-        ],
-        correctAnswer: 1
-    },
-    {
         id: 13,
-        question: `Which of the following quantities is not conserved for a particle moving in a conservative central force field?`,
+        question: `If \\( \\nu_1 \\) and \\( \\nu_2 \\) be the frequencies of the \\( R \\)-branch \\( P \\)-branch of vibrational-rotational spectra, then`,
         image: null,
         options: [
-            `Moment of momentum`,
-            `Total Energy`,
-            `Linear momentum`,
-            `Areal Velocity`
+            `\\( \\nu_1 = \\nu_2 \\)`,
+            `\\( \\nu_1 > \\nu_2 \\)`,
+            `\\( \\nu_2 > \\nu_1 \\)`,
+            `\\( \\nu_2 \\ge \\nu_1 \\)`
         ],
         correctAnswer: 2
     },
     {
         id: 14,
-        question: `Which of the following is true about the magnitude of acceleration of a particle undergoing SHM at its maximum displacement?`,
+        question: `The origin of band structure of electronic spectra of molecules is due to the fact that,`,
         image: null,
         options: [
-            `The acceleration is zero`,
-            `The acceleration is maximum`,
-            `The acceleration is minimum`,
-            `None of these`
+            `\\( \\Delta E_e \\gg E_j \\)`,
+            `\\( \\Delta E_v > E_j \\)`,
+            `\\( \\Delta E_v \\simeq \\Delta E_e \\)`,
+            `\\( \\Delta E_e > \\Delta E_v, \\Delta E_j \\)`
         ],
-        correctAnswer: 1
+        correctAnswer: 3
     },
     {
         id: 15,
-        question: `If an object's velocity vector is always perpendicular to the radius vector, what kind of motion does the object exhibit?`,
+        question: `The band length of homonuclear molecules can be determined from the study of`,
         image: null,
         options: [
-            `Elliptical motion`,
-            `Parabolic motion`,
-            `Hyperbolic motion`,
-            `Circular motion`
+            `rotational spectra`,
+            `vibrational-rotational spectra`,
+            `electronic spectra`,
+            `Raman spectra.`
         ],
         correctAnswer: 3
     },
     {
         id: 16,
-        question: `For a central orbit, the expression for the constant \\( h \\) is given by`,
+        question: `The spacing between two successive Stokes lines is`,
         image: null,
         options: [
-            `\\( h = r^{2}\\frac{d\\theta}{dt} \\)`,
-            `\\( h = 0 \\)`,
-            `\\( h = r\\frac{d\\theta}{dt} \\)`,
-            `\\( h = \\frac{dr}{dt} \\)`
+            `dependent on rotational quantum number \\( J \\)`,
+            `independent of \\( J \\)`,
+            `depend directly on the M.I. of the molecule`,
+            `dependent on the frequency of the lines.`
         ],
-        correctAnswer: 0
+        correctAnswer: 1
     },
     {
         id: 17,
-        question: `If a particle describes a parabola whose pedal equation is \\( p^{2} = ar \\) under a central force towards the pole, then the force varies as`,
+        question: `In phosphorescence the absorption and emission of light take place`,
         image: null,
         options: [
-            `\\( \\frac{1}{r^{2}} \\)`,
-            `\\( \\frac{1}{r^{3}} \\)`,
-            `\\( \\frac{1}{r} \\)`,
-            `\\( r \\)`
+            `simultaneously`,
+            `where emission is delayed by \\( \\sim 10^{7} \\text{ s} \\)`,
+            `where emission is not always delayed`,
+            `with delay time \\( \\sim \\) several years.`
         ],
         correctAnswer: 1
     },
     {
         id: 18,
-        question: `A particle describes a curve \\( r = ae^{\\theta} \\), \\( a \\) being constant, with a constant angular velocity, then the radial acceleration of the particle is`,
+        question: `The selection rule for transition in rotational spectra is`,
         image: null,
         options: [
-            `Zero`,
-            `Proportional to \\( r^{2} \\)`,
-            `Proportional to \\( \\frac{1}{r} \\)`,
-            `Proportional to \\( r \\)`
-        ],
-        correctAnswer: 3
-    },
-    {
-        id: 19,
-        question: `A particle describes a circle \\( r = a \\), where \\( a \\) being the radius of the circle, then its radial velocity will be`,
-        image: null,
-        options: [
-            `\\( a\\frac{d\\theta}{dt} \\)`,
-            `Zero`,
-            `a`,
-            `None of these`
+            `\\( \\Delta J = 0 \\)`,
+            `\\( \\Delta J = \\pm 1 \\)`,
+            `\\( \\Delta J = \\pm 2 \\)`,
+            `\\( \\Delta J = \\pm 1, \\pm 2 \\)`
         ],
         correctAnswer: 1
     },
     {
-        id: 20,
-        question: `In a central orbit, at an apse, a particle moves`,
+        id: 19,
+        question: `The stokes and anti-Stokes lines in Raman spectra are`,
         image: null,
         options: [
-            `Along the radius vector`,
-            `At an angle \\( \\frac{\\pi}{4} \\) with the initial line`,
-            `At an angle \\( \\frac{\\pi}{2} \\) to the radius vector`,
-            `None of these`
+            `equally spaced`,
+            `unequally spaced`,
+            `irregularly spaced`,
+            `none of these.`
         ],
-        correctAnswer: 2
+        correctAnswer: 0
+    },
+    {
+        id: 20,
+        question: `Which of the following is homonuclear molecule?`,
+        image: null,
+        options: [
+            `\\( \\text{CO} \\)`,
+            `\\( \\text{O}_2 \\)`,
+            `\\( \\text{NO} \\)`,
+            `\\( \\text{CO}_2 \\)`
+        ],
+        correctAnswer: 1
     },
     {
         id: 21,
-        question: `If a particle moves in a plane, the rate of description of sectorial area is called`,
+        question: `The molecules and ions which show ESR spectra must have spin`,
         image: null,
         options: [
-            `Radial velocity`,
-            `Cross-radial velocity`,
-            `Angular velocity`,
-            `Areal velocity`
+            `zero`,
+            `non-zero`,
+            `zero or non-zero`,
+            `none of these.`
         ],
-        correctAnswer: 3
+        correctAnswer: 1
     },
     {
         id: 22,
-        question: `The normal component of acceleration for a particle moving along a plane curve is`,
+        question: `In a system of diatomic molecule some atoms of one element are replaced by a heavier isotope such that the reduced mass is changed by \\( 1.05 \\). The shift in spectral line will be by a factor`,
         image: null,
         options: [
-            `\\( \\frac{d^{2}s}{dt^{2}} \\)`,
-            `\\( v\\frac{dv}{ds} \\)`,
-            `\\( \\frac{v^{2}}{\\rho} \\)`,
-            `\\( r\\frac{d\\theta}{dt} \\)`
+            `0.475`,
+            `0.5`,
+            `0.98`,
+            `1.`
         ],
         correctAnswer: 2
     },
     {
         id: 23,
-        question: `Relation between angular velocity and linear velocity of a particle moving in a plane curve is`,
+        question: `For a diatomic molecule the vibrational energy level spacing \\( (\\Delta E_v) \\) and rotational energy level spacing \\( (\\Delta E_J) \\) are :`,
         image: null,
         options: [
-            `\\( \\frac{d\\theta}{dt} = \\frac{pv}{r} \\)`,
-            `\\( \\frac{d\\theta}{dt} = \\frac{v}{p} \\)`,
-            `\\( \\frac{d\\theta}{dt} = \\frac{pv^{2}}{r} \\)`,
-            `None of these`
+            `\\( \\Delta E_v \\) increases with \\( v \\), \\( \\Delta E_J \\) increases with \\( J \\)`,
+            `\\( \\Delta E_v \\) decreases with \\( v \\), \\( \\Delta E_J \\) increases with \\( J \\)`,
+            `\\( \\Delta E_v \\) decreases with \\( v \\), \\( \\Delta E_J \\) increases with \\( J \\)`,
+            `\\( \\Delta E_v \\) decreases with \\( v \\), \\( \\Delta E_J \\) decreases with \\( J \\)`
         ],
         correctAnswer: 1
-    },
-    {
-        id: 24,
-        question: `A particle is moving in a circle of radius \\( a \\) with velocity \\( v \\). The normal acceleration of the particle is`,
-        image: null,
-        options: [
-            `\\( v\\frac{dv}{ds} \\)`,
-            `\\( \\frac{dv}{dt} \\)`,
-            `0`,
-            `\\( \\frac{v^{2}}{a} \\)`
-        ],
-        correctAnswer: 3
-    },
-    {
-        id: 25,
-        question: `In a central force field, the force experienced by a particle is`,
-        image: null,
-        options: [
-            `Towards or away from the center force along the radial direction`,
-            `Tangentially to its path`,
-            `In the direction opposite to the velocity vector`,
-            `None of these`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 26,
-        question: `If a particle describes a parabola under a central force towards its focus, then the force varies as`,
-        image: null,
-        options: [
-            `r`,
-            `\\( r^{2} \\)`,
-            `\\( \\frac{1}{r^{2}} \\)`,
-            `None of these`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 27,
-        question: `If a particle describes an ellipse \\( \\frac{l}{r} = 1 - e\\cos\\theta \\) under a central force towards one of the foci, the law of force is given by`,
-        image: null,
-        options: [
-            `\\( F \\propto x \\)`,
-            `\\( F \\propto r \\)`,
-            `\\( F \\propto \\frac{1}{r^{2}} \\)`,
-            `\\( F \\propto r^{2} \\)`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 28,
-        question: `If a particle describes a hyperbola \\( \\frac{l}{r} = 1 + e\\cos\\theta \\) under a central force towards one of the foci, the law of force is given by`,
-        image: null,
-        options: [
-            `\\( F \\propto r^{2} \\)`,
-            `\\( F \\propto r \\)`,
-            `\\( F \\propto x \\)`,
-            `\\( F \\propto \\frac{1}{r^{2}} \\)`
-        ],
-        correctAnswer: 3
-    },
-    {
-        id: 29,
-        question: `A particle describes a curve \\( r = k\\theta \\), \\( k \\) being constant, with a constant angular velocity, then the radial acceleration of the particle is`,
-        image: null,
-        options: [
-            `Proportional to r`,
-            `Proportional to \\( \\frac{1}{r} \\)`,
-            `Zero`,
-            `None of these`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 30,
-        question: `The law of motion of a particle moving in a straight line is \\( s = \\frac{1}{2}vt \\). Then the acceleration of the particle is`,
-        image: null,
-        options: [
-            `Proportional to velocity`,
-            `Proportional to square of velocity`,
-            `Proportional to inverse of velocity`,
-            `Constant`
-        ],
-        correctAnswer: 3
-    },
-    {
-        id: 31,
-        question: `If the position of a moving particle at time \\( t \\) is given by \\( x = a\\cos pt \\), \\( y = a\\sin pt \\), where \\( a, p \\) are constants, the acceleration of the particle at time \\( t \\) is`,
-        image: null,
-        options: [
-            `ap`,
-            `\\( a^{2}p \\)`,
-            `\\( p^{2}a \\)`,
-            `\\( p^{2}a^{2} \\)`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 32,
-        question: `A particle describes a curve \\( r = ae^{\\theta} \\) with constant angular velocity. Then the cross-radial velocity is`,
-        image: null,
-        options: [
-            `Proportional to r`,
-            `Proportional to \\( \\frac{1}{r} \\)`,
-            `Non-zero constant`,
-            `Zero`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 33,
-        question: `The rate of description of sectorial area (i.e., areal velocity) by the particle in a central force field is always`,
-        image: null,
-        options: [
-            `Zero`,
-            `Constant`,
-            `Not conserved`,
-            `Infinite`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 34,
-        question: `For a particle moving under a central force, its motion always takes place`,
-        image: null,
-        options: [
-            `In space`,
-            `In a straight line`,
-            `In a plane`,
-            `None of these`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 35,
-        question: `If a particle moves in a conservative central force field, then its total energy is`,
-        image: null,
-        options: [
-            `Zero`,
-            `Conserved`,
-            `Not conserved`,
-            `Proportional to its velocity`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 36,
-        question: `If a particle is moving in a circle of radius \\( a \\) with uniform speed \\( v \\). The acceleration of the particle towards the centre is`,
-        image: null,
-        options: [
-            `va`,
-            `\\( \\frac{v^{2}}{a} \\)`,
-            `va`,
-            `Zero`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 37,
-        question: `A particle describes a plane curve with a constant speed and its resultant acceleration is constant, the path of particle is a`,
-        image: null,
-        options: [
-            `Circle`,
-            `Straight line`,
-            `Parabola`,
-            `None of these`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 38,
-        question: `If a particle moves along a circle of radius \\( a \\) so that \\( r = a \\), then its transverse velocity is equal to`,
-        image: null,
-        options: [
-            `\\( a\\frac{d\\theta}{dt} \\)`,
-            `\\( \\frac{d\\theta}{dt} \\)`,
-            `a`,
-            `\\( a\\frac{dr}{dt} \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 39,
-        question: `If the position of a moving particle at time \\( t \\) is given by \\( x = 3t - 4t^{2} \\), \\( y = 4t - 8t^{2} \\), the velocity of the particle at time \\( t = 1 \\text{ sec} \\) is`,
-        image: null,
-        options: [
-            `3 unit/sec`,
-            `169 unit/sec`,
-            `13 unit/sec`,
-            `None of these`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 40,
-        question: `A virtual displacement \\( \\delta r \\) is defined as an infinitesimal change in system coordinates occurring:`,
-        image: null,
-        options: [
-            `Over a finite time interval \\( \\Delta t \\)`,
-            `Instantaneously at a fixed time \\( (dt = 0) \\)`,
-            `Along the path of actual motion only`,
-            `Due to internal heat dissipation`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 41,
-        question: `The necessary and sufficient condition for the equilibrium of a rigid body subjected to a system of coplanar forces is that the total virtual work done by external forces is:`,
-        image: null,
-        options: [
-            `Positive`,
-            `Negative`,
-            `Zero`,
-            `Equal to total kinetic energy`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 42,
-        question: `In a system with smooth, rigid constraints, the virtual work done by the forces of constraint for any displacement compatible with the constraints is:`,
-        image: null,
-        options: [
-            `Zero`,
-            `Equal to potential energy`,
-            `Infinite`,
-            `Dependent on acceleration`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 43,
-        question: `If a light rod of length \\( l \\) connects two particles, the virtual work done by the internal tension \\( T \\) when the length changes by \\( \\delta l \\) is:`,
-        image: null,
-        options: [
-            `\\( -T\\delta l \\)`,
-            `\\( T\\delta l \\)`,
-            `\\( \\frac{1}{2}T\\delta l \\)`,
-            `Zero always, as \\( \\delta l = 0 \\) for a rigid rod`
-        ],
-        correctAnswer: 3
-    },
-    {
-        id: 44,
-        question: `Which force performs non-zero virtual work in a mechanical system?`,
-        image: null,
-        options: [
-            `Normal reaction on a smooth fixed surface`,
-            `Tension in an inextensible string`,
-            `External applied load`,
-            `Reaction at a smooth fixed fulcrum`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 45,
-        question: `A heavy uniform body of mass \\( M \\) rests in equilibrium on a convex surface. The equilibrium is stable if the height of its center of mass \\( h \\) above the point of contact satisfies:`,
-        image: null,
-        options: [
-            `\\( h < \\rho \\) (where \\( \\rho \\) is the radius of curvature)`,
-            `\\( h > \\rho \\)`,
-            `\\( h = 2\\rho \\)`,
-            `\\( h > 2\\rho \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 46,
-        question: `For a heavy body resting on a sphere of radius \\( R \\), if \\( h \\) is the height of C.M. above the contact point, the condition for neutral equilibrium is:`,
-        image: null,
-        options: [
-            `\\( \\frac{1}{h} = \\frac{1}{R} \\)`,
-            `\\( \\frac{1}{h} = \\frac{1}{r} + \\frac{1}{R} \\)`,
-            `\\( h = R \\)`,
-            `\\( h = 0 \\)`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 47,
-        question: `Limiting static friction \\( F_{s} \\) is related to normal reaction \\( N \\) and coefficient of static friction \\( \\mu \\) by:`,
-        image: null,
-        options: [
-            `\\( F_{s} = \\mu N \\)`,
-            `\\( F_{s} < \\mu N \\)`,
-            `\\( F_{s} = \\frac{N}{\\mu} \\)`,
-            `\\( F_{s} = \\mu^{2}N \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 48,
-        question: `The angle of friction \\( \\lambda \\) is defined as the angle between the normal reaction \\( N \\) and the:`,
-        image: null,
-        options: [
-            `Applied horizontal force`,
-            `Resultant reaction \\( R \\) of the surface in limiting equilibrium`,
-            `Force of limiting friction \\( F \\)`,
-            `Inclined plane surface`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 49,
-        question: `The relationship between the coefficient of friction \\( \\mu \\) and angle of friction \\( \\lambda \\) is:`,
-        image: null,
-        options: [
-            `\\( \\mu = \\tan\\lambda \\)`,
-            `\\( \\mu = \\sin\\lambda \\)`,
-            `\\( \\mu = \\cos\\lambda \\)`,
-            `\\( \\mu = \\cot\\lambda \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 50,
-        question: `The cone of friction is a cone with vertex at the point of contact, axis along the normal reaction, and semi-vertical angle equal to:`,
-        image: null,
-        options: [
-            `Angle of repose`,
-            `Angle of friction \\( \\lambda \\)`,
-            `\\( 90^{\\circ} - \\lambda \\)`,
-            `\\( 45^{\\circ} \\)`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 51,
-        question: `The least force required to pull a body of weight \\( W \\) along a rough horizontal plane with coefficient of friction \\( \\mu = \\tan\\lambda \\) is:`,
-        image: null,
-        options: [
-            `\\( W\\sin\\lambda \\)`,
-            `\\( W\\cos\\lambda \\)`,
-            `\\( W\\tan\\lambda \\)`,
-            `\\( W\\sec\\lambda \\)`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 52,
-        question: `Differential intrinsic equations of equilibrium for a string under central force field \\( (X,Y) \\) in a plane use as:`,
-        image: null,
-        options: [
-            `Arc length`,
-            `Angle made by tangent with initial line`,
-            `Radius of curvature`,
-            `Sag`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 53,
-        question: `The tension \\( T \\) at any point of a flexible string in equilibrium under gravity alone depends on:`,
-        image: null,
-        options: [
-            `The vertical height of the point`,
-            `Horizontal distance only`,
-            `Curvature of the peg only`,
-            `Total mass of peg`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 54,
-        question: `If \\( w \\) is the weight per unit length of a string under gravity, the differential equation for tension \\( T \\) along arc length \\( s \\) is \\( \\frac{dT}{ds} = \\)`,
-        image: null,
-        options: [
-            `\\( w\\sin\\psi \\)`,
-            `\\( w\\cos\\psi \\)`,
-            `\\( -w\\sin\\psi \\)`,
-            `\\( w\\rho \\)`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 55,
-        question: `A common catenary is the curve formed by a uniform, perfectly flexible string hanging freely under:`,
-        image: null,
-        options: [
-            `Central gravity`,
-            `Uniform gravity with weight per unit length constant`,
-            `Variable force per unit length`,
-            `Horizontal wind force`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 56,
-        question: `The Cartesian equation of the common catenary is:`,
-        image: null,
-        options: [
-            `\\( y = c\\cosh\\left(\\frac{x}{c}\\right) \\)`,
-            `\\( y = c\\sinh\\left(\\frac{x}{c}\\right) \\)`,
-            `\\( y = c\\ln\\left(\\frac{x}{c}\\right) \\)`,
-            `\\( x = c\\cosh\\left(\\frac{y}{c}\\right) \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 57,
-        question: `The intrinsic equation of the common catenary is:`,
-        image: null,
-        options: [
-            `\\( s = c\\tan\\psi \\)`,
-            `\\( s = c\\sin\\psi \\)`,
-            `\\( s = c\\sec\\psi \\)`,
-            `\\( s = c\\psi \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 58,
-        question: `Relation between tension \\( T \\) at any point \\( (x,y) \\) of a common catenary and vertical distance \\( y \\) from directrix is:`,
-        image: null,
-        options: [
-            `\\( T = wy \\)`,
-            `\\( T = wx \\)`,
-            `\\( T = ws \\)`,
-            `\\( T = wc \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 59,
-        question: `The horizontal component of tension \\( T_{0} \\) at every point on a common catenary is constant and equal to:`,
-        image: null,
-        options: [
-            `\\( wc \\)`,
-            `\\( wy \\)`,
-            `\\( ws \\)`,
-            `\\( wc^{2} \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 60,
-        question: `The relation between coordinates \\( y \\), arc length \\( s \\), and parameter \\( c \\) for a common catenary is:`,
-        image: null,
-        options: [
-            `\\( y^{2} = c^{2} + s^{2} \\)`,
-            `\\( y^{2} = c^{2} - s^{2} \\)`,
-            `\\( s^{2} = y^{2} + c^{2} \\)`,
-            `\\( y = c + s \\)`
-        ],
-        correctAnswer: 0
     }
 ];
 
