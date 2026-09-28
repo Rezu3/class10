@@ -274,7 +274,7 @@
             `\\( \\Delta E_v \\) decreases with \\( v \\), \\( \\Delta E_J \\) increases with \\( J \\)`,
             `\\( \\Delta E_v \\) decreases with \\( v \\), \\( \\Delta E_J \\) decreases with \\( J \\)`
         ],
-        correctAnswer: 1
+        correctAnswer: 2
     }
 ];
 
