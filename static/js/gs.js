@@ -1,732 +1,277 @@
 const gkQuestions = [
-    // ===== Section 1: Rectilinear Motion & Simple Harmonic Motion (SHM) =====
     {
         id: 1,
-        question: `What is rectilinear motion?`,
+        question: `In the calculus of variations, the quantity whose extremum is sought is generally called`,
         image: null,
         options: [
-            `Motion along a curved path`,
-            `Motion in a straight line`,
-            `Circular motion`,
-            `Random motion`
+            `A coordinate`,
+            `A functional`,
+            `A momentum`,
+            `A transformation`
         ],
         correctAnswer: 1
     },
     {
         id: 2,
-        question: `Which of the following is true for rectilinear motion with uniform acceleration?`,
+        question: `A transformation from \\( (q, p) \\) to \\( (Q, P) \\) is canonical if it preserves`,
         image: null,
         options: [
-            `Velocity changes at a constant rate`,
-            `Acceleration changes at a constant rate`,
-            `Displacement changes at a constant rate`,
-            `None of these`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 3,
-        question: `A particle, starting from rest, moves along the x-axis with an acceleration \\( x - 3x^2 \\) Then the particle comes to rest again after it has covered a distance`,
-        image: null,
-        options: [
-            `1 unit`,
-            `2 unit`,
-            `\\( 1/2 \\) unit`,
-            `None of these`
+            `The kinetic energy only`,
+            `The potential energy only`,
+            `The form of Hamilton's equations`,
+            `The coordinates individually`
         ],
         correctAnswer: 2
     },
     {
-        id: 4,
-        question: `The speed of a particle moving in a straight line is given by the relation \\( v^2 = a - bx^2 \\), where x is the distance of the particle from a fixed point (origin), a and b being constant. The periodic time of the motion is`,
+        id: 3,
+        question: `In the calculus of variations, a functional is a quantity that generally depends on:`,
         image: null,
         options: [
-            `\\( 2\\pi \\)`,
-            `\\( \\pi \\)`,
-            `\\( 2\\pi/b \\)`,
-            `\\( 2\\pi/\\sqrt{b} \\)`
+            `Only a number`,
+            `A function and its derivatives`,
+            `Only the independent variable`,
+            `Only the dependent variable`
         ],
-        correctAnswer: 3
+        correctAnswer: 1
+    },
+    {
+        id: 4,
+        question: `If a dynamical variable \\( F(q,p,t) \\) has no explicit time dependence and satisfies \\( [F,H] = 0 \\), then F is`,
+        image: null,
+        options: [
+            `A generalized coordinate`,
+            `A constant of motion`,
+            `A generating function`,
+            `A canonical momentum only`
+        ],
+        correctAnswer: 1
     },
     {
         id: 5,
-        question: `A particle is executing S.H.M. such that its period of oscillation is \\( 2\\pi \\) sec. If its maximum acceleration is \\( 8 \\text{ cm/sec}^2 \\), then its amplitude will be`,
+        question: `A rigid body rotating freely about which principal axis is generally unstable?`,
         image: null,
         options: [
-            `8 cm`,
-            `16 cm`,
-            `4 cm`,
-            `None of these`
+            `Axis corresponding to the maximum moment of inertia`,
+            `Axis corresponding to the minimum moment of inertia`,
+            `Intermediate principal axis`,
+            `Any axis is equally unstable`
         ],
-        correctAnswer: 0
+        correctAnswer: 2
     },
     {
         id: 6,
-        question: `A particle executing an SHM has a maximum acceleration a and a maximum velocity b. Then, its period of oscillations T will be`,
+        question: `Under a canonical transformation, the Poisson bracket of two dynamical variables f and g:`,
         image: null,
         options: [
-            `\\( 2\\pi a/b \\)`,
-            `\\( 2\\pi/ab \\)`,
-            `\\( 2\\pi b/a \\)`,
-            `None of these`
+            `Always becomes zero`,
+            `Changes its sign`,
+            `Remains invariant`,
+            `Becomes dependent only on time`
         ],
         correctAnswer: 2
     },
     {
         id: 7,
-        question: `A particle executes an SHM with an amplitude of b and a time period of T. The (minimum) time taken by the particle to travel half its amplitude from the equilibrium position is`,
+        question: `Liouville's theorem states that, for a Hamiltonian system, the phase-space volume occupied by an ensemble of systems`,
         image: null,
         options: [
-            `\\( 3T/2 \\)`,
-            `\\( T/12 \\)`,
-            `\\( 2T/3 \\)`,
-            `None of these`
+            `Always increases with time`,
+            `Always decreases with time`,
+            `Remains invariant during Hamiltonian evolution`,
+            `Becomes zero at equilibrium`
         ],
-        correctAnswer: 1
+        correctAnswer: 2
     },
     {
         id: 8,
-        question: `Which of the following is true about the magnitude of acceleration of a particle undergoing SHM at its maximum displacement?`,
+        question: `In the classical-to-quantum connection, the Hamilton-Jacobi equation provides an important basis for:`,
         image: null,
         options: [
-            `The acceleration is zero`,
-            `The acceleration is maximum`,
-            `The acceleration is minimum`,
-            `None of these`
+            `Newton's law of gravitation`,
+            `The semi classical/WKB approximation`,
+            `Maxwell's equations`,
+            `Thermodynamic equilibrium`
         ],
         correctAnswer: 1
     },
     {
         id: 9,
-        question: `The law of motion of a particle moving in a straight line is \\( s = \\frac{1}{2} vt \\). Then the acceleration of the particle is`,
+        question: `The Hamilton-Jacobi method is particularly significant because it`,
         image: null,
         options: [
-            `Proportional to velocity`,
-            `Proportional to square of velocity`,
-            `Proportional to inverse of velocity`,
-            `Constant`
+            `eliminates the need for generalized coordinates`,
+            `provides a connection between classical mechanics and quantum mechanics`,
+            `is applicable only to free particles`,
+            `eliminates conservation laws`
         ],
-        correctAnswer: 3
+        correctAnswer: 1
     },
-
-    // ===== Section 2: Plane Curvilinear Motion & Kinematics =====
     {
         id: 10,
-        question: `If the position of a moving particle at time t is given by \\( x = at^2, y = 2at \\), where a is a constant. Then the resultant acceleration of the particle at time t is`,
+        question: `Action-angle variables are particularly useful for`,
         image: null,
         options: [
-            `4a`,
-            `0`,
-            `a`,
-            `2a`
+            `describing periodic and quasi-periodic Hamiltonian systems`,
+            `eliminating angular momentum`,
+            `solving only dissipative systems`,
+            `describing only rigid-body translation`
         ],
-        correctAnswer: 3
+        correctAnswer: 0
     },
     {
         id: 11,
-        question: `If an object's velocity vector is always perpendicular to the radius vector, what kind of motion does the object exhibit?`,
+        question: `Euler's theorem on the motion of a rigid body states that any finite displacement of a rigid body having one point fixed can be represented by`,
         image: null,
         options: [
-            `Elliptical motion`,
-            `Parabolic motion`,
-            `Hyperbolic motion`,
-            `Circular motion`
+            `A pure translation`,
+            `A rotation about some axis passing through the fixed point`,
+            `A change in mass`,
+            `A change in angular momentum only`
         ],
-        correctAnswer: 3
+        correctAnswer: 1
     },
     {
         id: 12,
-        question: `A particle describes a curve \\( r = ae^{\\theta} \\) a being constant, with a constant angular velocity, then the radial acceleration of the particle is`,
+        question: `For torque-free motion of a rigid body, Euler's equations are expressed in terms of`,
         image: null,
         options: [
-            `Zero`,
-            `Proportional to \\( r^2 \\)`,
-            `Proportional to \\( \\theta \\)`,
-            `Proportional to r`
+            `Linear velocity components only`,
+            `Centre-of-mass coordinates only`,
+            `Potential energy only`,
+            `Principal moments of inertia and angular velocity components`
         ],
-        correctAnswer: 0
+        correctAnswer: 3
     },
     {
         id: 13,
-        question: `A particle describes a circle \\( r = a \\), where a being the radius of the circle, then its radial velocity will be`,
+        question: `According to Liouville's theorem, the phase-space density of an ensemble of systems:`,
         image: null,
         options: [
-            `\\( a(d\\theta/dt) \\)`,
-            `Zero`,
-            `a`,
-            `None of these`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 14,
-        question: `If a particle moves in a plane, the rate of description of sectorial area is called`,
-        image: null,
-        options: [
-            `Radial velocity`,
-            `Cross-radial velocity`,
-            `Angular velocity`,
-            `Areal velocity`
-        ],
-        correctAnswer: 3
-    },
-    {
-        id: 15,
-        question: `The normal component of acceleration for a particle moving along a plane curve is`,
-        image: null,
-        options: [
-            `\\( d^2s/dt^2 \\)`,
-            `\\( v(dv/ds) \\)`,
-            `\\( v^2/\\rho \\)`,
-            `\\( r(d\\theta/dt) \\)`
+            `Always increases with time`,
+            `Always decreases with time`,
+            `Remains constant along the trajectory in phase space`,
+            `Becomes zero at equilibrium`
         ],
         correctAnswer: 2
     },
     {
-        id: 16,
-        question: `Relation between angular velocity and linear velocity of a particle moving in a plane curve is`,
+        id: 14,
+        question: `In the motion of a heavy symmetric top with one point fixed, precession refers to`,
         image: null,
         options: [
-            `\\( d\\theta/dt = pv/r \\)`,
-            `\\( d\\theta/dt = pv/r^2 \\)`,
-            `\\( d\\theta/dt = pv^2/r \\)`,
-            `None of these`
+            `Rotation of the top about its symmetry axis`,
+            `Slow rotation of the symmetry axis about the vertical direction`,
+            `Oscillation of the centre of mass only`,
+            `Translation of the fixed point`
         ],
         correctAnswer: 1
     },
     {
-        id: 17,
-        question: `A particle is moving in a circle of radius a with velocity v. The normal acceleration of the particle is`,
+        id: 15,
+        question: `For a fast symmetric top, the condition for steady precession is primarily associated with:`,
         image: null,
         options: [
-            `\\( v(dv/ds) \\)`,
-            `\\( dv/dt \\)`,
-            `0`,
-            `\\( v^2/a \\)`
+            `Very small angular momentum of spin`,
+            `Large spin angular velocity`,
+            `Zero gravitational torque`,
+            `Zero moment of inertia`
         ],
-        correctAnswer: 3
+        correctAnswer: 1
     },
     {
-        id: 18,
-        question: `A particle describes a curve \\( r = k\\theta \\), k being constant, with a constant angular velocity, then the radial acceleration of the particle is`,
+        id: 16,
+        question: `For a rapidly spinning gyroscope, the angular velocity of precession is approximately inversely proportional to`,
         image: null,
         options: [
-            `Proportional to r`,
-            `Proportional to \\( \\theta \\)`,
-            `Zero`,
-            `None of these`
+            `Its angular momentum`,
+            `Its mass only`,
+            `Its moment of inertia about the vertical axis only`,
+            `Its kinetic energy only`
         ],
         correctAnswer: 0
     },
     {
-        id: 19,
-        question: `If the position of a moving particle at time t is given by \\( x = a \\cos pt \\), \\( y = a \\sin pt \\), where a, p are constants, the acceleration of the particle at time t is`,
+        id: 17,
+        question: `Larmor precession occurs when a charged particle or magnetic moment is subjected to:`,
         image: null,
         options: [
-            `ap`,
-            `\\( a^2p \\)`,
-            `\\( p^2a \\)`,
-            `\\( p^2a^2 \\)`
+            `A uniform gravitational field`,
+            `A uniform magnetic field`,
+            `A uniform electric field`,
+            `No external field`
+        ],
+        correctAnswer: 1
+    },
+    {
+        id: 18,
+        question: `According to Noether's theorem, invariance of the Lagrangian under continuous time translation implies conservation of`,
+        image: null,
+        options: [
+            `Linear momentum`,
+            `Angular momentum`,
+            `Energy`,
+            `Action`
         ],
         correctAnswer: 2
     },
     {
-        id: 20,
-        question: `A particle describes a curve with constant angular velocity. Then the cross-radial velocity is`,
+        id: 19,
+        question: `If the Hamilton–Jacobi equation is completely solved by a principal function \\( S(q, \\alpha, t) \\), the constants \\( \\alpha \\) are`,
         image: null,
         options: [
-            `Proportional to r`,
-            `Proportional to \\( \\theta \\)`,
-            `Non-zero constant`,
-            `Zero`
+            `Arbitrary constants related to the initial conditions`,
+            `Always equal to zero`,
+            `The generalized velocities`,
+            `The generalized coordinates`
+        ],
+        correctAnswer: 0
+    },
+    {
+        id: 20,
+        question: `For a freely rotating rigid body with no external torque, which quantity remains constant?`,
+        image: null,
+        options: [
+            `Angular momentum in the space-fixed frame`,
+            `Angular velocity in every frame`,
+            `Each component of angular momentum in the body-fixed frame`,
+            `Euler angles individually`
         ],
         correctAnswer: 0
     },
     {
         id: 21,
-        question: `If a particle is moving in a circle of radius a with uniform speed v. The acceleration of the particle towards the centre is`,
+        question: `The phenomenon in which the axis of a spinning gyroscope slowly rotates about the direction of an applied torque is known as`,
         image: null,
         options: [
-            `\\( v/a \\)`,
-            `\\( v^2/a \\)`,
-            `va`,
-            `Zero`
+            `Nutation`,
+            `Precession`,
+            `Oscillation`,
+            `Inversion`
         ],
         correctAnswer: 1
     },
     {
         id: 22,
-        question: `A particle describes a plane curve with a constant speed and its resultant acceleration is constant, the path of particle is a`,
+        question: `Hamilton's principal function S is closely related to:`,
         image: null,
         options: [
-            `Circle`,
-            `Straight line`,
-            `Parabola`,
-            `None of these`
+            `The action integral`,
+            `The potential energy only`,
+            `The kinetic energy only`,
+            `The angular momentum only`
         ],
         correctAnswer: 0
     },
     {
         id: 23,
-        question: `If a particle moves along a circle of radius a so that \\( r = a \\), then its transverse velocity is equal to`,
+        question: `For a time-independent Hamiltonian, Hamilton's principal function can generally be written as`,
         image: null,
         options: [
-            `\\( a(d\\theta/dt) \\)`,
-            `\\( d\\theta/dt \\)`,
-            `\\( \\theta(dr/dt) \\)`,
-            `\\( a(dr/dt) \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 24,
-        question: `If the position of a moving particle at time t is given by \\( x = 3t - 4t^2 \\), \\( y = 4t - 8t^2 \\) the velocity of the particle at time \\( t = 1 \\) sec is`,
-        image: null,
-        options: [
-            `3 unit/sec`,
-            `169 unit/sec`,
-            `13 unit/sec`,
-            `None of these`
-        ],
-        correctAnswer: 2
-    },
-
-    // ===== Section 3: Central Forces & Orbits =====
-    {
-        id: 25,
-        question: `A planet revolving around the sun (at one foci) in an elliptical orbit has a constant`,
-        image: null,
-        options: [
-            `Linear velocity`,
-            `Kinetic energy`,
-            `Angular velocity`,
-            `Angular momentum`
-        ],
-        correctAnswer: 3
-    },
-    {
-        id: 26,
-        question: `A point mass is moving in a hyperbolic orbit under a central force always directed towards one of its foci, then it has a constant`,
-        image: null,
-        options: [
-            `Angular velocity`,
-            `Moment of momentum`,
-            `Linear velocity`,
-            `None of these`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 27,
-        question: `A central orbit is always`,
-        image: null,
-        options: [
-            `A straight line`,
-            `A plane curve`,
-            `A circle`,
-            `A hyperbola`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 28,
-        question: `Which of the following quantities is not conserved for a particle moving in a conservative central force field?`,
-        image: null,
-        options: [
-            `Moment of momentum`,
-            `Total Energy`,
-            `Linear momentum`,
-            `Areal Velocity`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 29,
-        question: `For a central orbit, the expression for the constant h is given by`,
-        image: null,
-        options: [
-            `\\( h = r^2 d\\theta/dt \\)`,
-            `\\( h = \\theta dr/dt \\)`,
-            `\\( h = r d\\theta/dt \\)`,
-            `\\( h = dr/dt \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 30,
-        question: `If a particle describes a parabola whose pedal equation is \\( p^2 = ar \\) under a central force towards the pole, then the force varies as`,
-        image: null,
-        options: [
-            `\\( 1/r^2 \\)`,
-            `\\( r^2 \\)`,
-            `\\( 1/r \\)`,
-            `r`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 31,
-        question: `In a central orbit, at an apse, a particle moves`,
-        image: null,
-        options: [
-            `Along the radius vector`,
-            `At an angle \\( \\pi/4 \\) with the initial line`,
-            `At an angle \\( \\pi/2 \\) to the radius vector`,
-            `None of these`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 32,
-        question: `In a central force field, the force experienced by a particle is`,
-        image: null,
-        options: [
-            `Towards or away from the center force along the radial direction`,
-            `Tangentially to its path`,
-            `In the direction opposite to the velocity vector`,
-            `None of these`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 33,
-        question: `If a particle describes a parabola under a central force towards its focus, then the force varies as`,
-        image: null,
-        options: [
-            `r`,
-            `\\( r^2 \\)`,
-            `\\( 1/r^2 \\)`,
-            `None of these`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 34,
-        question: `If a particle describes an ellipse \\( l/r = 1 - e \\cos \\theta \\) under a central force towards one of the foci, the law of force is given by`,
-        image: null,
-        options: [
-            `\\( F \\propto 1/r \\)`,
-            `\\( F \\propto r \\)`,
-            `\\( F \\propto 1/r^2 \\)`,
-            `\\( F \\propto r^2 \\)`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 35,
-        question: `If a particle describes a hyperbola \\( l/r = 1 + e \\cos \\theta \\) under a central force towards one of the foci, the law of force is given by`,
-        image: null,
-        options: [
-            `\\( F \\propto r^2 \\)`,
-            `\\( F \\propto r \\)`,
-            `\\( F \\propto 1/r^2 \\)`,
-            `\\( F \\propto 1/r \\)`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 36,
-        question: `The rate of description of sectorial area (i.e., areal velocity) by the particle in a central force field is always`,
-        image: null,
-        options: [
-            `Zero`,
-            `Constant`,
-            `Not conserved`,
-            `Infinite`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 37,
-        question: `For a particle moving under a central force, its motion always takes place`,
-        image: null,
-        options: [
-            `In space`,
-            `In a straight line`,
-            `In a plane`,
-            `None of these`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 38,
-        question: `If a particle moves in a conservative central force field, then its total energy is`,
-        image: null,
-        options: [
-            `Zero`,
-            `Conserved`,
-            `Not conserved`,
-            `Proportional to its velocity`
-        ],
-        correctAnswer: 1
-    },
-
-    // ===== Section 4: Virtual Work & Stability =====
-    {
-        id: 39,
-        question: `A virtual displacement \\( \\delta r \\) is defined as an infinitesimal change in system coordinates occurring:`,
-        image: null,
-        options: [
-            `Over a finite time interval \\( \\Delta t \\)`,
-            `Instantaneously at a fixed time \\( (dt = 0) \\)`,
-            `Along the path of actual motion only`,
-            `Due to internal heat dissipation`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 40,
-        question: `The necessary and sufficient condition for the equilibrium of a rigid body subjected to a system of coplanar forces is that the total virtual work done by external forces is:`,
-        image: null,
-        options: [
-            `Positive`,
-            `Negative`,
-            `Zero`,
-            `Equal to total kinetic energy`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 41,
-        question: `In a system with smooth, rigid constraints, the virtual work done by the forces of constraint for any displacement compatible with the constraints is:`,
-        image: null,
-        options: [
-            `Zero`,
-            `Equal to potential energy`,
-            `Infinite`,
-            `Dependent on acceleration`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 42,
-        question: `If a light rod of length l connects two particles, the virtual work done by the internal tension T when the length changes by \\( \\delta l \\) is:`,
-        image: null,
-        options: [
-            `-T \\delta l`,
-            `T \\delta l`,
-            `\\( \\frac{1}{2} T \\delta l \\)`,
-            `Zero always, as \\( \\delta l = 0 \\) for a rigid rod`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 43,
-        question: `Which force performs non-zero virtual work in a mechanical system?`,
-        image: null,
-        options: [
-            `Normal reaction on a smooth fixed surface`,
-            `Tension in an inextensible string`,
-            `External applied load`,
-            `Reaction at a smooth fixed fulcrum`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 44,
-        question: `A heavy uniform body of mass M rests in equilibrium on a convex surface. The equilibrium is stable if the height of its center of mass h above the point of contact satisfies:`,
-        image: null,
-        options: [
-            `\\( h < \\rho \\) (where \\( \\rho \\) is the radius of curvature)`,
-            `\\( h > \\rho \\)`,
-            `\\( h = 2\\rho \\)`,
-            `\\( h > 2\\rho \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 45,
-        question: `For a heavy body resting on a sphere of radius R, if h is the height of C.M. above the contact point, the condition for neutral equilibrium is:`,
-        image: null,
-        options: [
-            `\\( 1/h = 1/R \\)`,
-            `\\( 1/h = 1/r + 1/R \\)`,
-            `\\( h = R \\)`,
-            `\\( h = 0 \\)`
-        ],
-        correctAnswer: 1
-    },
-
-    // ===== Section 5: Friction =====
-    {
-        id: 46,
-        question: `Which of the following is a non-conservative force?`,
-        image: null,
-        options: [
-            `Frictional force`,
-            `Gravitational force`,
-            `Electrostatic force`,
-            `Spring force`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 47,
-        question: `Limiting static friction \\( F_s \\) is related to normal reaction N and coefficient of static friction \\( \\mu \\) by:`,
-        image: null,
-        options: [
-            `\\( F_s = \\mu N \\)`,
-            `\\( F_s < \\mu N \\)`,
-            `\\( F_s = N/\\mu \\)`,
-            `\\( F_s = \\mu^2 N \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 48,
-        question: `The angle of friction \\( \\lambda \\) is defined as the angle between the normal reaction N and the:`,
-        image: null,
-        options: [
-            `Applied horizontal force`,
-            `Resultant reaction R of the surface in limiting equilibrium`,
-            `Force of limiting friction F`,
-            `Inclined plane surface`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 49,
-        question: `The relationship between the coefficient of friction \\( \\mu \\) and angle of friction \\( \\lambda \\) is:`,
-        image: null,
-        options: [
-            `\\( \\mu = \\tan \\lambda \\)`,
-            `\\( \\mu = \\sin \\lambda \\)`,
-            `\\( \\mu = \\cos \\lambda \\)`,
-            `\\( \\mu = \\cot \\lambda \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 50,
-        question: `The cone of friction is a cone with vertex at the point of contact, axis along the normal reaction, and semi-vertical angle equal to:`,
-        image: null,
-        options: [
-            `Angle of repose`,
-            `Angle of friction \\( \\lambda \\)`,
-            `\\( 90^{\\circ} - \\lambda \\)`,
-            `\\( 45^{\\circ} \\)`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 51,
-        question: `The least force required to pull a body of weight W along a rough horizontal plane with coefficient of friction \\( \\mu = \\tan \\lambda \\) is:`,
-        image: null,
-        options: [
-            `W \\sin \\lambda`,
-            `W \\cos \\lambda`,
-            `W \\tan \\lambda`,
-            `W \\sec \\lambda`
-        ],
-        correctAnswer: 0
-    },
-
-    // ===== Section 6: Common Catenary & Flexible Strings =====
-    {
-        id: 52,
-        question: `Differential intrinsic equations of equilibrium for a string under central force field (X, Y) in a plane use \\( \\psi \\) as:`,
-        image: null,
-        options: [
-            `Arc length`,
-            `Angle made by tangent with initial line`,
-            `Radius of curvature`,
-            `Sag`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 53,
-        question: `The tension T at any point of a flexible string in equilibrium under gravity alone depends on:`,
-        image: null,
-        options: [
-            `The vertical height of the point`,
-            `Horizontal distance only`,
-            `Curvature of the peg only`,
-            `Total mass of peg`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 54,
-        question: `If w is the weight per unit length of a string under gravity, the differential equation for tension T along arc length s is \\( dT/ds = \\)`,
-        image: null,
-        options: [
-            `w \\sin \\psi`,
-            `w \\cos \\psi`,
-            `-w \\sin \\psi`,
-            `w\\rho`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 55,
-        question: `A common catenary is the curve formed by a uniform, perfectly flexible string hanging freely under:`,
-        image: null,
-        options: [
-            `Central gravity`,
-            `Uniform gravity with weight per unit length constant`,
-            `Variable force per unit length`,
-            `Horizontal wind force`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 56,
-        question: `The Cartesian equation of the common catenary is:`,
-        image: null,
-        options: [
-            `\\( y = c \\cosh(x/c) \\)`,
-            `\\( y = c \\sinh(x/c) \\)`,
-            `\\( y = c \\ln(x/c) \\)`,
-            `\\( x = c \\cosh(y/c) \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 57,
-        question: `The intrinsic equation of the common catenary is:`,
-        image: null,
-        options: [
-            `\\( s = c \\tan \\psi \\)`,
-            `\\( s = c \\sin \\psi \\)`,
-            `\\( s = c \\sec \\psi \\)`,
-            `\\( s = c\\psi \\)`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 58,
-        question: `Relation between tension T at any point (x, y) of a common catenary and vertical distance y from directrix is:`,
-        image: null,
-        options: [
-            `T = wy`,
-            `T = wx`,
-            `T = ws`,
-            `T = wc`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 59,
-        question: `The horizontal component of tension \\( T_0 \\) at every point on a common catenary is constant and equal to:`,
-        image: null,
-        options: [
-            `wc`,
-            `wy`,
-            `ws`,
-            `w/c`
-        ],
-        correctAnswer: 0
-    },
-    {
-        id: 60,
-        question: `The relation between coordinates y, arc length s, and parameter c for a common catenary is:`,
-        image: null,
-        options: [
-            `\\( y^2 = c^2 + s^2 \\)`,
-            `\\( y^2 = c^2 - s^2 \\)`,
-            `\\( s^2 = y^2 + c^2 \\)`,
-            `\\( y = c + s \\)`
+            `\\( S = W - Et \\)`,
+            `\\( S = W + Et \\)`,
+            `\\( S = Et \\) only`,
+            `\\( S = W / t \\)`
         ],
         correctAnswer: 0
     }
