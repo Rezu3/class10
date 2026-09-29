@@ -26,31 +26,31 @@ const gkQuestions = [
     },
     {
         id: 3,
-        question: `A particle, starting from rest, moves along the x-axis with an acceleration \\\\( x - 3x^2 \\\\) Then the particle comes to rest again after it has covered a distance`,
+        question: `A particle, starting from rest, moves along the x-axis with an acceleration \\( x - 3x^2 \\) Then the particle comes to rest again after it has covered a distance`,
         image: null,
         options: [
             `1 unit`,
             `2 unit`,
-            `\\\\( 1/2 \\\\) unit`,
+            `\\( 1/2 \\) unit`,
             `None of these`
         ],
         correctAnswer: 2
     },
     {
         id: 4,
-        question: `The speed of a particle moving in a straight line is given by the relation \\\\( v^2 = a - bx^2 \\\\), where x is the distance of the particle from a fixed point (origin), a and b being constant. The periodic time of the motion is`,
+        question: `The speed of a particle moving in a straight line is given by the relation \\( v^2 = a - bx^2 \\), where x is the distance of the particle from a fixed point (origin), a and b being constant. The periodic time of the motion is`,
         image: null,
         options: [
-            `\\\\( 2\\pi \\\\)`,
-            `\\\\( \\\\pi \\\\)`,
-            `\\\\( 2\\pi/b \\\\)`,
-            `\\\\( 2\\pi/\\\\sqrt{b} \\\\)`
+            `\\( 2\\pi \\)`,
+            `\\( \\pi \\)`,
+            `\\( 2\\pi/b \\)`,
+            `\\( 2\\pi/\\sqrt{b} \\)`
         ],
         correctAnswer: 3
     },
     {
         id: 5,
-        question: `A particle is executing S.H.M. such that its period of oscillation is \\\\( 2\\pi \\\\) sec. If its maximum acceleration is \\\\( 8 \\\\text{ cm/sec}^2 \\\\), then its amplitude will be`,
+        question: `A particle is executing S.H.M. such that its period of oscillation is \\( 2\\pi \\) sec. If its maximum acceleration is \\( 8 \\text{ cm/sec}^2 \\), then its amplitude will be`,
         image: null,
         options: [
             `8 cm`,
@@ -65,9 +65,9 @@ const gkQuestions = [
         question: `A particle executing an SHM has a maximum acceleration a and a maximum velocity b. Then, its period of oscillations T will be`,
         image: null,
         options: [
-            `\\\\( 2\\pi a/b \\\\)`,
-            `\\\\( 2\\pi/ab \\\\)`,
-            `\\\\( 2\\pi b/a \\\\)`,
+            `\\( 2\\pi a/b \\)`,
+            `\\( 2\\pi/ab \\)`,
+            `\\( 2\\pi b/a \\)`,
             `None of these`
         ],
         correctAnswer: 2
@@ -77,9 +77,9 @@ const gkQuestions = [
         question: `A particle executes an SHM with an amplitude of b and a time period of T. The (minimum) time taken by the particle to travel half its amplitude from the equilibrium position is`,
         image: null,
         options: [
-            `\\\\( 3T/2 \\\\)`,
-            `\\\\( T/12 \\\\)`,
-            `\\\\( 2T/3 \\\\)`,
+            `\\( 3T/2 \\)`,
+            `\\( T/12 \\)`,
+            `\\( 2T/3 \\)`,
             `None of these`
         ],
         correctAnswer: 1
@@ -98,7 +98,7 @@ const gkQuestions = [
     },
     {
         id: 9,
-        question: `The law of motion of a particle moving in a straight line is \\\\( s = \\\\frac{1}{2} vt \\\\). Then the acceleration of the particle is`,
+        question: `The law of motion of a particle moving in a straight line is \\( s = \\frac{1}{2} vt \\). Then the acceleration of the particle is`,
         image: null,
         options: [
             `Proportional to velocity`,
@@ -112,7 +112,7 @@ const gkQuestions = [
     // ===== Section 2: Plane Curvilinear Motion & Kinematics =====
     {
         id: 10,
-        question: `If the position of a moving particle at time t is given by \\\\( x = at^2, y = 2at \\\\), where a is a constant. Then the resultant acceleration of the particle at time t is`,
+        question: `If the position of a moving particle at time t is given by \\( x = at^2, y = 2at \\), where a is a constant. Then the resultant acceleration of the particle at time t is`,
         image: null,
         options: [
             `4a`,
@@ -136,22 +136,22 @@ const gkQuestions = [
     },
     {
         id: 12,
-        question: `A particle describes a curve \\\\( r = ae^{\\theta} \\\\) a being constant, with a constant angular velocity, then the radial acceleration of the particle is`,
+        question: `A particle describes a curve \\( r = ae^{\\theta} \\) a being constant, with a constant angular velocity, then the radial acceleration of the particle is`,
         image: null,
         options: [
             `Zero`,
-            `Proportional to \\\\( r^2 \\\\)`,
-            `Proportional to \\\\( \\\\theta \\\\)`,
+            `Proportional to \\( r^2 \\)`,
+            `Proportional to \\( \\theta \\)`,
             `Proportional to r`
         ],
         correctAnswer: 0
     },
     {
         id: 13,
-        question: `A particle describes a circle \\\\( r = a \\\\), where a being the radius of the circle, then its radial velocity will be`,
+        question: `A particle describes a circle \\( r = a \\), where a being the radius of the circle, then its radial velocity will be`,
         image: null,
         options: [
-            `\\\\( a(d\\\\theta/dt) \\\\)`,
+            `\\( a(d\\theta/dt) \\)`,
             `Zero`,
             `a`,
             `None of these`
@@ -175,10 +175,10 @@ const gkQuestions = [
         question: `The normal component of acceleration for a particle moving along a plane curve is`,
         image: null,
         options: [
-            `\\\\( d^2s/dt^2 \\\\)`,
-            `\\\\( v(dv/ds) \\\\)`,
-            `\\\\( v^2/\\\\rho \\\\)`,
-            `\\\\( r(d\\\\theta/dt) \\\\)`
+            `\\( d^2s/dt^2 \\)`,
+            `\\( v(dv/ds) \\)`,
+            `\\( v^2/\\rho \\)`,
+            `\\( r(d\\theta/dt) \\)`
         ],
         correctAnswer: 2
     },
@@ -187,9 +187,9 @@ const gkQuestions = [
         question: `Relation between angular velocity and linear velocity of a particle moving in a plane curve is`,
         image: null,
         options: [
-            `\\\\( d\\\\theta/dt = pv/r \\\\)`,
-            `\\\\( d\\\\theta/dt = pv/r^2 \\\\)`,
-            `\\\\( d\\\\theta/dt = pv^2/r \\\\)`,
+            `\\( d\\theta/dt = pv/r \\)`,
+            `\\( d\\theta/dt = pv/r^2 \\)`,
+            `\\( d\\theta/dt = pv^2/r \\)`,
             `None of these`
         ],
         correctAnswer: 1
@@ -199,20 +199,20 @@ const gkQuestions = [
         question: `A particle is moving in a circle of radius a with velocity v. The normal acceleration of the particle is`,
         image: null,
         options: [
-            `\\\\( v(dv/ds) \\\\)`,
-            `\\\\( dv/dt \\\\)`,
+            `\\( v(dv/ds) \\)`,
+            `\\( dv/dt \\)`,
             `0`,
-            `\\\\( v^2/a \\\\)`
+            `\\( v^2/a \\)`
         ],
         correctAnswer: 3
     },
     {
         id: 18,
-        question: `A particle describes a curve \\\\( r = k\\\\theta \\\\), k being constant, with a constant angular velocity, then the radial acceleration of the particle is`,
+        question: `A particle describes a curve \\( r = k\\theta \\), k being constant, with a constant angular velocity, then the radial acceleration of the particle is`,
         image: null,
         options: [
             `Proportional to r`,
-            `Proportional to \\\\( \\\\theta \\\\)`,
+            `Proportional to \\( \\theta \\)`,
             `Zero`,
             `None of these`
         ],
@@ -220,13 +220,13 @@ const gkQuestions = [
     },
     {
         id: 19,
-        question: `If the position of a moving particle at time t is given by \\\\( x = a \\\\cos pt \\\\), \\\\( y = a \\\\sin pt \\\\), where a, p are constants, the acceleration of the particle at time t is`,
+        question: `If the position of a moving particle at time t is given by \\( x = a \\cos pt \\), \\( y = a \\sin pt \\), where a, p are constants, the acceleration of the particle at time t is`,
         image: null,
         options: [
             `ap`,
-            `\\\\( a^2p \\\\)`,
-            `\\\\( p^2a \\\\)`,
-            `\\\\( p^2a^2 \\\\)`
+            `\\( a^2p \\)`,
+            `\\( p^2a \\)`,
+            `\\( p^2a^2 \\)`
         ],
         correctAnswer: 2
     },
@@ -236,7 +236,7 @@ const gkQuestions = [
         image: null,
         options: [
             `Proportional to r`,
-            `Proportional to \\\\( \\\\theta \\\\)`,
+            `Proportional to \\( \\theta \\)`,
             `Non-zero constant`,
             `Zero`
         ],
@@ -247,8 +247,8 @@ const gkQuestions = [
         question: `If a particle is moving in a circle of radius a with uniform speed v. The acceleration of the particle towards the centre is`,
         image: null,
         options: [
-            `\\\\( v/a \\\\)`,
-            `\\\\( v^2/a \\\\)`,
+            `\\( v/a \\)`,
+            `\\( v^2/a \\)`,
             `va`,
             `Zero`
         ],
@@ -268,19 +268,19 @@ const gkQuestions = [
     },
     {
         id: 23,
-        question: `If a particle moves along a circle of radius a so that \\\\( r = a \\\\), then its transverse velocity is equal to`,
+        question: `If a particle moves along a circle of radius a so that \\( r = a \\), then its transverse velocity is equal to`,
         image: null,
         options: [
-            `\\\\( a(d\\\\theta/dt) \\\\)`,
-            `\\\\( d\\\\theta/dt \\\\)`,
-            `\\\\( \\\\theta(dr/dt) \\\\)`,
-            `\\\\( a(dr/dt) \\\\)`
+            `\\( a(d\\theta/dt) \\)`,
+            `\\( d\\theta/dt \\)`,
+            `\\( \\theta(dr/dt) \\)`,
+            `\\( a(dr/dt) \\)`
         ],
         correctAnswer: 0
     },
     {
         id: 24,
-        question: `If the position of a moving particle at time t is given by \\\\( x = 3t - 4t^2 \\\\), \\\\( y = 4t - 8t^2 \\\\) the velocity of the particle at time \\\\( t = 1 \\\\) sec is`,
+        question: `If the position of a moving particle at time t is given by \\( x = 3t - 4t^2 \\), \\( y = 4t - 8t^2 \\) the velocity of the particle at time \\( t = 1 \\) sec is`,
         image: null,
         options: [
             `3 unit/sec`,
@@ -345,21 +345,21 @@ const gkQuestions = [
         question: `For a central orbit, the expression for the constant h is given by`,
         image: null,
         options: [
-            `\\\\( h = r^2 d\\\\theta/dt \\\\)`,
-            `\\\\( h = \\\\theta dr/dt \\\\)`,
-            `\\\\( h = r d\\\\theta/dt \\\\)`,
-            `\\\\( h = dr/dt \\\\)`
+            `\\( h = r^2 d\\theta/dt \\)`,
+            `\\( h = \\theta dr/dt \\)`,
+            `\\( h = r d\\theta/dt \\)`,
+            `\\( h = dr/dt \\)`
         ],
         correctAnswer: 0
     },
     {
         id: 30,
-        question: `If a particle describes a parabola whose pedal equation is \\\\( p^2 = ar \\\\) under a central force towards the pole, then the force varies as`,
+        question: `If a particle describes a parabola whose pedal equation is \\( p^2 = ar \\) under a central force towards the pole, then the force varies as`,
         image: null,
         options: [
-            `\\\\( 1/r^2 \\\\)`,
-            `\\\\( r^2 \\\\)`,
-            `\\\\( 1/r \\\\)`,
+            `\\( 1/r^2 \\)`,
+            `\\( r^2 \\)`,
+            `\\( 1/r \\)`,
             `r`
         ],
         correctAnswer: 0
@@ -370,8 +370,8 @@ const gkQuestions = [
         image: null,
         options: [
             `Along the radius vector`,
-            `At an angle \\\\( \\\\pi/4 \\\\) with the initial line`,
-            `At an angle \\\\( \\\\pi/2 \\\\) to the radius vector`,
+            `At an angle \\( \\pi/4 \\) with the initial line`,
+            `At an angle \\( \\pi/2 \\) to the radius vector`,
             `None of these`
         ],
         correctAnswer: 2
@@ -394,33 +394,33 @@ const gkQuestions = [
         image: null,
         options: [
             `r`,
-            `\\\\( r^2 \\\\)`,
-            `\\\\( 1/r^2 \\\\)`,
+            `\\( r^2 \\)`,
+            `\\( 1/r^2 \\)`,
             `None of these`
         ],
         correctAnswer: 2
     },
     {
         id: 34,
-        question: `If a particle describes an ellipse \\\\( l/r = 1 - e \\\\cos \\\\theta \\\\) under a central force towards one of the foci, the law of force is given by`,
+        question: `If a particle describes an ellipse \\( l/r = 1 - e \\cos \\theta \\) under a central force towards one of the foci, the law of force is given by`,
         image: null,
         options: [
-            `\\\\( F \\\\propto 1/r \\\\)`,
-            `\\\\( F \\\\propto r \\\\)`,
-            `\\\\( F \\\\propto 1/r^2 \\\\)`,
-            `\\\\( F \\\\propto r^2 \\\\)`
+            `\\( F \\propto 1/r \\)`,
+            `\\( F \\propto r \\)`,
+            `\\( F \\propto 1/r^2 \\)`,
+            `\\( F \\propto r^2 \\)`
         ],
         correctAnswer: 2
     },
     {
         id: 35,
-        question: `If a particle describes a hyperbola \\\\( l/r = 1 + e \\\\cos \\\\theta \\\\) under a central force towards one of the foci, the law of force is given by`,
+        question: `If a particle describes a hyperbola \\( l/r = 1 + e \\cos \\theta \\) under a central force towards one of the foci, the law of force is given by`,
         image: null,
         options: [
-            `\\\\( F \\\\propto r^2 \\\\)`,
-            `\\\\( F \\\\propto r \\\\)`,
-            `\\\\( F \\\\propto 1/r^2 \\\\)`,
-            `\\\\( F \\\\propto 1/r \\\\)`
+            `\\( F \\propto r^2 \\)`,
+            `\\( F \\propto r \\)`,
+            `\\( F \\propto 1/r^2 \\)`,
+            `\\( F \\propto 1/r \\)`
         ],
         correctAnswer: 2
     },
@@ -464,11 +464,11 @@ const gkQuestions = [
     // ===== Section 4: Virtual Work & Stability =====
     {
         id: 39,
-        question: `A virtual displacement \\\\( \\\\delta r \\\\) is defined as an infinitesimal change in system coordinates occurring:`,
+        question: `A virtual displacement \\( \\delta r \\) is defined as an infinitesimal change in system coordinates occurring:`,
         image: null,
         options: [
-            `Over a finite time interval \\\\( \\\\Delta t \\\\)`,
-            `Instantaneously at a fixed time \\\\( (dt = 0) \\\\)`,
+            `Over a finite time interval \\( \\Delta t \\)`,
+            `Instantaneously at a fixed time \\( (dt = 0) \\)`,
             `Along the path of actual motion only`,
             `Due to internal heat dissipation`
         ],
@@ -500,13 +500,13 @@ const gkQuestions = [
     },
     {
         id: 42,
-        question: `If a light rod of length l connects two particles, the virtual work done by the internal tension T when the length changes by \\\\( \\\\delta l \\\\) is:`,
+        question: `If a light rod of length l connects two particles, the virtual work done by the internal tension T when the length changes by \\( \\delta l \\) is:`,
         image: null,
         options: [
-            `-T \\\\delta l`,
-            `T \\\\delta l`,
-            `\\\\( \\\\frac{1}{2} T \\\\delta l \\\\)`,
-            `Zero always, as \\\\( \\\\delta l = 0 \\\\) for a rigid rod`
+            `-T \\delta l`,
+            `T \\delta l`,
+            `\\( \\frac{1}{2} T \\delta l \\)`,
+            `Zero always, as \\( \\delta l = 0 \\) for a rigid rod`
         ],
         correctAnswer: 0
     },
@@ -527,10 +527,10 @@ const gkQuestions = [
         question: `A heavy uniform body of mass M rests in equilibrium on a convex surface. The equilibrium is stable if the height of its center of mass h above the point of contact satisfies:`,
         image: null,
         options: [
-            `\\\\( h < \\\\rho \\\\) (where \\\\( \\\\rho \\\\) is the radius of curvature)`,
-            `\\\\( h > \\\\rho \\\\)`,
-            `\\\\( h = 2\\\\rho \\\\)`,
-            `\\\\( h > 2\\\\rho \\\\)`
+            `\\( h < \\rho \\) (where \\( \\rho \\) is the radius of curvature)`,
+            `\\( h > \\rho \\)`,
+            `\\( h = 2\\rho \\)`,
+            `\\( h > 2\\rho \\)`
         ],
         correctAnswer: 0
     },
@@ -539,10 +539,10 @@ const gkQuestions = [
         question: `For a heavy body resting on a sphere of radius R, if h is the height of C.M. above the contact point, the condition for neutral equilibrium is:`,
         image: null,
         options: [
-            `\\\\( 1/h = 1/R \\\\)`,
-            `\\\\( 1/h = 1/r + 1/R \\\\)`,
-            `\\\\( h = R \\\\)`,
-            `\\\\( h = 0 \\\\)`
+            `\\( 1/h = 1/R \\)`,
+            `\\( 1/h = 1/r + 1/R \\)`,
+            `\\( h = R \\)`,
+            `\\( h = 0 \\)`
         ],
         correctAnswer: 1
     },
@@ -562,19 +562,19 @@ const gkQuestions = [
     },
     {
         id: 47,
-        question: `Limiting static friction \\\\( F_s \\\\) is related to normal reaction N and coefficient of static friction \\\\( \\\\mu \\\\) by:`,
+        question: `Limiting static friction \\( F_s \\) is related to normal reaction N and coefficient of static friction \\( \\mu \\) by:`,
         image: null,
         options: [
-            `\\\\( F_s = \\\\mu N \\\\)`,
-            `\\\\( F_s < \\\\mu N \\\\)`,
-            `\\\\( F_s = N/\\\\mu \\\\)`,
-            `\\\\( F_s = \\\\mu^2 N \\\\)`
+            `\\( F_s = \\mu N \\)`,
+            `\\( F_s < \\mu N \\)`,
+            `\\( F_s = N/\\mu \\)`,
+            `\\( F_s = \\mu^2 N \\)`
         ],
         correctAnswer: 0
     },
     {
         id: 48,
-        question: `The angle of friction \\\\( \\\\lambda \\\\) is defined as the angle between the normal reaction N and the:`,
+        question: `The angle of friction \\( \\lambda \\) is defined as the angle between the normal reaction N and the:`,
         image: null,
         options: [
             `Applied horizontal force`,
@@ -586,13 +586,13 @@ const gkQuestions = [
     },
     {
         id: 49,
-        question: `The relationship between the coefficient of friction \\\\( \\\\mu \\\\) and angle of friction \\\\( \\\\lambda \\\\) is:`,
+        question: `The relationship between the coefficient of friction \\( \\mu \\) and angle of friction \\( \\lambda \\) is:`,
         image: null,
         options: [
-            `\\\\( \\\\mu = \\\\tan \\\\lambda \\\\)`,
-            `\\\\( \\\\mu = \\\\sin \\\\lambda \\\\)`,
-            `\\\\( \\\\mu = \\\\cos \\\\lambda \\\\)`,
-            `\\\\( \\\\mu = \\\\cot \\\\lambda \\\\)`
+            `\\( \\mu = \\tan \\lambda \\)`,
+            `\\( \\mu = \\sin \\lambda \\)`,
+            `\\( \\mu = \\cos \\lambda \\)`,
+            `\\( \\mu = \\cot \\lambda \\)`
         ],
         correctAnswer: 0
     },
@@ -602,21 +602,21 @@ const gkQuestions = [
         image: null,
         options: [
             `Angle of repose`,
-            `Angle of friction \\\\( \\\\lambda \\\\)`,
-            `\\\\( 90^{\\circ} - \\\\lambda \\\\)`,
-            `\\\\( 45^{\\circ} \\\\)`
+            `Angle of friction \\( \\lambda \\)`,
+            `\\( 90^{\\circ} - \\lambda \\)`,
+            `\\( 45^{\\circ} \\)`
         ],
         correctAnswer: 1
     },
     {
         id: 51,
-        question: `The least force required to pull a body of weight W along a rough horizontal plane with coefficient of friction \\\\( \\\\mu = \\\\tan \\\\lambda \\\\) is:`,
+        question: `The least force required to pull a body of weight W along a rough horizontal plane with coefficient of friction \\( \\mu = \\tan \\lambda \\) is:`,
         image: null,
         options: [
-            `W \\\\sin \\\\lambda`,
-            `W \\\\cos \\\\lambda`,
-            `W \\\\tan \\\\lambda`,
-            `W \\\\sec \\\\lambda`
+            `W \\sin \\lambda`,
+            `W \\cos \\lambda`,
+            `W \\tan \\lambda`,
+            `W \\sec \\lambda`
         ],
         correctAnswer: 0
     },
@@ -624,7 +624,7 @@ const gkQuestions = [
     // ===== Section 6: Common Catenary & Flexible Strings =====
     {
         id: 52,
-        question: `Differential intrinsic equations of equilibrium for a string under central force field (X, Y) in a plane use \\\\( \\\\psi \\\\) as:`,
+        question: `Differential intrinsic equations of equilibrium for a string under central force field (X, Y) in a plane use \\( \\psi \\) as:`,
         image: null,
         options: [
             `Arc length`,
@@ -648,13 +648,13 @@ const gkQuestions = [
     },
     {
         id: 54,
-        question: `If w is the weight per unit length of a string under gravity, the differential equation for tension T along arc length s is \\\\( dT/ds = \\\\)`,
+        question: `If w is the weight per unit length of a string under gravity, the differential equation for tension T along arc length s is \\( dT/ds = \\)`,
         image: null,
         options: [
-            `w \\\\sin \\\\psi`,
-            `w \\\\cos \\\\psi`,
-            `-w \\\\sin \\\\psi`,
-            `w\\\\rho`
+            `w \\sin \\psi`,
+            `w \\cos \\psi`,
+            `-w \\sin \\psi`,
+            `w\\rho`
         ],
         correctAnswer: 0
     },
@@ -675,10 +675,10 @@ const gkQuestions = [
         question: `The Cartesian equation of the common catenary is:`,
         image: null,
         options: [
-            `\\\\( y = c \\\\cosh(x/c) \\\\)`,
-            `\\\\( y = c \\\\sinh(x/c) \\\\)`,
-            `\\\\( y = c \\\\ln(x/c) \\\\)`,
-            `\\\\( x = c \\\\cosh(y/c) \\\\)`
+            `\\( y = c \\cosh(x/c) \\)`,
+            `\\( y = c \\sinh(x/c) \\)`,
+            `\\( y = c \\ln(x/c) \\)`,
+            `\\( x = c \\cosh(y/c) \\)`
         ],
         correctAnswer: 0
     },
@@ -687,10 +687,10 @@ const gkQuestions = [
         question: `The intrinsic equation of the common catenary is:`,
         image: null,
         options: [
-            `\\\\( s = c \\\\tan \\\\psi \\\\)`,
-            `\\\\( s = c \\\\sin \\\\psi \\\\)`,
-            `\\\\( s = c \\\\sec \\\\psi \\\\)`,
-            `\\\\( s = c\\\\psi \\\\)`
+            `\\( s = c \\tan \\psi \\)`,
+            `\\( s = c \\sin \\psi \\)`,
+            `\\( s = c \\sec \\psi \\)`,
+            `\\( s = c\\psi \\)`
         ],
         correctAnswer: 0
     },
@@ -708,7 +708,7 @@ const gkQuestions = [
     },
     {
         id: 59,
-        question: `The horizontal component of tension \\\\( T_0 \\\\) at every point on a common catenary is constant and equal to:`,
+        question: `The horizontal component of tension \\( T_0 \\) at every point on a common catenary is constant and equal to:`,
         image: null,
         options: [
             `wc`,
@@ -723,15 +723,14 @@ const gkQuestions = [
         question: `The relation between coordinates y, arc length s, and parameter c for a common catenary is:`,
         image: null,
         options: [
-            `\\\\( y^2 = c^2 + s^2 \\\\)`,
-            `\\\\( y^2 = c^2 - s^2 \\\\)`,
-            `\\\\( s^2 = y^2 + c^2 \\\\)`,
-            `\\\\( y = c + s \\\\)`
+            `\\( y^2 = c^2 + s^2 \\)`,
+            `\\( y^2 = c^2 - s^2 \\)`,
+            `\\( s^2 = y^2 + c^2 \\)`,
+            `\\( y = c + s \\)`
         ],
         correctAnswer: 0
     }
 ];
-
 
 
 
