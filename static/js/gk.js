@@ -1,4 +1,4 @@
-const edmQuestions = [
+const gkQuestions = [
     // ===== Section 1: EM Waves, Dispersion, and Scattering =====
     {
         id: 1,
