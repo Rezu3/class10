@@ -34,7 +34,7 @@ const gkQuestions = [
             `\\( \\frac{1}{2} \\) unit`,
             `None of these`
         ],
-        correctAnswer: 0
+        correctAnswer: 3
     },
     {
         id: 4,
@@ -753,7 +753,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let quizTimerInterval = null;
 
     const TOTAL_TIME = 1500;
-    const QUESTION_TIME = 60;
+    const QUESTION_TIME = 120;
 
     const questionText = document.getElementById('question-text');
     const optionsContainer = document.getElementById('options-container');
