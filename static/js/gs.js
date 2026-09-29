@@ -34,7 +34,7 @@ const gkQuestions = [
             `\\( \\frac{1}{2} \\) unit`,
             `None of these`
         ],
-        correctAnswer: 3
+        correctAnswer: 2
     },
     {
         id: 4,
