@@ -1,280 +1,279 @@
- const gkQuestions = [
-    // ===== Section: Molecular Spectra and Atomic Physics =====
+const classicalMechanicsQuestions = [
     {
         id: 1,
-        question: `Molecular spectra consists of`,
+        question: `In the calculus of variations, the quantity whose extremum is sought is generally called`,
         image: null,
         options: [
-            `discrete lines`,
-            `bands`,
-            `mixture of lines and bands`,
-            `none of these.`
+            `A coordinate`,
+            `A functional`,
+            `A momentum`,
+            `A transformation`
         ],
         correctAnswer: 1
     },
     {
         id: 2,
-        question: `The order of energy associated with rotational spectra is`,
+        question: `A transformation from \\( (q, p) \\) to \\( (Q, P) \\) is canonical if it preserves`,
         image: null,
         options: [
-            `\\( 10^{-3} \\text{ eV} \\)`,
-            `\\( 2 \\text{ eV} \\)`,
-            `\\( 10^{-6} \\text{ eV} \\)`,
-            `\\( 10^{-2} \\text{ eV} \\)`
+            `The kinetic energy only`,
+            `The potential energy only`,
+            `The form of Hamilton's equations`,
+            `The coordinates individually`
         ],
-        correctAnswer: 0
+        correctAnswer: 2
     },
     {
         id: 3,
-        question: `The radiation emitted in rotational spectrum lies in`,
+        question: `In the calculus of variations, a functional is a quantity that generally depends on:`,
         image: null,
         options: [
-            `visible region`,
-            `near infrared region`,
-            `ultraviolet region`,
-            `audible region.`
+            `Only a number`,
+            `A function and its derivatives`,
+            `Only the independent variable`,
+            `Only the dependent variable`
         ],
         correctAnswer: 1
     },
     {
         id: 4,
-        question: `The wavelength of electronic spectra lines between`,
+        question: `If a dynamical variable \\( F(q,p,t) \\) has no explicit time dependence and satisfies \\( [F,H] = 0 \\), then F is`,
         image: null,
         options: [
-            `\\( 100 \\text{ to } 1000 \\text{ \\AA} \\)`,
-            `\\( 1000 \\text{ to } 7000 \\text{ \\AA} \\)`,
-            `\\( 10000 \\text{ to } 15000 \\text{ \\AA} \\)`,
-            `\\( 10^5 \\text{ to } 10^7 \\text{ \\AA} \\)`
+            `A generalized coordinate`,
+            `A constant of motion`,
+            `A generating function`,
+            `A canonical momentum only`
         ],
         correctAnswer: 1
     },
     {
         id: 5,
-        question: `If the rotational, vibrational and electronic energy of a molecule be represented by \\( E_r, E_v \\) and \\( E_e \\) respectively, then`,
+        question: `A rigid body rotating freely about which principal axis is generally unstable?`,
         image: null,
         options: [
-            `\\( E_v > E_r > E_e \\)`,
-            `\\( E_e > E_r > E_v \\)`,
-            `\\( E_e > E_v > E_r \\)`,
-            `\\( E_r = E_v = E_e \\)`
+            `Axis corresponding to the maximum moment of inertia`,
+            `Axis corresponding to the minimum moment of inertia`,
+            `Intermediate principal axis`,
+            `Any axis is equally unstable`
         ],
         correctAnswer: 2
     },
     {
         id: 6,
-        question: `The rotational energy levels of diatomic molecules are`,
+        question: `Under a canonical transformation, the Poisson bracket of two dynamical variables f and g:`,
         image: null,
         options: [
-            `equi-spaced`,
-            `closely spaced at higher values`,
-            `decreases with \\( v \\)`,
-            `none of these.`
+            `Always becomes zero`,
+            `Changes its sign`,
+            `Remains invariant`,
+            `Becomes dependent only on time`
         ],
-        correctAnswer: 0
+        correctAnswer: 2
     },
     {
         id: 7,
-        question: `The frequency separation of rotational level`,
+        question: `Liouville's theorem states that, for a Hamiltonian system, the phase-space volume occupied by an ensemble of systems`,
         image: null,
         options: [
-            `is constant`,
-            `increases with \\( v \\)`,
-            `decreases with \\( v \\)`,
-            `none of these.`
+            `Always increases with time`,
+            `Always decreases with time`,
+            `Remains invariant during Hamiltonian evolution`,
+            `Becomes zero at equilibrium`
         ],
-        correctAnswer: 0
+        correctAnswer: 2
     },
     {
         id: 8,
-        question: `Molecular spectra is more complicated as compared to atomic spectra because`,
+        question: `In the classical-to-quantum connection, the Hamilton-Jacobi equation provides an important basis for:`,
         image: null,
         options: [
-            `the molecule has many more energy levels,`,
-            `the electron in a molecule does not move in a central force field like an atom`,
-            `the molecular mass is usually greater than atomic mass`,
-            `the molecule can dissociate into atoms.`
+            `Newton's law of gravitation`,
+            `The semi classical/WKB approximation`,
+            `Maxwell's equations`,
+            `Thermodynamic equilibrium`
         ],
-        correctAnswer: 0
+        correctAnswer: 1
     },
     {
         id: 9,
-        question: `The importance of rotational spectral study is that we can determine the`,
+        question: `The Hamilton-Jacobi method is particularly significant because it`,
         image: null,
         options: [
-            `the mass of the atom forming the molecule`,
-            `bond length of the molecule`,
-            `angular momentum`,
-            `molecular structure.`
+            `eliminates the need for generalized coordinates`,
+            `provides a connection between classical mechanics and quantum mechanics`,
+            `is applicable only to free particles`,
+            `eliminates conservation laws`
         ],
         correctAnswer: 1
     },
     {
         id: 10,
-        question: `All diatomic molecules do not show rotational spectra because,`,
+        question: `Action-angle variables are particularly useful for`,
         image: null,
         options: [
-            `they possess very heavy mass`,
-            `they do not have permanent dipole moment`,
-            `their angular momentum is constant`,
-            `they always occupy ground state though they have higher rotational level.`
-        ],
-        correctAnswer: 1
-    },
-    {
-        id: 11,
-        question: `The minimum vibrational energy of a diatomic molecule is given by`,
-        image: null,
-        options: [
-            `\\( \\left( v + \\frac{1}{2} \\right) h \\nu_0 \\)`,
-            `\\( v h \\nu_0 \\)`,
-            `\\( \\frac{1}{2} h \\nu_0 \\)`,
-            `\\( h \\nu_0 \\)`
-        ],
-        correctAnswer: 2
-    },
-    {
-        id: 12,
-        question: `The vibrational levels of a diatomic molecule are`,
-        image: null,
-        options: [
-            `equi-spaced`,
-            `unequi-spaced`,
-            `irregularly spaced`,
-            `none of these.`
+            `describing periodic and quasi-periodic Hamiltonian systems`,
+            `eliminating angular momentum`,
+            `solving only dissipative systems`,
+            `describing only rigid-body translation`
         ],
         correctAnswer: 0
     },
     {
-        id: 13,
-        question: `If \\( \\nu_1 \\) and \\( \\nu_2 \\) be the frequencies of the \\( R \\)-branch \\( P \\)-branch of vibrational-rotational spectra, then`,
+        id: 11,
+        question: `Euler's theorem on the motion of a rigid body states that any finite displacement of a rigid body having one point fixed can be represented by`,
         image: null,
         options: [
-            `\\( \\nu_1 = \\nu_2 \\)`,
-            `\\( \\nu_1 > \\nu_2 \\)`,
-            `\\( \\nu_2 > \\nu_1 \\)`,
-            `\\( \\nu_2 \\ge \\nu_1 \\)`
+            `A pure translation`,
+            `A rotation about some axis passing through the fixed point`,
+            `A change in mass`,
+            `A change in angular momentum only`
+        ],
+        correctAnswer: 1
+    },
+    {
+        id: 12,
+        question: `For torque-free motion of a rigid body, Euler's equations are expressed in terms of`,
+        image: null,
+        options: [
+            `Linear velocity components only`,
+            `Centre-of-mass coordinates only`,
+            `Potential energy only`,
+            `Principal moments of inertia and angular velocity components`
+        ],
+        correctAnswer: 3
+    },
+    {
+        id: 13,
+        question: `According to Liouville's theorem, the phase-space density of an ensemble of systems:`,
+        image: null,
+        options: [
+            `Always increases with time`,
+            `Always decreases with time`,
+            `Remains constant along the trajectory in phase space`,
+            `Becomes zero at equilibrium`
         ],
         correctAnswer: 2
     },
     {
         id: 14,
-        question: `The origin of band structure of electronic spectra of molecules is due to the fact that,`,
+        question: `In the motion of a heavy symmetric top with one point fixed, precession refers to`,
         image: null,
         options: [
-            `\\( \\Delta E_e \\gg E_j \\)`,
-            `\\( \\Delta E_v > E_j \\)`,
-            `\\( \\Delta E_v \\simeq \\Delta E_e \\)`,
-            `\\( \\Delta E_e > \\Delta E_v, \\Delta E_j \\)`
-        ],
-        correctAnswer: 3
-    },
-    {
-        id: 15,
-        question: `The band length of homonuclear molecules can be determined from the study of`,
-        image: null,
-        options: [
-            `rotational spectra`,
-            `vibrational-rotational spectra`,
-            `electronic spectra`,
-            `Raman spectra.`
-        ],
-        correctAnswer: 3
-    },
-    {
-        id: 16,
-        question: `The spacing between two successive Stokes lines is`,
-        image: null,
-        options: [
-            `dependent on rotational quantum number \\( J \\)`,
-            `independent of \\( J \\)`,
-            `depend directly on the M.I. of the molecule`,
-            `dependent on the frequency of the lines.`
+            `Rotation of the top about its symmetry axis`,
+            `Slow rotation of the symmetry axis about the vertical direction`,
+            `Oscillation of the centre of mass only`,
+            `Translation of the fixed point`
         ],
         correctAnswer: 1
     },
     {
-        id: 17,
-        question: `In phosphorescence the absorption and emission of light take place`,
+        id: 15,
+        question: `For a fast symmetric top, the condition for steady precession is primarily associated with:`,
         image: null,
         options: [
-            `simultaneously`,
-            `where emission is delayed by \\( \\sim 10^7 \\text{ s} \\)`,
-            `where emission is not always delayed`,
-            `with delay time \\( \\sim \\) several years.`
+            `Very small angular momentum of spin`,
+            `Large spin angular velocity`,
+            `Zero gravitational torque`,
+            `Zero moment of inertia`
+        ],
+        correctAnswer: 1
+    },
+    {
+        id: 16,
+        question: `For a rapidly spinning gyroscope, the angular velocity of precession is approximately inversely proportional to`,
+        image: null,
+        options: [
+            `Its angular momentum`,
+            `Its mass only`,
+            `Its moment of inertia about the vertical axis only`,
+            `Its kinetic energy only`
+        ],
+        correctAnswer: 0
+    },
+    {
+        id: 17,
+        question: `Larmor precession occurs when a charged particle or magnetic moment is subjected to:`,
+        image: null,
+        options: [
+            `A uniform gravitational field`,
+            `A uniform magnetic field`,
+            `A uniform electric field`,
+            `No external field`
         ],
         correctAnswer: 1
     },
     {
         id: 18,
-        question: `The selection rule for transition in rotational spectra is`,
+        question: `According to Noether's theorem, invariance of the Lagrangian under continuous time translation implies conservation of`,
         image: null,
         options: [
-            `\\( \\Delta J = 0 \\)`,
-            `\\( \\Delta J = \\pm 1 \\)`,
-            `\\( \\Delta J = \\pm 2 \\)`,
-            `\\( \\Delta J = \\pm 1, \\pm 2 \\)`
+            `Linear momentum`,
+            `Angular momentum`,
+            `Energy`,
+            `Action`
         ],
-        correctAnswer: 1
+        correctAnswer: 2
     },
     {
         id: 19,
-        question: `The stokes and anti-Stokes lines in Raman spectra are`,
+        question: `If the Hamilton–Jacobi equation is completely solved by a principal function \\( S(q, \\alpha, t) \\), the constants \\( \\alpha \\) are`,
         image: null,
         options: [
-            `equally spaced`,
-            `unequally spaced`,
-            `irregularly spaced`,
-            `none of these.`
+            `Arbitrary constants related to the initial conditions`,
+            `Always equal to zero`,
+            `The generalized velocities`,
+            `The generalized coordinates`
         ],
         correctAnswer: 0
     },
     {
         id: 20,
-        question: `Which of the following is homonuclear molecule?`,
+        question: `For a freely rotating rigid body with no external torque, which quantity remains constant?`,
         image: null,
         options: [
-            `\\( \\text{CO} \\)`,
-            `\\( \\text{O}_2 \\)`,
-            `\\( \\text{NO} \\)`,
-            `\\( \\text{CO}_2 \\)`
+            `Angular momentum in the space-fixed frame`,
+            `Angular velocity in every frame`,
+            `Each component of angular momentum in the body-fixed frame`,
+            `Euler angles individually`
         ],
-        correctAnswer: 1
+        correctAnswer: 0
     },
     {
         id: 21,
-        question: `The molecules and ions which show ESR spectra must have spin`,
+        question: `The phenomenon in which the axis of a spinning gyroscope slowly rotates about the direction of an applied torque is known as`,
         image: null,
         options: [
-            `zero`,
-            `non-zero`,
-            `zero or non-zero`,
-            `none of these.`
+            `Nutation`,
+            `Precession`,
+            `Oscillation`,
+            `Inversion`
         ],
         correctAnswer: 1
     },
     {
         id: 22,
-        question: `In a system of diatomic molecule some atoms of one element are replaced by a heavier isotope such that the reduced mass is changed by \\( 1.05 \\). The shift in spectral line will be by a factor`,
+        question: `Hamilton's principal function S is closely related to:`,
         image: null,
         options: [
-            `0.475`,
-            `0.5`,
-            `0.98`,
-            `1.`
+            `The action integral`,
+            `The potential energy only`,
+            `The kinetic energy only`,
+            `The angular momentum only`
         ],
-        correctAnswer: 2
+        correctAnswer: 0
     },
     {
         id: 23,
-        question: `For a diatomic molecule the vibrational energy level spacing \\( (\\Delta E_v) \\) and rotational energy level spacing \\( (\\Delta E_J) \\) are :`,
+        question: `For a time-independent Hamiltonian, Hamilton's principal function can generally be written as`,
         image: null,
         options: [
-            `\\( \\Delta E_v \\) increases with \\( v \\), \\( \\Delta E_J \\) increases with \\( J \\)`,
-            `\\( \\Delta E_v \\) decreases with \\( v \\), \\( \\Delta E_J \\) increases with \\( J \\)`,
-            `\\( \\Delta E_v \\) decreases with \\( v \\), \\( \\Delta E_J \\) increases with \\( J \\)`,
-            `\\( \\Delta E_v \\) decreases with \\( v \\), \\( \\Delta E_J \\) decreases with \\( J \\)`
+            `\\( S = W - Et \\)`,
+            `\\( S = W + Et \\)`,
+            `\\( S = Et \\) only`,
+            `\\( S = W / t \\)`
         ],
-        correctAnswer: 2
+        correctAnswer: 0
     }
 ];
 
