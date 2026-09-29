@@ -1,4 +1,4 @@
-const gkQuestions = [
+ const gkQuestions = [
     {
         id: 1,
         question: `In the calculus of variations, the quantity whose extremum is sought is generally called`,
